@@ -3,7 +3,7 @@
   "sources": {
     "uestc-gr-competition": {
       "enabled": true,
-      "last_run": "2026-10-15T22:45:06+08:00",
+      "last_run": "2026-10-15T22:45:52+08:00",
       "last_health": "ok",
       "last_http": 200,
       "last_fetched": 20,
@@ -250,6 +250,11 @@
         "fc9c1c6417161ebd",
         "fe388982e1f8de4f"
       ]
+    },
+    "uestc-icse-portal": {
+      "enabled": false,
+      "last_health": "disabled",
+      "last_run": "2026-10-15T22:45:58+08:00"
     }
   }
 }

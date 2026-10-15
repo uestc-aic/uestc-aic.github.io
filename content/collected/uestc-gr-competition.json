@@ -2,11 +2,11 @@
   "source_id": "uestc-gr-competition",
   "source_name": "电子科技大学研究生院 · 竞赛实践",
   "source_url": "https://gr.uestc.edu.cn/jiuye/152",
-  "fetched_at": "2026-10-15T22:42:52+08:00",
+  "fetched_at": "2026-10-15T22:45:52+08:00",
   "items": [
     {
       "id": "a69be9b85e569587",
-      "title": "【人工修正】测试标题-绝不该被采集覆盖",
+      "title": "第五届中国研究生网络安全创新大赛校内赛报名通知",
       "url": "https://gr.uestc.edu.cn/jiuye/152/14817",
       "date": "2026-09-10",
       "date_text": "2026年09月10日",
@@ -17,7 +17,7 @@
         "source_id": "uestc-gr-competition"
       },
       "collected_at": "2026-10-15T22:37:02+08:00",
-      "locked": true
+      "locked": false
     },
     {
       "id": "0470e8deb8d5ca5b",

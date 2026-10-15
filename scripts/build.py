@@ -706,7 +706,7 @@ def quick_links(site: dict) -> str:
         ("users", "认识合作伙伴", "学院 · 班级 · 工作室", f"{p}partners/index.html"),
     ]
     items = "".join(
-        f'<a href="{href}">{icon(i)}<span class="quick-text"><strong>{t}</strong><span>{d}</span></span>{icon("arrow", "quick-arrow")}</a>'
+        f'<a href="{href}">{icon(i)}<div><strong>{t}</strong><span>{d}</span></div>{icon("arrow", "quick-arrow")}</a>'
         for i, t, d, href in data)
     return f'<div class="quick-links container" data-reveal>{items}</div>'
 

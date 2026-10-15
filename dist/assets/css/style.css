@@ -502,3 +502,11 @@ dialog h2 { font-size: 27px; margin-bottom: 20px; }
   .ticker-inner span:nth-of-type(n+3) { display: none; }
   .resource-row .resource-zh { display: none; }
 }
+
+/* ── 补齐：生成器用到的其余类 ───────────────────────────────── */
+.container-narrow { max-width: 800px; }
+.hero-copy { min-width: 0; }
+.detail-main { min-width: 0; }
+.section-alt { background: var(--white); border-block: 1px solid var(--line); }
+.event-card-featured { grid-column: span 2; background: var(--blue-soft); border-color: #cfdaf5; }
+@media (max-width: 850px) { .event-card-featured { grid-column: span 1; } }
