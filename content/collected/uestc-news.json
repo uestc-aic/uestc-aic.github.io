@@ -1,0 +1,458 @@
+{
+  "source_id": "uestc-news",
+  "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+  "source_url": "https://news.uestc.edu.cn/",
+  "fetched_at": "2026-10-15T22:43:36+08:00",
+  "items": [
+    {
+      "id": "2fc8d02df8e046e7",
+      "title": "学者论坛：Pickup Opportunity as Resource A Probabilistic Approach for Demand-Aware Ride-Sharing Optimization",
+      "url": "https://news.uestc.edu.cn/info/1015/44384.htm",
+      "date": "2026-10-15",
+      "date_text": "2026-10-15",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1015/44384.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "27657a5e3b6adcdc",
+      "title": "电子科技大学与法国格勒诺布尔经济管理学院硕士学位教育项目举行开学典礼",
+      "url": "https://news.uestc.edu.cn/info/1003/44388.htm",
+      "date": "2026-10-15",
+      "date_text": "2026-10-15",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44388.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "5f9ee916691ca72e",
+      "title": "国家自然科学基金委员会化学部学科研讨会在我校召开",
+      "url": "https://news.uestc.edu.cn/info/1003/44391.htm",
+      "date": "2026-10-15",
+      "date_text": "2026-10-15",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44391.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "6da7b620809298b7",
+      "title": "「人文×科技」思想者论坛第三十九期讲座预告",
+      "url": "https://news.uestc.edu.cn/info/1015/44357.htm",
+      "date": "2026-10-14",
+      "date_text": "2026-10-14",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1015/44357.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "49b3d7a03bf618bf",
+      "title": "生命学院刘贻尧、李亭亭团队在PNAS发表研究成果",
+      "url": "https://news.uestc.edu.cn/info/1005/44356.htm",
+      "date": "2026-10-14",
+      "date_text": "2026-10-14",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/44356.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "56c8c4d4873b6712",
+      "title": "电子学院文岐业团队在Nano-Micro Letters和Advanced Functional Materials发表研究成果",
+      "url": "https://news.uestc.edu.cn/info/1005/44355.htm",
+      "date": "2026-10-14",
+      "date_text": "2026-10-14",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/44355.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "4a476525540e04e0",
+      "title": "资环学院博士生在《中国科学：地球科学》发表综述论文",
+      "url": "https://news.uestc.edu.cn/info/1005/44353.htm",
+      "date": "2026-10-14",
+      "date_text": "2026-10-14",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/44353.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "ff4e73917a611e7e",
+      "title": "“珠峰班”学生在机器学习顶级会议NeurIPS 2026发表论文",
+      "url": "https://news.uestc.edu.cn/info/1005/44352.htm",
+      "date": "2026-10-14",
+      "date_text": "2026-10-14",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/44352.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "aac6e6c16c750661",
+      "title": "名师讲堂：From Perception to Control: Learning-Based Approaches and Algorithmic Enhancements",
+      "url": "https://news.uestc.edu.cn/info/1015/44334.htm",
+      "date": "2026-10-13",
+      "date_text": "2026-10-13",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1015/44334.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "309e61e63d1f8888",
+      "title": "中国科学院心理研究所陈祉妍教授来校开设心理类大师课",
+      "url": "https://news.uestc.edu.cn/info/1004/44350.htm",
+      "date": "2026-10-13",
+      "date_text": "2026-10-13",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1004/44350.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "189d01b169fe1550",
+      "title": "上海交通大学何小刚教授做客学者论坛",
+      "url": "https://news.uestc.edu.cn/info/1005/44351.htm",
+      "date": "2026-10-13",
+      "date_text": "2026-10-13",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/44351.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "1267393690d245ff",
+      "title": "薛欣宇教授团队在Science Advances发表研究成果",
+      "url": "https://news.uestc.edu.cn/info/1005/44336.htm",
+      "date": "2026-10-13",
+      "date_text": "2026-10-13",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/44336.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "84d931276d460745",
+      "title": "我校学生获第九届工业工程与精益管理创新赛全国一等奖2项",
+      "url": "https://news.uestc.edu.cn/info/1004/44393.htm",
+      "date": "2026-10-13",
+      "date_text": "2026-10-13",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1004/44393.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "b6517eb29f0d54ba",
+      "title": "经管学院承办2026-2030四川省管理科学与工程类专业教学指导委员会成立大会及2026年会",
+      "url": "https://news.uestc.edu.cn/info/1003/44324.htm",
+      "date": "2026-10-13",
+      "date_text": "2026-10-13",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44324.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "914be53adcc5bc16",
+      "title": "法国格勒诺布尔经济管理学院校长Fouziya BOUZERDA来校访问",
+      "url": "https://news.uestc.edu.cn/info/1006/44290.htm",
+      "date": "2026-10-12",
+      "date_text": "2026-10-12",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1006/44290.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "26c2167c501e51ee",
+      "title": "学者论坛：宇宙的物质不对称: 被低能参数\"锁死\"的轻子生成(Leptogenesis Determined by Low Energy Parameters)",
+      "url": "https://news.uestc.edu.cn/info/1015/44210.htm",
+      "date": "2026-10-10",
+      "date_text": "2026-10-10",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1015/44210.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "c2b79f5b1f4e72e3",
+      "title": "物理学院杨元杰教授团队在Nature Communications发表研究成果",
+      "url": "https://news.uestc.edu.cn/info/1005/44188.htm",
+      "date": "2026-10-10",
+      "date_text": "2026-10-10",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/44188.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "fd770f6b0aa3a562",
+      "title": "基础院蒙翠玲教授荣获中国激光杂志社第二届“青云奖”",
+      "url": "https://news.uestc.edu.cn/info/1005/44212.htm",
+      "date": "2026-10-08",
+      "date_text": "2026-10-08",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/44212.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "14a4cdd6518bcb56",
+      "title": "我校牵头两项国家标准通过审查、一项IEC国际标准完成国内论证",
+      "url": "https://news.uestc.edu.cn/info/1005/43895.htm",
+      "date": "2026-10-08",
+      "date_text": "2026-10-08",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/43895.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "f41e1aaf362f4115",
+      "title": "光电学院许向东教授在材料学顶级期刊Materials Today发表研究成果",
+      "url": "https://news.uestc.edu.cn/info/1005/44189.htm",
+      "date": "2026-10-08",
+      "date_text": "2026-10-08",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/44189.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "671d150d30fcde3e",
+      "title": "集电学院张晓升教授团队在工业电子领域顶级期刊IEEE Transactions on Industrial Electronics发表研究成果",
+      "url": "https://news.uestc.edu.cn/info/1005/44190.htm",
+      "date": "2026-10-08",
+      "date_text": "2026-10-08",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/44190.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "3e7875e7877dec3e",
+      "title": "《Photonic Sensors》入选《2025年度世界一流科技期刊目录》",
+      "url": "https://news.uestc.edu.cn/info/1005/43883.htm",
+      "date": "2026-10-06",
+      "date_text": "2026-10-06",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/43883.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "19c63ffc9322e1a3",
+      "title": "英国格拉斯哥大学校长Andy Schofield一行来校访问",
+      "url": "https://news.uestc.edu.cn/info/1003/44181.htm",
+      "date": "2026-10-03",
+      "date_text": "2026-10-03",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44181.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "fdadb271690da68c",
+      "title": "微波射频与先进电子大会举行",
+      "url": "https://news.uestc.edu.cn/info/1003/44169.htm",
+      "date": "2026-10-03",
+      "date_text": "2026-10-03",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44169.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "498c1a7d8174e0f1",
+      "title": "学校召开校地定点帮扶工作座谈会",
+      "url": "https://news.uestc.edu.cn/info/1003/44171.htm",
+      "date": "2026-10-03",
+      "date_text": "2026-10-03",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44171.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "958d74ce1b526bd5",
+      "title": "2026集成电路特色工艺与先进封装测试产业技术论坛在蓉举办",
+      "url": "https://news.uestc.edu.cn/info/1003/44173.htm",
+      "date": "2026-10-03",
+      "date_text": "2026-10-03",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44173.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "bb05dcb0af37e939",
+      "title": "我校与俄“密西斯”大学硕士项目2026级新生开学典礼举行",
+      "url": "https://news.uestc.edu.cn/info/1003/44175.htm",
+      "date": "2026-10-03",
+      "date_text": "2026-10-03",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44175.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "4116cc0a02786c3d",
+      "title": "医学院肖波教授团队在Nature Communications发表结直肠癌治疗研究成果",
+      "url": "https://news.uestc.edu.cn/info/1005/44186.htm",
+      "date": "2026-10-02",
+      "date_text": "2026-10-02",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/44186.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "07ab5c67c6fdb29a",
+      "title": "精彩！“银杏颂”文艺晚会献礼建校七十周年",
+      "url": "https://news.uestc.edu.cn/info/1003/44158.htm",
+      "date": "2026-10-01",
+      "date_text": "2026-10-01",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44158.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    },
+    {
+      "id": "037fa98899875518",
+      "title": "邓泰华校友、彭志辉校友向母校捐赠100台机器人",
+      "url": "https://news.uestc.edu.cn/info/1003/44131.htm",
+      "date": "2026-09-30",
+      "date_text": "2026-09-30",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44131.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-15T22:37:45+08:00",
+      "locked": false
+    }
+  ]
+}

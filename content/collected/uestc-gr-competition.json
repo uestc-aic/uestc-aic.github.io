@@ -1,0 +1,308 @@
+{
+  "source_id": "uestc-gr-competition",
+  "source_name": "电子科技大学研究生院 · 竞赛实践",
+  "source_url": "https://gr.uestc.edu.cn/jiuye/152",
+  "fetched_at": "2026-10-15T22:42:52+08:00",
+  "items": [
+    {
+      "id": "a69be9b85e569587",
+      "title": "【人工修正】测试标题-绝不该被采集覆盖",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/14817",
+      "date": "2026-09-10",
+      "date_text": "2026年09月10日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/14817",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": true
+    },
+    {
+      "id": "0470e8deb8d5ca5b",
+      "title": "华为赛事——CANN挑战赛（西南赛区）报名启动",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/14786",
+      "date": "2026-07-30",
+      "date_text": "2026年07月30日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/14786",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "f49d64f89aae66d4",
+      "title": "第八届中国研究生机器人创新设计大赛 校内选拔赛报名通知",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/14764",
+      "date": "2026-07-20",
+      "date_text": "2026年07月20日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/14764",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "dcaa5b803eb809e0",
+      "title": "“中石协·杰瑞杯”第十三届中国研究生能源装备创新设计大赛校内选拔赛通知",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/14695",
+      "date": "2026-06-26",
+      "date_text": "2026年06月26日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/14695",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "ec7d9d40faff832e",
+      "title": "第三届中国研究生操作系统开源创新大赛暨开放原子大赛操作系统专项赛电子科技大学校赛决赛通知",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/14683",
+      "date": "2026-06-23",
+      "date_text": "2026年06月23日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/14683",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "09338ec783fba430",
+      "title": "第五届中国研究生金融科技创新大赛校内赛报名通知",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/14637",
+      "date": "2026-06-12",
+      "date_text": "2026年06月12日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/14637",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "b787bcc030db486a",
+      "title": "第八届中国研究生人工智能创新大赛 校内赛报名通知",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/14590",
+      "date": "2026-06-05",
+      "date_text": "2026年06月05日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/14590",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "b83d05a96d67bd96",
+      "title": "第三届中国研究生操作系统开源创新大赛暨开放原子大赛操作系统专项赛电子科大校赛报名通知",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/14589",
+      "date": "2026-06-05",
+      "date_text": "2026年06月05日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/14589",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "affb9831cb0e2377",
+      "title": "关于举办第九届中国研究生创“芯”大赛电子科技大学校内赛的通知",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/14561",
+      "date": "2026-05-29",
+      "date_text": "2026年05月29日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/14561",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "888a327f66262b16",
+      "title": "关于公布2026年“中国研究生创新实践系列大赛” 校内承办单位暨“研究生科技创新项目”立项清单的通知",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/14555",
+      "date": "2026-05-27",
+      "date_text": "2026年05月27日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/14555",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "ce0290c09f889976",
+      "title": "第五届中国研究生“双碳”创新与创意大赛校内选拔赛通知",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/14545",
+      "date": "2026-05-22",
+      "date_text": "2026年05月22日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/14545",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "1b0f2bfddc903df6",
+      "title": "2026年电子科技大学第二十六届数学建模竞赛通知",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/14519",
+      "date": "2026-04-30",
+      "date_text": "2026年04月30日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/14519",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "5d5bae448f5045c7",
+      "title": "关于举办2026年中国研究生电子设计竞赛 “智明达杯”电子科技大学校内选拔赛的通知",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/14515",
+      "date": "2026-04-27",
+      "date_text": "2026年04月27日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/14515",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "282251623c571584",
+      "title": "Call for Papers: the 22nd ICCWAMTIP",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/14223",
+      "date": "2025-10-24",
+      "date_text": "2025年10月24日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/14223",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "99ef368a4ce526a1",
+      "title": "“华为杯”第四届中国研究生网络安全创新大赛校内赛报名通知",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/13988",
+      "date": "2025-07-08",
+      "date_text": "2025年07月08日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/13988",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "4d1fc38f4b1bf31c",
+      "title": "第十一届中国研究生智慧城市技术与创意设计大赛电子科技大学校内赛报名通知",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/13987",
+      "date": "2025-07-08",
+      "date_text": "2025年07月08日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/13987",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "eaa828d440eeecfa",
+      "title": "关于举办第八届中国研究生创“芯”大赛电子科技大学校内赛的通知",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/13810",
+      "date": "2025-06-04",
+      "date_text": "2025年06月04日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/13810",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "e46cb487c3c602d5",
+      "title": "Call for Paper: the 21th ICCWAMTIP",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/13183",
+      "date": "2024-10-23",
+      "date_text": "2024年10月23日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/13183",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "8e3ea1dff494b2e4",
+      "title": "关于组织参加2024年全国大学生FPGA创新设计竞赛 “智明达杯”电子科技大学校内选拔赛的通知",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/12954",
+      "date": "2024-09-06",
+      "date_text": "2024年09月06日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/12954",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "38111fa7763ba60c",
+      "title": "2024年电子科技大学研究生企业管理创新大赛校内选拔赛参赛通知",
+      "url": "https://gr.uestc.edu.cn/jiuye/152/12891",
+      "date": "2024-07-12",
+      "date_text": "2024年07月12日",
+      "category": "competition",
+      "source": {
+        "name": "电子科技大学研究生院 · 竞赛实践",
+        "url": "https://gr.uestc.edu.cn/jiuye/152/12891",
+        "source_id": "uestc-gr-competition"
+      },
+      "collected_at": "2026-10-15T22:37:02+08:00",
+      "locked": false
+    }
+  ]
+}

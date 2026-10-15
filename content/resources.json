@@ -1,0 +1,177 @@
+{
+  "updated": "2026-10-15",
+  "_schema": {
+    "category": "ai-agent | ai4eda | ic-design | eda-tool | dataset-model | course | paper-list | community | workflow",
+    "level": "入门 | 进阶 | 研究",
+    "verified": "实测可访问的日期（yyyy-mm-dd）",
+    "http_status": "实测 HTTP 状态码"
+  },
+  "items": [
+    {
+      "id": "fpga-website",
+      "title": "FPGA 小课堂",
+      "titleZh": "FPGA 接口与电路学习笔记",
+      "category": "ic-design",
+      "description": "面向动手实践的 FPGA 接口与电路学习笔记，从引脚、时序到常见外设，边做边查。",
+      "source": "Sintherain",
+      "host": "sintherain.github.io",
+      "url": "https://sintherain.github.io/fpga-website/",
+      "stars": 0,
+      "language": "中文",
+      "license": "未知",
+      "level": "入门",
+      "tags": [
+        "FPGA",
+        "接口电路",
+        "学习笔记"
+      ],
+      "featured": true,
+      "label": "FPGA 学习",
+      "verified": "2026-10-15",
+      "http_status": 0
+    },
+    {
+      "id": "corleone-blog",
+      "title": "Corleone's Blog",
+      "titleZh": "微电子学习笔记",
+      "category": "ic-design",
+      "description": "模拟电路、数字设计、信号与系统等微电子方向的学习笔记，适合课后对照复习。",
+      "source": "Corleone",
+      "host": "corele-one.github.io",
+      "url": "https://corele-one.github.io/Corleone-s-Blog/",
+      "stars": 0,
+      "language": "中文",
+      "license": "未知",
+      "level": "入门",
+      "tags": [
+        "模拟电路",
+        "数字设计",
+        "信号与系统"
+      ],
+      "featured": true,
+      "label": "微电子笔记",
+      "verified": "2026-10-15",
+      "http_status": 0
+    },
+    {
+      "id": "ai-agents-for-beginners",
+      "title": "AI Agents for Beginners",
+      "titleZh": "AI Agent 入门课程",
+      "category": "ai-agent",
+      "description": "Microsoft 开源课程，从基础概念讲到动手搭建，适合作为第一次接触 Agent 的系统入口。",
+      "source": "microsoft/ai-agents-for-beginners",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "stars": 0,
+      "language": "Jupyter Notebook",
+      "license": "MIT",
+      "level": "入门",
+      "tags": [
+        "Agent",
+        "课程",
+        "微软"
+      ],
+      "verified": "2026-10-15",
+      "http_status": 0
+    },
+    {
+      "id": "gh-cli-manual",
+      "title": "GitHub CLI 官方手册",
+      "titleZh": "gh 命令手册",
+      "category": "workflow",
+      "description": "gh 命令行完整手册，把本地开发与 GitHub 协作接起来，是参与社区仓库最省事的工具。",
+      "source": "GitHub Docs",
+      "url": "https://cli.github.com/manual/",
+      "stars": 0,
+      "language": "无",
+      "license": "CC-BY-4.0",
+      "level": "入门",
+      "tags": [
+        "GitHub",
+        "CLI",
+        "协作"
+      ],
+      "verified": "2026-10-15",
+      "http_status": 0
+    },
+    {
+      "id": "pages-custom-workflows",
+      "title": "用 GitHub Actions 部署静态网站",
+      "titleZh": "Pages 自定义工作流",
+      "category": "workflow",
+      "description": "GitHub Pages 官方发布指南，本站就是按这套流程部署的，可以照抄。",
+      "source": "GitHub Docs",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "stars": 0,
+      "language": "无",
+      "license": "CC-BY-4.0",
+      "level": "入门",
+      "tags": [
+        "GitHub Actions",
+        "Pages",
+        "部署"
+      ],
+      "verified": "2026-10-15",
+      "http_status": 0
+    },
+    {
+      "id": "github-skills",
+      "title": "GitHub 入门练习",
+      "titleZh": "GitHub Skills",
+      "category": "workflow",
+      "description": "官方交互式练习，通过真实仓库操作学会提交、分支与协作流程，约一小时能做完。",
+      "source": "GitHub",
+      "url": "https://skills.github.com/",
+      "stars": 0,
+      "language": "无",
+      "license": "CC-BY-4.0",
+      "level": "入门",
+      "tags": [
+        "Git",
+        "协作",
+        "练习"
+      ],
+      "verified": "2026-10-15",
+      "http_status": 0
+    },
+    {
+      "id": "hdlbits",
+      "title": "HDLBits",
+      "titleZh": "Verilog 在线练习",
+      "category": "ic-design",
+      "description": "在线刷 Verilog 小电路题库，从组合逻辑到状态机，写完即判，适合数字逻辑课后练手。",
+      "source": "HDLBits",
+      "url": "https://hdlbits.01xz.net/wiki/Main_Page",
+      "stars": 0,
+      "language": "Verilog",
+      "license": "未知",
+      "level": "入门",
+      "tags": [
+        "Verilog",
+        "数字逻辑",
+        "在线题库"
+      ],
+      "verified": "2026-10-15",
+      "http_status": 0
+    },
+    {
+      "id": "openroad-docs",
+      "title": "OpenROAD",
+      "titleZh": "开源数字芯片设计流程",
+      "category": "eda-tool",
+      "description": "从 RTL 到 GDSII 的完整开源实现流程，适合想了解工业界真实设计链路的学生。",
+      "source": "The-OpenROAD-Project",
+      "url": "https://openroad.readthedocs.io/en/latest/",
+      "stars": 0,
+      "language": "C++",
+      "license": "Apache-2.0",
+      "level": "进阶",
+      "tags": [
+        "开源EDA",
+        "数字后端",
+        "设计流程"
+      ],
+      "verified": "2026-10-15",
+      "http_status": 0
+    }
+  ]
+}

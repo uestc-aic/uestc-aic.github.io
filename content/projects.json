@@ -1,0 +1,36 @@
+{
+  "updated": "2026-10-15",
+  "items": [
+    {
+      "id": "project-a",
+      "code": "PROJECT A",
+      "title": "AI 工具与应用",
+      "intro": "围绕实际需求，探索 Agent 工作流、个人网站和 AI 辅助学习。",
+      "direction": "Agent 工作流、个人网站、AI 辅助学习",
+      "size": "4–6 名参与者",
+      "progress": "项目组筹备中，具体选题待确定",
+      "tags": [
+        "Agent",
+        "Web",
+        "效率工具"
+      ],
+      "visual": "tools"
+    },
+    {
+      "id": "project-b",
+      "code": "PROJECT B",
+      "title": "AI × IC 技术实践",
+      "intro": "围绕人工智能与集成电路的交叉问题，共同选题、学习和验证想法。",
+      "direction": "AI for IC 技术学习与项目实践",
+      "size": "4–6 名参与者",
+      "progress": "项目组筹备中，具体选题待确定",
+      "tags": [
+        "AI for IC",
+        "技术探索",
+        "开源协作"
+      ],
+      "visual": "hardware"
+    }
+  ],
+  "footnote": "项目组开放给非正式成员，职能部门成员也可以跨组参与。"
+}

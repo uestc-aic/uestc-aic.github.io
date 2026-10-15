@@ -1,64 +1,101 @@
 # AI 芯动力 · UESTC AIC
 
-社团官网第二版。原生 HTML、CSS、JavaScript，无需构建。官网：https://uestc-aic.github.io/
+电子科技大学集成电路科学与工程学院 **AI for IC** 社区官网。
+原生 HTML / CSS / JavaScript，**零构建依赖**（只用 Python 3 标准库生成静态页）。
 
-## 查看页面
+线上地址：<https://uestc-aic.github.io/>
 
-打开 `dist/index.html` 即可查看。完整预览建议使用本地静态服务器。
+---
 
-## 内容与交互
+## 它长什么样
 
-- 自适应首页，包含社团介绍、活动预告、项目方向、资源库、组织架构、拟合作伙伴和招新入口。
-- 活动分类、资源分类与搜索、详情弹窗、移动端导航、投稿格式复制。
-- 八份可直接访问的公开学习资源。FPGA 小课堂与 Corleone’s Blog 在“学习站推荐”中展示，并参与搜索及 IC 分类筛选。
-- 芯片插画和标识为页面内 SVG，无需图片服务。
-- 首期沙龙处于筹备阶段，候选主题、时间和地点均按当前信息展示。
-- 报名表、QQ 群和投稿表单暂未接入；页面明确显示“待公布”，不收集报名数据。
+- **首页**：芯片插画 hero、活动预告、项目方向、资源库精选、组织架构、合作伙伴、加入入口
+- **活动日历** `/events/`：按「芯沙龙 / 常规活动 / 学院资讯 / 竞赛信息」分类筛选
+- **活动详情** `/events/<id>/`：每场活动独立页面，支持长文、议题、嘉宾、报名
+- **学院资讯** `/college/`：自动同步校级公开信息源 + 社区投稿
+- **竞赛信息** `/competitions/`：同上，重点覆盖校内选拔赛通知
+- **资源库** `/resources/`：AI × IC 方向的工具、项目、课程、论文清单，分类 + 搜索
+- **合作伙伴** `/partners/`：ICSE、钧业班、立人班、芯言工作室、芯传工作室
+- **关于 / 项目 / 加入 / 投稿** `/about/` `/projects/` `/join/` `/contribute/`
+- **运维手册** `/docs/`：站内可直接查的操作手册
 
-## 修改入口
+## 架构
 
-编辑 `dist/app.js` 顶部的 `CONFIG`：
-
-```js
-const CONFIG = {
-  github: 'https://github.com/uestc-aic',
-  recruitmentForm: '',       // 招新报名表的 HTTPS 地址
-  qqGroup: '',               // QQ 群邀请的 HTTPS 地址
-  contributionForm: '',      // 投稿表的 HTTPS 地址
-  salonRegistration: '',     // 首期沙龙报名表的 HTTPS 地址
-  salonTime: '期中后，具体时间待公布',
-  salonLocation: '待公布'
-};
+```
+content/*.json        ← 唯一内容源（运维只改这里）
+content/pages/*.md    ← 长文（活动详情、手册）
+content/collected/    ← 采集脚本自动写入
+content/inbox/        ← 人工投稿暂存
+assets/               ← CSS / JS / 图片
+sources/sources.json  ← 采集源配置
+scripts/build.py      ← 静态生成器（零依赖）
+scripts/collect.py    ← 采集器（零依赖）
+docs/                 ← 运维手册、采集系统说明
+dist/                 ← 构建产物（不提交，Actions 生成）
 ```
 
-填入相应地址后，弹窗自动显示可用入口。首页活动卡片的日期、地点位于 `dist/index.html`，正式确定后需同步修改。
+三条流水线（GitHub Actions）：
 
-资源数据在 `dist/app.js` 的 `RESOURCES` 中；页面文案和布局在 `dist/index.html`，颜色与响应式样式在 `dist/style.css`。
+| 工作流 | 触发 | 作用 |
+|---|---|---|
+| `pages.yml` | push 到 main | 校验内容 → `build.py` → 发布到 Pages |
+| `collect.yml` | 每天 03:10 (CST) | `collect.py` 抓取校级公开源 → 有新条目则提交 |
+| `deploy` job | 由上面构建后 | 部署 artifact |
 
-中文名暂用项目名称“AI 芯动力”，英文账号为 UESTC AIC。拟合作伙伴仅作筹备信息展示，请在合作确认后更新状态。
+## 本地预览
 
-## 部署到 GitHub Pages
+```bash
+python3 scripts/build.py --clean
+python3 -m http.server 8000 --directory dist
+# 打开 http://localhost:8000
+```
 
-已附 `.github/workflows/pages.yml`，将 `dist` 发布到 GitHub Pages。该流程需要仓库主分支为 `main`。
+不需要 Node、不需要 npm、不需要任何第三方 Python 包。
 
-1. 使用 GitHub CLI 的浏览器授权登录 `uestc-aic` 账号：`gh auth login`。
-2. 在项目根目录初始化 Git，并创建或连接目标仓库。账号首页建议使用仓库名 `uestc-aic.github.io`。
-3. 上传 `dist`、`.github` 和本说明。无需上传 `.openai` 或任何本地预览文件。
-4. 在仓库 Settings → Pages 中，将 Source 设置为 GitHub Actions。
-5. 推送至 `main` 后，等待 Deploy website to GitHub Pages 工作流成功。
+只校验内容不生成：
 
-账号首页在部署成功后通常对应 `https://uestc-aic.github.io/`。部署状态请以 GitHub 仓库 Actions 中的工作流结果为准。
+```bash
+python3 scripts/build.py --check
+```
 
-页面使用系统字体，不依赖外部字体服务。芯片图形与图标由本地 SVG 绘制。
+## 我要改内容，从哪开始
 
-## 第二版视觉检查
+看 [`docs/运维手册.md`](docs/运维手册.md)。速查：
 
-已检查 320、390、768、1024、1440 像素五种宽度下的横向溢出、芯片居中、项目图形连接与按钮图标对齐；上述图形对齐误差小于 1 像素。活动筛选、资料分类、关键词搜索、空结果、六个详情弹窗和手机导航均已验证。
+| 想做的事 | 改哪 |
+|---|---|
+| 发布/更新活动 | `content/events.json` |
+| 加资源 | `content/resources.json` |
+| 改伙伴状态 | `content/partners.json` |
+| 改 QQ 群 / 报名表 / 投稿表链接 | `content/site.json` |
+| 写活动长文 | `content/pages/<id>.md` |
+| 换配色 | `assets/css/style.css` 的 `:root` |
+
+**设计规范**全文见 [`DESIGN.md`](DESIGN.md)（配色、字体、组件、动效、
+Do's & Don'ts、响应式断点），改样式前请先读它。
+
+## 采集系统的边界（重要）
+
+- 能自动抓：`news.uestc.edu.cn`、`gr.uestc.edu.cn`（含竞赛实践栏目）、
+  `jwc.uestc.edu.cn`、`uestc.edu.cn`、电赛培训网、数模竞赛网等**校级公开、服务端渲染**的源。
+- **抓不到**：`icse.uestc.edu.cn`（集成电路科学与工程学院官网）全站启用了
+  JS 挑战型 WAF，程序直连一律返回 `HTTP 412`。**学院内部信息走人工投稿**，
+  在 `content/events.json` 里以 `locked: true` 录入，采集永不覆盖。
+- 合规：串行抓取、间隔 ≥3 秒、遵守 `robots.txt`、只存结构化字段 + 原文链接不转载全文。
+
+细节见 [`docs/采集系统说明.md`](docs/采集系统说明.md)。
+
+## 环境要求
+
+- 本地：Python 3.9+（生成器与采集器都只用标准库）
+- CI：GitHub Actions（ubuntu-latest，自带 Python）
 
 ## 参考
 
-- https://uestc-ia.github.io/ ：参考社团介绍与开源社区入口的组织方式。
-- http://teamup.20050917.xyz/ ：本次无法读取，未使用其内容。
-- 用户提供的组织架构图与 GitHub 账号截图。
-- https://sintherain.github.io/fpga-website/ ：外部学习站“FPGA 小课堂 · 接口与电路笔记”。
-- https://corele-one.github.io/Corleone-s-Blog/ ：外部学习站 Corleone’s Blog，包含微电子相关学习笔记。
+- <https://uestc-ia.github.io/> —— 社团站点结构与开源社区入口的组织方式
+- <https://github.com/pyzw618/UESTC-Teamup> —— 竞赛信息采集的思路与流水线设计
+  （Fetcher → 编码处理 → Differ → Parser → Matcher → Guard → Publisher）
+
+## 许可
+
+站点内容版权归 AI 芯动力（UESTC AIC）所有。

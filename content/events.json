@@ -1,0 +1,106 @@
+{
+  "updated": "2026-10-15",
+  "_schema": {
+    "id": "唯一标识，也是详情页 slug（如 salon-01 → events/salon-01/index.html）",
+    "category": "salon 芯沙龙 | regular 常规活动 | campus 学院资讯 | competition 竞赛信息",
+    "status": "tbd 待定 | upcoming 即将开始 | ongoing 进行中 | past 已结束",
+    "locked": "true 表示人工维护，采集脚本永不覆盖该条",
+    "source": "采集来源 {name,url}，人工录入留空"
+  },
+  "items": [
+    {
+      "id": "salon-01",
+      "category": "salon",
+      "status": "past",
+      "featured": true,
+      "title": "第一期芯沙龙 · 圆满举行",
+      "titleEn": "THE FIRST CONNECTION",
+      "vol": "VOL. 01",
+      "date": "2026-05-26",
+      "dateText": "2026年5月26日 中午",
+      "time": "中午",
+      "location": "成电国际创新中心 B511",
+      "organizer": "集成电路科学与工程学院",
+      "speakers": [
+        {
+          "role": "主讲",
+          "name": "孔谋夫",
+          "title": "教授",
+          "org": "集成电路科学与工程学院"
+        },
+        {
+          "role": "学生分享",
+          "name": "向钧升",
+          "title": "硕士研究生",
+          "org": "集成电路科学与工程学院"
+        }
+      ],
+      "guests": [
+        {
+          "name": "李雪梅",
+          "title": "学院党委书记"
+        },
+        {
+          "name": "于淼",
+          "title": "学院党委副书记"
+        },
+        {
+          "name": "李虞峰",
+          "title": "教授"
+        }
+      ],
+      "summary": "首期芯沙龙在成电国际创新中心举办，同步成立 AI 芯动力工作室。孔谋夫教授分享从 LLM 到 Agent 与 Skill 的实践路径，40 余名学生参与交流。",
+      "topics": [
+        "人工智能：从 LLM 到 Agent 与 Skill 的实践",
+        "AI Agent 在芯片设计参数优化中的实战",
+        "AI 赋能 IC 的技术路径",
+        "产教融合与复合能力培养"
+      ],
+      "tags": [
+        "首期",
+        "AI × IC",
+        "工作室成立"
+      ],
+      "registerUrl": "",
+      "body": "salon-01.md",
+      "locked": true,
+      "source": null,
+      "links": [
+        {
+          "label": "AI 芯动力工作室后续活动",
+          "url": "https://github.com/uestc-aic"
+        }
+      ]
+    },
+    {
+      "id": "salon-02",
+      "category": "salon",
+      "status": "upcoming",
+      "featured": false,
+      "title": "第二期芯沙龙",
+      "titleEn": "COMING UP NEXT",
+      "vol": "VOL. 02",
+      "dateText": "待公布",
+      "time": "待公布",
+      "location": "待公布",
+      "organizer": "AI 芯动力（UESTC AIC）",
+      "speakers": [],
+      "summary": "主题由社区投票决定：个人网站搭建、Agent 工作流实战、IC 方向分享、竞赛经验与避坑。",
+      "topics": [
+        "个人网站从零到上线",
+        "Agent 工作流实战",
+        "IC 方向分享：你在做什么",
+        "竞赛经验与避坑"
+      ],
+      "tags": [
+        "预告",
+        "主题征集中"
+      ],
+      "registerUrl": "",
+      "body": "salon-02-preview.md",
+      "locked": true,
+      "source": null,
+      "links": []
+    }
+  ]
+}

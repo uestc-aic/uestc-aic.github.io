@@ -1,0 +1,68 @@
+{
+  "source_id": "nuedc-training-news",
+  "source_name": "全国大学生电子设计竞赛培训网 · 信息发布",
+  "source_url": "https://www.nuedc-training.com.cn/index/news",
+  "fetched_at": "2026-10-15T22:44:23+08:00",
+  "items": [
+    {
+      "id": "77fa29a9291ca684",
+      "title": "关于公布2026年全国大学生电子设计竞赛模拟电子系统设计专题赛决赛获奖名单的通知",
+      "url": "https://www.nuedc-training.com.cn/index/news/details/new_id/359",
+      "date": "2026-09-07",
+      "date_text": "2026-09-07",
+      "category": "competition",
+      "source": {
+        "name": "全国大学生电子设计竞赛培训网 · 信息发布",
+        "url": "https://www.nuedc-training.com.cn/index/news/details/new_id/359",
+        "source_id": "nuedc-training-news"
+      },
+      "collected_at": "2026-10-15T22:38:32+08:00",
+      "locked": false
+    },
+    {
+      "id": "7514fede81f9c10c",
+      "title": "关于公布2026年全国大学生电子设计竞赛模拟电子系统设计专题赛决赛获奖名单（初评）的通知",
+      "url": "https://www.nuedc-training.com.cn/index/news/details/new_id/358",
+      "date": "2026-09-02",
+      "date_text": "2026-09-02",
+      "category": "competition",
+      "source": {
+        "name": "全国大学生电子设计竞赛培训网 · 信息发布",
+        "url": "https://www.nuedc-training.com.cn/index/news/details/new_id/358",
+        "source_id": "nuedc-training-news"
+      },
+      "collected_at": "2026-10-15T22:38:32+08:00",
+      "locked": false
+    },
+    {
+      "id": "97a7c5d92be31bf6",
+      "title": "关于举办2026年全国大学生电子设计竞赛赛区赛及 TI 杯模拟电子系统设计专题赛赛题解析与技术交流研讨会的通知",
+      "url": "https://www.nuedc-training.com.cn/index/news/details/new_id/354",
+      "date": "2026-08-13",
+      "date_text": "2026-08-13",
+      "category": "competition",
+      "source": {
+        "name": "全国大学生电子设计竞赛培训网 · 信息发布",
+        "url": "https://www.nuedc-training.com.cn/index/news/details/new_id/354",
+        "source_id": "nuedc-training-news"
+      },
+      "collected_at": "2026-10-15T22:38:32+08:00",
+      "locked": false
+    },
+    {
+      "id": "97c335a7c5b4bf42",
+      "title": "关于开展2026年全国大学生电子设计竞赛模拟电子系统设计专题赛的第二次通知",
+      "url": "https://www.nuedc-training.com.cn/index/news/details/new_id/353",
+      "date": "2026-07-25",
+      "date_text": "2026-07-25",
+      "category": "competition",
+      "source": {
+        "name": "全国大学生电子设计竞赛培训网 · 信息发布",
+        "url": "https://www.nuedc-training.com.cn/index/news/details/new_id/353",
+        "source_id": "nuedc-training-news"
+      },
+      "collected_at": "2026-10-15T22:38:32+08:00",
+      "locked": false
+    }
+  ]
+}

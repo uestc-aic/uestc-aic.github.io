@@ -1,78 +1,231 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6f8fc">
-  <meta name="description" content="AI 芯动力 UESTC AIC，电子科技大学 AI for IC 社团。参与芯沙龙、探索 AI 工具与集成电路，分享项目和学习资源。">
-  <title>AI 芯动力 · UESTC AIC</title>
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css?v=2">
-  <script src="./app.js?v=2" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f8fc">
+<meta name="description" content="AI 芯动力（UESTC AIC）是电子科技大学集成电路科学与工程学院的 AI for IC 开放技术社区。一起探索 AI 工具与集成电路，参与芯沙龙、技术实践与开放协作。">
+<title>AI 芯动力 · UESTC AIC</title>
+<meta property="og:title" content="AI 芯动力 · UESTC AIC">
+<meta property="og:description" content="AI 芯动力（UESTC AIC）是电子科技大学集成电路科学与工程学院的 AI for IC 开放技术社区。一起探索 AI 工具与集成电路，参与芯沙龙、技术实践与开放协作。">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/app.js" defer></script>
 </head>
 <body>
-  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
-    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
-    <symbol id="icon-down" viewBox="0 0 24 24"><path d="M12 4v16m-7-7 7 7 7-7"/></symbol>
-    <symbol id="icon-chip" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v3m6-3v3M9 19v3m6-3v3M2 9h3m-3 6h3m14-6h3m-3 6h3"/></symbol>
-    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
-    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
-    <symbol id="icon-book" viewBox="0 0 24 24"><path d="M12 5v15M3 4c3-1 6-1 9 1 3-2 6-2 9-1v15c-3-1-6-1-9 1-3-2-6-2-9-1Z"/></symbol>
-    <symbol id="icon-terminal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3m6 0h4"/></symbol>
-    <symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol>
-    <symbol id="icon-agent" viewBox="0 0 24 24"><path d="m12 2 2.5 6.5L21 11l-6.5 2.5L12 20l-2.5-6.5L3 11l6.5-2.5Z"/><path d="m20 16 1 2 2 1-2 1-1 2-1-2-2-1 2-1Z"/></symbol>
-    <symbol id="icon-git" viewBox="0 0 24 24"><circle cx="7" cy="5" r="2"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="5" r="2"/><path d="M7 7v10m10-10v2a5 5 0 0 1-5 5H7"/></symbol>
-    <symbol id="icon-route" viewBox="0 0 24 24"><rect x="2" y="3" width="6" height="6" rx="1"/><rect x="16" y="15" width="6" height="6" rx="1"/><path d="M8 6h8a3 3 0 0 1 0 6H8a3 3 0 0 0 0 6h8"/></symbol>
-    <symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m2-16a3 3 0 0 1 0 6m1 4a5 5 0 0 1 3 5"/></symbol>
-    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
-  </defs></svg>
-  <a class="skip-link" href="#main">跳转到主要内容</a>
-  <header class="header"><div class="container nav-wrap">
-    <a class="brand" href="#home" aria-label="AI 芯动力首页"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span><span class="brand-name">AI 芯动力<span>UESTC AIC</span></span></a>
-    <nav class="nav" id="navigation" aria-label="主导航"><a href="#events">近期活动</a><a href="#projects">项目实践</a><a href="#resources">学习资源</a><a href="#about">关于社团</a></nav>
-    <div class="nav-actions"><a class="github-link" href="https://github.com/uestc-aic" target="_blank" rel="noopener noreferrer" aria-label="GitHub 社区，在新窗口打开"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.57 9.57 0 0 1 12 6.83c.85 0 1.71.11 2.51.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.58 4.94.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></a><button class="button button-small" data-dialog="join">加入我们<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button><button class="menu-button" aria-label="打开导航" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button></div>
+<svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol><symbol id="icon-arrow-r" viewBox="0 0 24 24"><path d="M4 12h15m-6-7 7 7-7 7"/></symbol><symbol id="icon-down" viewBox="0 0 24 24"><path d="M12 4v16m-7-7 7 7 7-7"/></symbol><symbol id="icon-chip" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v3m6-3v3M9 19v3m6-3v3M2 9h3m-3 6h3m14-6h3m-3 6h3"/></symbol><symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="icon-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol><symbol id="icon-book" viewBox="0 0 24 24"><path d="M12 5v15M3 4c3-1 6-1 9 1 3-2 6-2 9-1v15c-3-1-6-1-9 1-3-2-6-2-9-1Z"/></symbol><symbol id="icon-terminal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3m6 0h4"/></symbol><symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol><symbol id="icon-agent" viewBox="0 0 24 24"><path d="m12 2 2.5 6.5L21 11l-6.5 2.5L12 20l-2.5-6.5L3 11l6.5-2.5Z"/><path d="m20 16 1 2 2 1-2 1-1 2-1-2-2-1 2-1Z"/></symbol><symbol id="icon-git" viewBox="0 0 24 24"><circle cx="7" cy="5" r="2"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="5" r="2"/><path d="M7 7v10m10-10v2a5 5 0 0 1-5 5H7"/></symbol><symbol id="icon-route" viewBox="0 0 24 24"><rect x="2" y="3" width="6" height="6" rx="1"/><rect x="16" y="15" width="6" height="6" rx="1"/><path d="M8 6h8a3 3 0 0 1 0 6H8a3 3 0 0 0 0 6h8"/></symbol><symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m2-16a3 3 0 0 1 0 6m1 4a5 5 0 0 1 3 5"/></symbol><symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol><symbol id="icon-github" viewBox="0 0 24 24"><path d="M9 19c-4 1.5-4-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 4.5-1.4 4.5-4.8 0-1-.4-2-1-2.6.1-.3.5-1.3-.1-2.6 0 0-1-.3-3.3 1.2a11 11 0 0 0-5.8 0C6.5 5.2 5.5 5.5 5.5 5.5c-.6 1.3-.2 2.3-.1 2.6-.6.6-1 1.5-1 2.6 0 3.4 1.7 4.5 4.5 4.8-.5.5-.5 1.1-.5 2V21"/></symbol><symbol id="icon-share" viewBox="0 0 24 24"><path d="M12 16V4M8 8l4-4 4 4"/><path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></symbol><symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></symbol><symbol id="icon-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-1.6 4L16 12H5"/></symbol><symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 13 4 4 10-11"/></symbol><symbol id="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol><symbol id="icon-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8.5v.5"/></symbol><symbol id="icon-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></symbol><symbol id="icon-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/></symbol><symbol id="icon-plug" viewBox="0 0 24 24"><path d="M9 2v6M15 2v6M6 8h12v3a6 6 0 0 1-12 0Z"/><path d="M12 17v5"/></symbol></defs></svg>
+<a class="skip-link" href="#main">跳转到主要内容</a>
+<header class="header"><div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="AI 芯动力 · UESTC AIC首页"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span><span class="brand-name">AI 芯动力<span>UESTC AIC</span></span></a>
+    <nav class="nav" id="navigation" aria-label="主导航"><a href="" class="current">首页</a><a href="events/index.html">活动</a><a href="college/index.html">学院资讯</a><a href="competitions/index.html">竞赛</a><a href="resources/index.html">资源库</a><a href="partners/index.html">合作伙伴</a><a href="about/index.html">关于</a></nav>
+    <div class="nav-actions"><a class="github-link" href="https://github.com/uestc-aic" target="_blank" rel="noopener noreferrer" aria-label="GitHub 社区，在新窗口打开"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg></a><a class="button button-small" href="join/index.html">加入我们<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a><button class="menu-button" aria-label="打开导航" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button></div>
   </div></header>
-  <main id="main">
-    <section class="hero container" id="home">
-      <div class="hero-copy"><p class="hero-label"><span class="live-dot"></span>电子科技大学 · AI for IC 社区</p><h1>从 AI 工具，<br>走进芯片实践。</h1><p class="hero-description">一起用 Agent 解决问题，探索人工智能与集成电路。<br class="desktop-break">在芯沙龙里交流，在项目中动手，把经验分享出来。</p><div class="hero-buttons"><a class="button" href="#events">看看近期活动<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a><a class="text-button" href="#resources">从学习资源开始<svg class="icon" aria-hidden="true"><use href="#icon-down"/></svg></a></div><p class="hero-note">社团筹备中，欢迎带着问题和想法加入。</p></div>
-      <figure class="hero-art" aria-labelledby="chip-caption">
-        <div class="art-top"><span><span class="blue-dot"></span>一块芯片，连接更多想法</span><span>AI × IC</span></div>
-        <svg class="chip-art" viewBox="0 0 560 440" fill="none" role="img" aria-label="以同一中心对齐的 AI 与 IC 芯片电路示意图">
-          <defs><pattern id="circuit-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0v24" stroke="#dce6fa" stroke-width=".7"/></pattern></defs>
-          <path fill="url(#circuit-grid)" d="M0 0h560v440H0z"/>
-          <g stroke="#9cb2e8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M208 125V84l-32-32H64m168 73V65L211 44h-73m118 81V20m24 105V60l32-32h66m-74 97V90l52-52h126m-154 87v-22l37-37h131m-123 59V107l48-48h78M185 153h-48L90 106H38m147 71H110l-28-28H20m165 52H36m149 24H68m117 24H99l-28 28H20m165-4h-56l-46 46H38m147-22h-25l-45 45H64M375 153h25l45-45h51m-121 69h56l46-46h45m-147 70h86l28-28h51m-165 52h117m-117 24h149m-149 24h75l28 28h62m-165-4h48l47 47h52M208 315v18l-48 48H64m168-66v22l-37 37H64m192-59v35l-52 52H38m242-87v65l-32 32h-66m122-97v105m24-105v60l21 21h73m-70-81v41l32 32h112"/></g>
-          <g fill="#f5f8ff" stroke="#9cb2e8" stroke-width="1.5"><circle cx="64" cy="52" r="4"/><circle cx="138" cy="44" r="3"/><circle cx="378" cy="28" r="4"/><circle cx="482" cy="38" r="3"/><circle cx="38" cy="106" r="3"/><circle cx="36" cy="201" r="4"/><circle cx="68" cy="225" r="3"/><circle cx="492" cy="225" r="3"/><circle cx="524" cy="249" r="4"/><circle cx="496" cy="108" r="3"/><circle cx="522" cy="344" r="3"/><circle cx="64" cy="381" r="3"/><circle cx="182" cy="412" r="3"/><circle cx="422" cy="396" r="4"/><circle cx="496" cy="388" r="3"/></g>
-          <g stroke="#294fd6" stroke-width="2"><path d="M256 125V20M185 201H36M375 249h149M304 315v105"/></g>
-          <g class="chip-pins" stroke="#294fd6" stroke-width="7"><path d="M208 112v13m24-13v13m24-13v13m24-13v13m24-13v13m24-13v13m24-13v13M208 315v13m24-13v13m24-13v13m24-13v13m24-13v13m24-13v13m24-13v13M172 153h13m-13 24h13m-13 24h13m-13 24h13m-13 24h13m-13 24h13m-13 24h13M375 153h13m-13 24h13m-13 24h13m-13 24h13m-13 24h13m-13 24h13m-13 24h13"/></g>
-          <rect class="chip-body" x="185" y="125" width="190" height="190" rx="12" fill="#294fd6"/>
-          <rect x="198" y="138" width="164" height="164" rx="6" stroke="#819af2"/>
-          <path d="M213 167v-14h14m106 0h14v14M213 273v14h14m106 0h14v-14" stroke="#b7c8ff" stroke-width="1.5"/>
-          <text class="chip-type" x="280" y="217" fill="white" text-anchor="middle" font-size="40" font-family="Arial,sans-serif" font-weight="600">AI × IC</text>
-          <path d="M238 238h84" stroke="#819af2"/>
-          <text x="280" y="263" fill="#dce5ff" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" letter-spacing="2">UESTC AIC</text>
-        </svg>
-        <figcaption id="chip-caption"><span>人工智能</span><span class="caption-line"></span><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg><span class="caption-line"></span><span>集成电路</span></figcaption>
-      </figure>
-    </section>
-    <div class="quick-links container"><a href="#events"><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg><div><strong>第一期芯沙龙</strong><span>期中后见，正在筹备</span></div><svg class="icon quick-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a><a href="#projects"><svg class="icon" aria-hidden="true"><use href="#icon-terminal"/></svg><div><strong>找伙伴，做项目</strong><span>欢迎跨方向、跨部门参与</span></div><svg class="icon quick-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a><a href="#resources"><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg><div><strong>共享学习资源</strong><span>工具、课程与同学们的笔记</span></div><svg class="icon quick-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a></div>
-    <section class="section container" id="events">
-      <div class="section-heading"><div><p class="section-label">在这里见面</p><h2>近期活动</h2></div><p class="section-aside">沙龙、技术交流，以及值得关注的校园信息。</p></div>
-      <div class="tabs" aria-label="活动分类"><button class="tab active" data-event-filter="all" aria-pressed="true">全部活动</button><button class="tab" data-event-filter="salon" aria-pressed="false">芯沙龙</button><button class="tab" data-event-filter="campus" aria-pressed="false">学院资讯</button><button class="tab" data-event-filter="competition" aria-pressed="false">竞赛信息</button></div>
-      <div class="events-grid" id="event-list">
-        <article class="featured-event" data-event-category="salon"><div class="event-poster"><span class="poster-series">AI 芯动力 · 第一期</span><div class="poster-title">芯沙龙</div><div class="poster-circuit" aria-hidden="true"><svg viewBox="0 0 250 90" fill="none"><g stroke="currentColor" stroke-width="1.5"><path d="M0 25h60l25 25h80l25-25h60M0 45h45l25 25h110l25-25h45M0 5h75l25 25h50l25-25h75"/><circle cx="125" cy="30" r="5" fill="#294fd6"/><circle cx="125" cy="50" r="5" fill="#294fd6"/><circle cx="125" cy="70" r="5" fill="#294fd6"/></g></svg></div><div class="poster-bottom"><span>AI 工具 / IC 交流</span><span>期中后见</span></div></div><div class="event-copy"><span class="status"><i></i>筹备中</span><h3>第一次见面，<br>从你的问题开始。</h3><p>聊聊 Agent 的实际用法，也聊聊 IC 的不同方向。具体主题确认后，会在这里公布。</p><div class="event-meta"><span><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg>期中后 · 具体时间待公布</span><span><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>活动地点待公布</span></div><button class="text-button" data-dialog="salon">查看活动预告<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button></div></article>
-        <article class="next-event" data-event-category="salon"><p class="section-label">选题讨论中</p><h3>你想先聊哪一个？</h3><ol class="preview-topics"><li><span>01</span>Agent 打破信息差</li><li><span>02</span>用 Agent 搭建个人网站</li><li><span>03</span>Git、Agent 与提问的智慧</li><li><span>04</span>IC 各方向科普</li></ol><p class="next-note">这些主题也会作为后续活动的选题参考。</p><button class="text-button" data-dialog="topics">了解候选主题<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button></article>
+<main id="main">
+<section class="hero container" id="home">
+    <div class="hero-copy"><p class="hero-label"><span class="live-dot"></span>电子科技大学 · AI for IC 社区</p>
+      <h1>一起探索<br>AI × IC 的可能</h1>
+      <p class="hero-description">让 AI 成为手中的工具，让想法走向真实的项目。<br class="desktop-break">从第一次使用 Agent，到一起探索集成电路。</p>
+      <div class="hero-buttons"><a class="button" href="events/index.html">看看近期活动<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a><a class="text-button" href="resources/index.html">从学习资源开始<svg class="icon" aria-hidden="true"><use href="#icon-down"/></svg></a></div>
+      <p class="hero-note">带上好奇心，和我们一起动手。</p></div>
+    <figure class="hero-art" aria-labelledby="chip-caption">
+    <div class="art-top"><span><span class="blue-dot"></span>一块芯片，连接更多想法</span><span>AI × IC</span></div>
+    <svg class="chip-art" viewBox="0 0 560 440" fill="none" role="img" aria-label="以同一中心对齐的 AI 与 IC 芯片电路示意图">
+    <defs><pattern id="circuit-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0v24" stroke="#dce6fa" stroke-width=".7"/></pattern></defs>
+    <path fill="url(#circuit-grid)" d="M0 0h560v440H0z"/>
+    <g stroke="#9cb2e8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M208 125V84l-32-32H64m168 73V65L211 44h-73m118 81V20m24 105V60l32-32h66m-74 97V90l52-52h126m-154 87v-22l37-37h131m-123 59V107l48-48h78M185 153h-48L90 106H38m147 71H110l-28-28H20m165 52H36m149 24H68m117 24H99l-28 28H20m165-4h-56l-46 46H38m147-22h-25l-45 45H64M375 153h25l45-45h51m-121 69h56l46-46h45m-147 70h86l28-28h51m-165 52h117m-117 24h149m-149 24h75l28 28h62m-165-4h48l47 47h52M208 315v18l-48 48H64m168-66v22l-37 37H64m192-59v35l-52 52H38m242-87v65l-32 32h-66m122-97v105m24-105v60l21 21h73m-70-81v41l32 32h112"/></g>
+    <g fill="#f5f8ff" stroke="#9cb2e8" stroke-width="1.5"><circle cx="64" cy="52" r="4"/><circle cx="138" cy="44" r="3"/><circle cx="378" cy="28" r="4"/><circle cx="482" cy="38" r="3"/><circle cx="38" cy="106" r="3"/><circle cx="36" cy="201" r="4"/><circle cx="68" cy="225" r="3"/><circle cx="492" cy="225" r="3"/><circle cx="524" cy="249" r="4"/><circle cx="496" cy="108" r="3"/><circle cx="522" cy="344" r="3"/><circle cx="64" cy="381" r="3"/><circle cx="182" cy="412" r="3"/><circle cx="422" cy="396" r="4"/><circle cx="496" cy="388" r="3"/></g>
+    <g stroke="#294fd6" stroke-width="2"><path d="M256 125V20M185 201H36M375 249h149M304 315v105"/></g>
+    <g class="chip-pins" stroke="#294fd6" stroke-width="7"><path d="M208 112v13m24-13v13m24-13v13m24-13v13m24-13v13m24-13v13m24-13v13M208 315v13m24-13v13m24-13v13m24-13v13m24-13v13m24-13v13m24-13v13M172 153h13m-13 24h13m-13 24h13m-13 24h13m-13 24h13m-13 24h13m-13 24h13M375 153h13m-13 24h13m-13 24h13m-13 24h13m-13 24h13m-13 24h13m-13 24h13"/></g>
+    <rect class="chip-body" x="185" y="125" width="190" height="190" rx="12" fill="#294fd6"/>
+    <rect x="198" y="138" width="164" height="164" rx="6" stroke="#819af2"/>
+    <path d="M213 167v-14h14m106 0h14v14M213 273v14h14m106 0h14v-14" stroke="#b7c8ff" stroke-width="1.5"/>
+    <text class="chip-type" x="280" y="217" fill="white" text-anchor="middle" font-size="40" font-family="Arial,sans-serif" font-weight="600">AI × IC</text>
+    <path d="M238 238h84" stroke="#819af2"/>
+    <text x="280" y="263" fill="#dce5ff" text-anchor="middle" font-size="13" font-family="Arial,sans-serif" letter-spacing="2">UESTC AIC</text>
+    </svg>
+    <figcaption id="chip-caption"><span>人工智能</span><span class="caption-line"></span><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg><span class="caption-line"></span><span>集成电路</span></figcaption>
+    </figure>
+  </section>
+<div class="quick-links container" data-reveal><a href="events/index.html"><svg class="icon" aria-hidden="true"><use href="#icon-agent"/></svg><span class="quick-text"><strong>发现芯沙龙</strong><span>活动日历 · 预告与回顾</span></span><svg class="icon quick-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a><a href="resources/index.html"><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg><span class="quick-text"><strong>打开资源库</strong><span>AI × IC 工具与课程</span></span><svg class="icon quick-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a><a href="partners/index.html"><svg class="icon" aria-hidden="true"><use href="#icon-users"/></svg><span class="quick-text"><strong>认识合作伙伴</strong><span>学院 · 班级 · 工作室</span></span><svg class="icon quick-arrow" aria-hidden="true"><use href="#icon-arrow"/></svg></a></div>
+<section class="section">
+  <div class="container">
+    <div class="section-heading"><div><p class="section-label">近期活动</p><h2>见面，让想法发生。</h2></div><p class="section-aside">芯沙龙 · 常规活动 · 学院资讯 · 竞赛信息 · 全部活动入口</p></div>
+    <div class="events-grid"><article class="featured-event" data-reveal>
+      <div class="event-poster">
+        <p class="poster-series">COMING UP NEXT · VOL. 02</p>
+        <p class="poster-title">第二期芯沙龙</p>
+        <div class="poster-circuit"><svg viewBox="0 0 300 100" fill="none" aria-hidden="true">
+  <path d="M0 62h46l16-16h44M106 46h38l14 14h42M200 60h44l16-16h40M0 30h30l18 18h40M88 48h26l18 18h44M176 66h30"
+        stroke="currentColor" stroke-width="1.3"/>
+  <circle cx="46" cy="62" r="3" fill="currentColor"/><circle cx="106" cy="46" r="3" fill="currentColor"/>
+  <circle cx="200" cy="60" r="3" fill="currentColor"/><circle cx="48" cy="48" r="3" fill="currentColor"/>
+  <rect x="128" y="30" width="40" height="40" rx="5" stroke="currentColor" stroke-width="1.4"/>
+  <rect x="139" y="41" width="18" height="18" rx="2" fill="currentColor" opacity=".45"/>
+</svg></div>
+        <div class="poster-bottom"><span>从一个问题开始</span><span>AI × IC</span></div>
       </div>
-      <div class="empty-state" id="event-empty" hidden><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg><h3 id="event-empty-title">资讯正在整理中</h3><p id="event-empty-description">欢迎提供值得分享的信息。</p><button class="text-button" data-dialog="contribute">提供一条线索<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button></div>
-    </section>
-    <section class="projects-section" id="projects"><div class="container section"><div class="section-heading"><div><p class="section-label">在项目里学</p><h2>一起做点具体的事</h2></div><p class="section-aside">两个孵化方向，欢迎带着想法加入。</p></div><div class="projects-grid">
-      <article class="project-card"><div class="project-copy"><div class="project-meta"><span>AI 工具方向</span><span>计划 4–6 人</span></div><h3>从一个需求，到自己的工具</h3><p>探索 Agent 工作流、个人网站和 AI 辅助学习，把重复的事交给工具。</p><div class="project-tags"><span>Agent</span><span>Web</span><span>效率工具</span></div><button class="text-button" data-dialog="project-a">了解项目方向<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button></div><div class="project-visual tools-visual" aria-hidden="true"><div class="workflow-node"><svg class="icon"><use href="#icon-agent"/></svg><span>一个想法</span></div><span class="workflow-link"></span><div class="workflow-node node-highlight"><svg class="icon"><use href="#icon-terminal"/></svg><span>一件工具</span></div></div></article>
-      <article class="project-card"><div class="project-copy"><div class="project-meta"><span>AI × IC 方向</span><span>计划 4–6 人</span></div><h3>让算法与硬件多一些交集</h3><p>共同梳理交叉方向的问题，通过学习、讨论和实验，验证值得做的想法。</p><div class="project-tags"><span>AI for IC</span><span>技术探索</span><span>开源协作</span></div><button class="text-button" data-dialog="project-b">了解项目方向<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button></div><div class="project-visual hardware-visual" aria-hidden="true"><div class="workflow-node"><span class="node-type">AI</span><span>算法</span></div><span class="workflow-link"></span><div class="workflow-node node-highlight"><svg class="icon"><use href="#icon-chip"/></svg><span>硬件</span></div></div></article>
-    </div><p class="project-footnote"><svg class="icon" aria-hidden="true"><use href="#icon-users"/></svg>项目组欢迎非正式成员，职能部门成员也可以跨组参与。</p></div></section>
-    <section class="section container resources-section" id="resources"><div class="section-heading"><div><p class="section-label">有用的东西，一起收藏</p><h2>学习资源</h2></div><button class="text-button" data-dialog="contribute">推荐一份资料<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button></div><div class="resource-toolbar"><div class="resource-filters" aria-label="资源分类"><button class="resource-filter active" data-resource-filter="all" aria-pressed="true">全部资源</button><button class="resource-filter" data-resource-filter="agent" aria-pressed="false">AI / Agent</button><button class="resource-filter" data-resource-filter="development" aria-pressed="false">开发工具</button><button class="resource-filter" data-resource-filter="ic" aria-pressed="false">IC 与 FPGA</button></div><label class="search-box"><svg class="icon" aria-hidden="true"><use href="#icon-search"/></svg><input type="search" id="resource-search" name="resource-search" placeholder="搜索资料、工具…" aria-label="搜索资料和工具" autocomplete="off"></label></div><div id="featured-resource-section"><h3 class="resource-subheading">学习站推荐<span>来自同学们的整理与分享</span></h3><div class="featured-resources" id="featured-resources"></div></div><div class="library-heading" id="library-heading"><h3 class="resource-subheading">工具与公开课程</h3><span>在新窗口打开原站</span></div><div class="resource-list" id="resource-list"></div><p class="resource-empty" id="resource-empty" hidden>没有找到匹配的资料，试试其他关键词。</p><div class="resource-bottom"><span id="resource-count" role="status" aria-live="polite"></span><span>持续整理中，欢迎投稿</span></div></section>
-    <section class="about-section" id="about"><div class="container section"><div class="about-introduction"><div><p class="section-label">关于 AI 芯动力</p><h2>对 AI 和 IC 好奇，<br>就有一起探索的理由。</h2></div><div><p>AI 芯动力（UESTC AIC）是正在筹建的 AI for IC 社团。我们从 AI 工具应用出发，探索人工智能与集成电路的交叉实践。</p><p>通过芯沙龙和开放项目，连接不同方向的同学，把活动资料、项目经验与学习笔记留下来。</p></div></div><div id="organization"><div class="organization-heading"><h3>一起把社团建起来</h3><span>主席团负责方向、资源与跨组协调</span></div><div class="organization-grid"><article><svg class="icon department-symbol" aria-hidden="true"><use href="#icon-agent"/></svg><div><h3>内容策划部</h3><p>选题策划、技术交流、嘉宾联络</p></div><span class="department-size">计划 3 人</span></article><article><svg class="icon department-symbol" aria-hidden="true"><use href="#icon-users"/></svg><div><h3>活动运营部</h3><p>活动组织、社群运营、对外联络</p></div><span class="department-size">计划 3 人</span></article><article><svg class="icon department-symbol" aria-hidden="true"><use href="#icon-book"/></svg><div><h3>宣传与知识部</h3><p>视觉宣传、资料整理、知识沉淀</p></div><span class="department-size">计划 3 人</span></article></div><p class="organization-note">项目孵化机制计划设置 2 名项目协调者，支持跨部门协作。</p></div><div class="partners"><div><h3>拟合作伙伴</h3><span>合作交流筹备中</span></div><div class="partner-names"><span>ICSE</span><span>钧业班</span><span>立人班</span><span>芯言</span><span>芯传</span></div></div></div></section>
-    <section class="join-section container"><div class="join-panel"><div><p class="section-label">欢迎加入 UESTC AIC</p><h2>带上好奇心，<br>找到一起动手的人。</h2><p>参加一次沙龙、尝试一个项目，或分享一份学习笔记。</p></div><div class="join-action"><button class="button" data-dialog="join">了解如何加入<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button><span>招新报名与 QQ 社群入口筹备中</span></div></div></section>
-  </main>
-  <footer class="container footer"><div class="footer-top"><a class="brand" href="#home"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span><span class="brand-name">AI 芯动力<span>UESTC AIC</span></span></a><p>电子科技大学 · AI for IC</p><div class="footer-links"><a href="https://github.com/uestc-aic" target="_blank" rel="noopener noreferrer">GitHub<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a><button data-dialog="join">QQ 社群<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button><button data-dialog="contribute">资源投稿<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></button></div></div><div class="footer-bottom"><span>© 2026 UESTC AIC</span><span>保持好奇，分享所学。</span><a href="#home">回到顶部<svg class="icon" aria-hidden="true"><use href="#icon-down"/></svg></a></div></footer>
-  <dialog id="detail-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="关闭弹窗"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></svg></button><div class="dialog-eyebrow" id="dialog-eyebrow"></div><h2 id="dialog-title"></h2><div id="dialog-content"></div></dialog><div class="toast" id="toast" role="status" aria-live="polite"></div>
+      <div class="event-copy"><span class="status status-upcoming"><i></i>即将开始</span><h3>第二期芯沙龙</h3>
+        <p>主题由社区投票决定：个人网站搭建、Agent 工作流实战、IC 方向分享、竞赛经验与避坑。</p>
+        <div class="event-meta"><span><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg>待公布</span><span><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>待公布</span><span><svg class="icon" aria-hidden="true"><use href="#icon-users"/></svg>AI 芯动力（UESTC AIC）</span></div>
+        <a class="text-button" href="events/salon-02/index.html">查看活动详情<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+      </div>
+    </article><article class="next-event" data-reveal>
+      <p class="section-label">下一期 · 预告</p>
+      <h3>第一期芯沙龙 · 圆满举行</h3>
+      <ul class="preview-topics"><li><span>01</span>人工智能：从 LLM 到 Agent 与 Skill 的实践</li><li><span>02</span>AI Agent 在芯片设计参数优化中的实战</li><li><span>03</span>AI 赋能 IC 的技术路径</li><li><span>04</span>产教融合与复合能力培养</li></ul>
+      <p class="next-note">首期芯沙龙在成电国际创新中心举办，同步成立 AI 芯动力工作室。孔谋夫教授分享从 LLM 到 Agent 与 Skill 的实践路径，40 余名学生参与交流。</p>
+      <a class="text-button" href="events/salon-01/index.html">看看候选主题<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+    </article></div>
+    <p class="project-footnote"><svg class="icon" aria-hidden="true"><use href="#icon-info"/></svg><span>完整列表（含自动同步的学院资讯与竞赛信息）在 <a class="inline-link" href="events/index.html">活动日历</a>。</span></p>
+  </div>
+</section>
+<section class="about-section" id="about"><div class="container section">
+    <div class="about-introduction">
+      <div><p class="section-label">关于社团</p><h2>因好奇相聚，<br>在实践中连接。</h2></div>
+      <div><p>AI 芯动力 · UESTC AIC 是 集成电路科学与工程学院（示范性微电子学院） 的 AI for IC 开放技术社区。
+      我们从 AI 工具应用出发，探索人工智能与集成电路的交叉实践。</p>
+      <p>三件事：让工具真正用起来、一起走进 IC 的世界、把经验留给下一个人。
+      落点就是芯沙龙、项目组，以及这个持续更新的网站。</p>
+      <a class="text-button" href="about/index.html">了解我们的组织<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a></div>
+    </div>
+    <div class="organization-heading"><h3>组织架构</h3><span>从内容、活动到知识沉淀</span></div>
+    <div class="organization-grid"><article data-reveal>
+    <span class="department-symbol"><svg class="icon" aria-hidden="true"><use href="#icon-layers"/></svg></span>
+    <span class="department-size">计划 3 人</span>
+    <h3>内容策划部</h3><p>选题策划 · 技术交流 · 嘉宾联络</p></article><article data-reveal>
+    <span class="department-symbol"><svg class="icon" aria-hidden="true"><use href="#icon-layers"/></svg></span>
+    <span class="department-size">计划 3 人</span>
+    <h3>活动运营部</h3><p>活动组织 · 社群运营 · 对外联络</p></article><article data-reveal>
+    <span class="department-symbol"><svg class="icon" aria-hidden="true"><use href="#icon-layers"/></svg></span>
+    <span class="department-size">计划 3 人</span>
+    <h3>宣传与知识部</h3><p>视觉宣传 · 资料整理 · 知识沉淀</p></article></div>
+    <p class="organization-note">主席团负责方向、资源与跨组协调 · 项目孵化机制 · 计划设置 2 名项目协调者</p>
+  </div></section>
+<section class="projects-section" id="projects"><div class="container section">
+    <div class="section-heading"><div><p class="section-label">项目实践</p><h2>好想法，值得动手。</h2></div>
+      <p class="section-aside">项目孵化方向 · 欢迎跨组参与</p></div>
+    <div class="projects-grid"><article class="project-card" data-reveal>
+    <div class="project-visual"><div class="workflow-node"><svg class="icon" aria-hidden="true"><use href="#icon-agent"/></svg><span>AI 需求</span></div><div class="workflow-link"></div><div class="workflow-node node-highlight node-type"><span>IC</span></div><div class="workflow-link"></div><div class="workflow-node"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg><span>芯片实践</span></div></div>
+    <div class="project-copy"><p class="project-meta"><span>PROJECT A</span><span>4–6 名参与者</span></p>
+      <h3>AI 工具与应用</h3><p>围绕实际需求，探索 Agent 工作流、个人网站和 AI 辅助学习。</p>
+      <div class="project-tags"><span>Agent</span><span>Web</span><span>效率工具</span></div></div>
+  </article><article class="project-card" data-reveal>
+    <div class="project-visual"><div class="workflow-node"><svg class="icon" aria-hidden="true"><use href="#icon-agent"/></svg><span>AI 需求</span></div><div class="workflow-link"></div><div class="workflow-node node-highlight node-type"><span>IC</span></div><div class="workflow-link"></div><div class="workflow-node"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg><span>芯片实践</span></div></div>
+    <div class="project-copy"><p class="project-meta"><span>PROJECT B</span><span>4–6 名参与者</span></p>
+      <h3>AI × IC 技术实践</h3><p>围绕人工智能与集成电路的交叉问题，共同选题、学习和验证想法。</p>
+      <div class="project-tags"><span>AI for IC</span><span>技术探索</span><span>开源协作</span></div></div>
+  </article></div>
+    <p class="project-footnote"><svg class="icon" aria-hidden="true"><use href="#icon-info"/></svg><span>项目组开放给非正式成员，职能部门成员也可以跨组参与。</span></p>
+  </div></section>
+<section class="section" id="resources"><div class="container">
+    <div class="section-heading"><div><p class="section-label">学习资源</p><h2>少走弯路，一起进步。</h2></div>
+      <a class="text-button" href="resources/index.html">全部 8 份资源<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a></div>
+    <h3 class="resource-subheading">社区精选 <span>同学自己整理的笔记与课程</span></h3><div class="featured-resources"><a class="featured-resource resource-item" href="https://sintherain.github.io/fpga-website/" target="_blank" rel="noopener noreferrer"
+     data-filter-item data-filter-cat="ic-design"
+     data-search="fpga 小课堂 面向动手实践的 fpga 接口与电路学习笔记，从引脚、时序到常见外设，边做边查。"
+     aria-label="FPGA 小课堂，在新窗口打开">
+    <span class="featured-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div class="featured-details"><p class="featured-label">FPGA 学习</p>
+      <h3>FPGA 小课堂</h3><p>面向动手实践的 FPGA 接口与电路学习笔记，从引脚、时序到常见外设，边做边查。</p>
+      <span class="site-host">sintherain.github.io</span></div>
+    <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
+  </a><a class="featured-resource resource-item" href="https://corele-one.github.io/Corleone-s-Blog/" target="_blank" rel="noopener noreferrer"
+     data-filter-item data-filter-cat="ic-design"
+     data-search="corleone&#x27;s blog 模拟电路、数字设计、信号与系统等微电子方向的学习笔记，适合课后对照复习。"
+     aria-label="Corleone&#x27;s Blog，在新窗口打开">
+    <span class="featured-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div class="featured-details"><p class="featured-label">微电子笔记</p>
+      <h3>Corleone&#x27;s Blog</h3><p>模拟电路、数字设计、信号与系统等微电子方向的学习笔记，适合课后对照复习。</p>
+      <span class="site-host">corele-one.github.io</span></div>
+    <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
+  </a></div>
+    <div class="library-heading"><h3 class="resource-subheading">资源库 <span>按用途分类，全部实测可访问</span></h3></div>
+    <div class="resource-list"><a class="resource-row" href="https://github.com/microsoft/ai-agents-for-beginners" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai-agent" data-search="ai agents for beginners ai agent 入门课程 microsoft 开源课程，从基础概念讲到动手搭建，适合作为第一次接触 agent 的系统入口。 microsoft/ai-agents-for-beginners agent 课程 微软"
+   aria-label="AI Agents for Beginners，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-agent"/></svg></span>
+    <div><h3>AI Agents for Beginners <span class="resource-zh">AI Agent 入门课程</span></h3><p>Microsoft 开源课程，从基础概念讲到动手搭建，适合作为第一次接触 Agent 的系统入口。</p></div>
+    <span class="resource-category">AI / Agent</span>
+    <span class="resource-source">microsoft/ai-agents-for-beginners</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://cli.github.com/manual/" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="workflow" data-search="github cli 官方手册 gh 命令手册 gh 命令行完整手册，把本地开发与 github 协作接起来，是参与社区仓库最省事的工具。 github docs github cli 协作"
+   aria-label="GitHub CLI 官方手册，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-git"/></svg></span>
+    <div><h3>GitHub CLI 官方手册 <span class="resource-zh">gh 命令手册</span></h3><p>gh 命令行完整手册，把本地开发与 GitHub 协作接起来，是参与社区仓库最省事的工具。</p></div>
+    <span class="resource-category">工作流</span>
+    <span class="resource-source">GitHub Docs</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="workflow" data-search="用 github actions 部署静态网站 pages 自定义工作流 github pages 官方发布指南，本站就是按这套流程部署的，可以照抄。 github docs github actions pages 部署"
+   aria-label="用 GitHub Actions 部署静态网站，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-git"/></svg></span>
+    <div><h3>用 GitHub Actions 部署静态网站 <span class="resource-zh">Pages 自定义工作流</span></h3><p>GitHub Pages 官方发布指南，本站就是按这套流程部署的，可以照抄。</p></div>
+    <span class="resource-category">工作流</span>
+    <span class="resource-source">GitHub Docs</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://skills.github.com/" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="workflow" data-search="github 入门练习 github skills 官方交互式练习，通过真实仓库操作学会提交、分支与协作流程，约一小时能做完。 github git 协作 练习"
+   aria-label="GitHub 入门练习，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-git"/></svg></span>
+    <div><h3>GitHub 入门练习 <span class="resource-zh">GitHub Skills</span></h3><p>官方交互式练习，通过真实仓库操作学会提交、分支与协作流程，约一小时能做完。</p></div>
+    <span class="resource-category">工作流</span>
+    <span class="resource-source">GitHub</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://hdlbits.01xz.net/wiki/Main_Page" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ic-design" data-search="hdlbits verilog 在线练习 在线刷 verilog 小电路题库，从组合逻辑到状态机，写完即判，适合数字逻辑课后练手。 hdlbits verilog 数字逻辑 在线题库"
+   aria-label="HDLBits，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>HDLBits <span class="resource-zh">Verilog 在线练习</span></h3><p>在线刷 Verilog 小电路题库，从组合逻辑到状态机，写完即判，适合数字逻辑课后练手。</p></div>
+    <span class="resource-category">IC 设计</span>
+    <span class="resource-source">HDLBits</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://openroad.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="eda-tool" data-search="openroad 开源数字芯片设计流程 从 rtl 到 gdsii 的完整开源实现流程，适合想了解工业界真实设计链路的学生。 the-openroad-project 开源eda 数字后端 设计流程"
+   aria-label="OpenROAD，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-route"/></svg></span>
+    <div><h3>OpenROAD <span class="resource-zh">开源数字芯片设计流程</span></h3><p>从 RTL 到 GDSII 的完整开源实现流程，适合想了解工业界真实设计链路的学生。</p></div>
+    <span class="resource-category">EDA 工具</span>
+    <span class="resource-source">The-OpenROAD-Project</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a></div>
+    <div class="resource-bottom"><span>显示 6 / 8 份资源</span><span>提交于 content/resources.json</span></div>
+  </div></section>
+<section class="section section-alt" id="campus">
+  <div class="container">
+    <div class="section-heading"><div><p class="section-label">学院与竞赛</p><h2>来自学院的动态</h2></div><p class="section-aside">自动同步校级公开信息源，保留原文链接</p></div>
+    <div class="news-list"><a class="news-row" href="https://www.jwc.uestc.edu.cn/info/126a5c328e18973beeb25bc0827f85ef" target=_blank rel=noopener noreferrer><span class="news-date">10-15</span><span class="news-title">“人工智能”核心通识课深化产教融合，邀请企业专家开展专题讲座</span><span class="news-cat">学院资讯</span></a><a class="news-row" href="https://news.uestc.edu.cn/info/1015/44384.htm" target=_blank rel=noopener noreferrer><span class="news-date">2026-10-15</span><span class="news-title">学者论坛：Pickup Opportunity as Resource A Probabilistic Approach for Demand-Aware Ride-Sharing Optimization</span><span class="news-cat">学院资讯</span></a><a class="news-row" href="https://news.uestc.edu.cn/info/1003/44388.htm" target=_blank rel=noopener noreferrer><span class="news-date">2026-10-15</span><span class="news-title">电子科技大学与法国格勒诺布尔经济管理学院硕士学位教育项目举行开学典礼</span><span class="news-cat">学院资讯</span></a><a class="news-row" href="https://news.uestc.edu.cn/info/1003/44391.htm" target=_blank rel=noopener noreferrer><span class="news-date">2026-10-15</span><span class="news-title">国家自然科学基金委员会化学部学科研讨会在我校召开</span><span class="news-cat">学院资讯</span></a><a class="news-row" href="https://news.uestc.edu.cn/info/1015/44357.htm" target=_blank rel=noopener noreferrer><span class="news-date">2026-10-14</span><span class="news-title">「人文×科技」思想者论坛第三十九期讲座预告</span><span class="news-cat">学院资讯</span></a></div>
+  </div>
+</section>
+<section class="section"><div class="container"><div class="partners">
+    <div><h3>连接更多同行者</h3><span>合作交流筹备中</span></div>
+    <div class="partner-names"><span>ICSE</span><span>钧业</span><span>立人</span><span>芯言</span><span>芯传</span></div>
+    <a class="text-button" href="partners/index.html">合作详情<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+  </div></div></section>
+<section class="join-section container"><div class="join-panel" data-reveal>
+    <div><p class="section-label">加入我们</p><h2>下一个想法，<br>一起实现。</h2>
+      <p>对 AI 或 IC 感兴趣，就从这里开始。项目组、活动筹备、内容策划都需要人。</p></div>
+    <div class="join-action"><span>不需要任何前置经验</span>
+      <a class="button" href="join/index.html">加入 AI 芯动力<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a></div>
+  </div></section>
+</main>
+<footer class="footer"><div class="container footer-top">
+    <a class="brand" href="index.html"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span><span class="brand-name">AI 芯动力<span>UESTC AIC</span></span></a>
+    <p>一个关于 AI 与 IC 的开放技术社区。</p>
+    <nav class="footer-links" aria-label="页脚导航">
+      <a href="events/index.html">活动</a>
+      <a href="resources/index.html">资源库</a>
+      <a href="partners/index.html">合作伙伴</a>
+      <a href="contribute/index.html">投稿</a>
+      <a href="docs/index.html">运维手册</a>
+      <a href="https://github.com/uestc-aic" target="_blank" rel="noopener noreferrer">GitHub<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+    </nav>
+  </div><div class="container footer-bottom">
+    <span>© 2026 AI 芯动力 · UESTC AIC．Built with curiosity.</span>
+    <span>电子科技大学 · 集成电路科学与工程学院（示范性微电子学院）</span>
+    <span>内容更新于 2026-10-15</span>
+  </div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

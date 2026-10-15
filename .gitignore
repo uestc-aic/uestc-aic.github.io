@@ -1,4 +1,25 @@
-node_modules/
+# 说明：远端 pages.yml 直接从仓库读取 dist/ 并发布，
+# 因此在启用「CI 构建」工作流之前，dist/ 必须提交。
+# 升级步骤见 docs/运维手册.md §12（启用后把下面的 dist/ 取消注释即可）。
+
+# dist/
+
+# 采集运行时状态（本地跑采集时的临时产物）
+content/collected/_state.json
+content/collected/_anomalies.json
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 本地预览与临时文件
 .sites-runtime/
+node_modules/
 *.log
 *.tar.gz
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
