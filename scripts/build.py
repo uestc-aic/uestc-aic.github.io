@@ -828,7 +828,7 @@ def build_home(site, events, partners, projects, org, resources, collected) -> s
 
     partner_block = f"""<section class="section"><div class="container"><div class="partners">
     <div><h3>连接更多同行者</h3><span>合作交流筹备中</span></div>
-    <div class="partner-names">{"".join(f'<span>{esc(pt.get("abbr") or pt.get("name"))}</span>' for pt in partners.get("items", []))}</div>
+    <div class="partner-names">{"".join(f'<span>{esc(pt.get("short") or pt.get("abbr") or pt.get("name"))}</span>' for pt in partners.get("items", []))}</div>
     <a class="text-button" href="partners/index.html">合作详情{icon("arrow")}</a>
   </div></div></section>"""
 
