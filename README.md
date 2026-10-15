@@ -47,7 +47,7 @@ const CONFIG = {
 4. 在仓库 Settings → Pages 中，将 Source 设置为 GitHub Actions。
 5. 推送至 `main` 后，等待 Deploy website to GitHub Pages 工作流成功。
 
-账号首页在部署成功后通常对应 `https://uestc-aic.github.io/`。本次交付包含工作流配置，未对该 GitHub 账号执行登录或发布。
+账号首页在部署成功后通常对应 `https://uestc-aic.github.io/`。部署状态请以 GitHub 仓库 Actions 中的工作流结果为准。
 
 页面字体按顺序使用 Google Fonts、系统中文字体与系统无衬线字体；外部字体加载失败时，中文内容和全部功能仍可使用。
 
