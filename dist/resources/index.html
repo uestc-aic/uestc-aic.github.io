@@ -26,81 +26,527 @@
   <div class="litho-grid" aria-hidden="true"></div>
   <div class="container page-hero-inner">
     <div class="page-hero-copy"><p class="section-label">The Shared Toolbox</p><h1>资源库</h1><p class="hero-description">AI × IC 方向的工具、项目、课程与论文清单。每条都实测可访问，按用途分类。</p></div>
-    <div class="page-hero-stats"><div class="hero-stat"><b>8</b><span>份资源</span></div><div class="hero-stat"><b>4</b><span>个分类</span></div></div>
+    <div class="page-hero-stats"><div class="hero-stat"><b>64</b><span>份资源</span></div><div class="hero-stat"><b>9</b><span>个分类</span></div></div>
   </div>
 </section>
 <section class="section"><div class="container" data-filter-root data-resource-root>
-    <div class="resource-toolbar"><div class="resource-filters" role="group" aria-label="分类筛选"><button class="resource-filter active" type="button" data-filter-btn data-filter-key="all" aria-pressed="true">全部资源<span class="filter-count" data-filter-count></span></button><button class="resource-filter" type="button" data-filter-btn data-filter-key="ic-design" aria-pressed="false">IC 设计<span class="filter-count" data-filter-count></span></button><button class="resource-filter" type="button" data-filter-btn data-filter-key="eda-tool" aria-pressed="false">EDA 工具<span class="filter-count" data-filter-count></span></button><button class="resource-filter" type="button" data-filter-btn data-filter-key="ai-agent" aria-pressed="false">AI / Agent<span class="filter-count" data-filter-count></span></button><button class="resource-filter" type="button" data-filter-btn data-filter-key="workflow" aria-pressed="false">工作流<span class="filter-count" data-filter-count></span></button></div>
+    <div class="resource-toolbar"><div class="resource-filters" role="group" aria-label="分类筛选"><button class="resource-filter active" type="button" data-filter-btn data-filter-key="all" aria-pressed="true">全部资源<span class="filter-count" data-filter-count></span></button><button class="resource-filter" type="button" data-filter-btn data-filter-key="ai4eda" aria-pressed="false">AI for EDA<span class="filter-count" data-filter-count></span></button><button class="resource-filter" type="button" data-filter-btn data-filter-key="ic-design" aria-pressed="false">IC 设计<span class="filter-count" data-filter-count></span></button><button class="resource-filter" type="button" data-filter-btn data-filter-key="eda-tool" aria-pressed="false">EDA 工具<span class="filter-count" data-filter-count></span></button><button class="resource-filter" type="button" data-filter-btn data-filter-key="ai-agent" aria-pressed="false">AI / Agent<span class="filter-count" data-filter-count></span></button><button class="resource-filter" type="button" data-filter-btn data-filter-key="course" aria-pressed="false">课程教程<span class="filter-count" data-filter-count></span></button><button class="resource-filter" type="button" data-filter-btn data-filter-key="paper-list" aria-pressed="false">论文清单<span class="filter-count" data-filter-count></span></button><button class="resource-filter" type="button" data-filter-btn data-filter-key="dataset-model" aria-pressed="false">数据集/模型<span class="filter-count" data-filter-count></span></button><button class="resource-filter" type="button" data-filter-btn data-filter-key="workflow" aria-pressed="false">工作流<span class="filter-count" data-filter-count></span></button><button class="resource-filter" type="button" data-filter-btn data-filter-key="community" aria-pressed="false">社区竞赛<span class="filter-count" data-filter-count></span></button></div>
       <label class="search-box"><svg class="icon" aria-hidden="true"><use href="#icon-search"/></svg><input type="search" id="resource-search" placeholder="搜索资源、工具、课程…" aria-label="搜索资源"></label>
     </div>
-    <h3 class="resource-subheading">社区精选 <span>同学自己整理的笔记、课程与站点</span></h3><div class="featured-resources"><a class="featured-resource resource-item" href="https://sintherain.github.io/fpga-website/" target="_blank" rel="noopener noreferrer"
-     data-filter-item data-filter-cat="ic-design"
-     data-search="fpga 小课堂 面向动手实践的 fpga 接口与电路学习笔记，从引脚、时序到常见外设，边做边查。"
-     aria-label="FPGA 小课堂，在新窗口打开">
-    <span class="featured-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
-    <div class="featured-details"><p class="featured-label">FPGA 学习</p>
-      <h3>FPGA 小课堂</h3><p>面向动手实践的 FPGA 接口与电路学习笔记，从引脚、时序到常见外设，边做边查。</p>
-      <span class="site-host">sintherain.github.io</span></div>
-    <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
-  </a><a class="featured-resource resource-item" href="https://corele-one.github.io/Corleone-s-Blog/" target="_blank" rel="noopener noreferrer"
-     data-filter-item data-filter-cat="ic-design"
-     data-search="corleone&#x27;s blog 模拟电路、数字设计、信号与系统等微电子方向的学习笔记，适合课后对照复习。"
-     aria-label="Corleone&#x27;s Blog，在新窗口打开">
-    <span class="featured-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
-    <div class="featured-details"><p class="featured-label">微电子笔记</p>
-      <h3>Corleone&#x27;s Blog</h3><p>模拟电路、数字设计、信号与系统等微电子方向的学习笔记，适合课后对照复习。</p>
-      <span class="site-host">corele-one.github.io</span></div>
-    <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
-  </a></div>
+    
     <div class="library-heading"><h3 class="resource-subheading">资源库 <span>按用途分类</span></h3>
       <span data-resource-count role="status" aria-live="polite"></span></div>
-    <div class="resource-list"><a class="resource-row" href="https://github.com/microsoft/ai-agents-for-beginners" target="_blank" rel="noopener noreferrer"
-   data-filter-item data-filter-cat="ai-agent" data-search="ai agents for beginners ai agent 入门课程 microsoft 开源课程，从基础概念讲到动手搭建，适合作为第一次接触 agent 的系统入口。 microsoft/ai-agents-for-beginners agent 课程 微软"
-   aria-label="AI Agents for Beginners，在新窗口打开">
+    <div class="resource-list"><a class="resource-row" href="https://github.com/ai4eda/awesome-AI4EDA" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai4eda" data-search="ai4eda/awesome-ai4eda ai4eda 论文精选清单 按布局布线、逻辑综合、验证等环节整理的 ai4eda 论文清单，配有在线阅读网页，适合研究生开题前摸清领域脉络。 ai4eda/awesome-ai4eda ai4eda 论文清单 综述"
+   aria-label="ai4eda/awesome-AI4EDA，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>ai4eda/awesome-AI4EDA <span class="resource-zh">AI4EDA 论文精选清单</span></h3><p>按布局布线、逻辑综合、验证等环节整理的 AI4EDA 论文清单，配有在线阅读网页，适合研究生开题前摸清领域脉络。</p></div>
+    <span class="resource-category">AI for EDA</span>
+    <span class="resource-source">ai4eda/awesome-AI4EDA · ★217</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/OpenROAD-Assistant/EDA-Corpus" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai4eda" data-search="openroad-assistant/eda-corpus eda 大模型语料库 面向 eda 大模型训练整理的语料数据集，含 openroad 工具文档与问答，适合做微调或检索增强实验。 openroad-assistant/eda-corpus 数据集 语料 llm rag"
+   aria-label="OpenROAD-Assistant/EDA-Corpus，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>OpenROAD-Assistant/EDA-Corpus <span class="resource-zh">EDA 大模型语料库</span></h3><p>面向 EDA 大模型训练整理的语料数据集，含 OpenROAD 工具文档与问答，适合做微调或检索增强实验。</p></div>
+    <span class="resource-category">AI for EDA</span>
+    <span class="resource-source">OpenROAD-Assistant/EDA-Corpus · ★46</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/NellyW8/MCP4EDA" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai4eda" data-search="nellyw8/mcp4eda mcp4eda 工具链服务 把一批开源 eda 工具封装成 mcp 服务，让大模型能直接驱动 rtl 到 gdsii 全流程，适合做流程自动化实验。 nellyw8/mcp4eda mcp 流程自动化 rtl2gds"
+   aria-label="NellyW8/MCP4EDA，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>NellyW8/MCP4EDA <span class="resource-zh">MCP4EDA 工具链服务</span></h3><p>把一批开源 EDA 工具封装成 MCP 服务，让大模型能直接驱动 RTL 到 GDSII 全流程，适合做流程自动化实验。</p></div>
+    <span class="resource-category">AI for EDA</span>
+    <span class="resource-source">NellyW8/MCP4EDA · ★113</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/oaslananka/kicad-mcp-pro" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai4eda" data-search="oaslananka/kicad-mcp-pro kicad 智能体接口 让 ai 助手接管 kicad 原理图与 pcb 的 mcp 服务，支持 erc 与 drc 检查及 bom 分析，适合硬件小项目试水。 oaslananka/kicad-mcp-pro mcp kicad pcb drc"
+   aria-label="oaslananka/kicad-mcp-pro，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>oaslananka/kicad-mcp-pro <span class="resource-zh">KiCad 智能体接口</span></h3><p>让 AI 助手接管 KiCad 原理图与 PCB 的 MCP 服务，支持 ERC 与 DRC 检查及 BOM 分析，适合硬件小项目试水。</p></div>
+    <span class="resource-category">AI for EDA</span>
+    <span class="resource-source">oaslananka/kicad-mcp-pro · ★130</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/limbo018/DREAMPlace" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai4eda" data-search="limbo018/dreamplace 深度学习驱动布局器 用深度学习张量框架重写的 vlsi 布局器，把布局问题转成 gpu 可加速的连续优化，适合学习 ai4eda 落地范式。 limbo018/dreamplace 布局布线 深度学习 gpu 物理设计"
+   aria-label="limbo018/DREAMPlace，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>limbo018/DREAMPlace <span class="resource-zh">深度学习驱动布局器</span></h3><p>用深度学习张量框架重写的 VLSI 布局器，把布局问题转成 GPU 可加速的连续优化，适合学习 AI4EDA 落地范式。</p></div>
+    <span class="resource-category">AI for EDA</span>
+    <span class="resource-source">limbo018/DREAMPlace · ★1,059</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/NYU-MLDA/OpenABC" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai4eda" data-search="nyu-mlda/openabc 开源 soc 图数据集工具链 把多种开源 soc 设计整理成可训练的图数据集与配套工具，便于在真实 rtl 上做机器学习与智能体研究。 nyu-mlda/openabc 数据集 图神经网络 soc"
+   aria-label="NYU-MLDA/OpenABC，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>NYU-MLDA/OpenABC <span class="resource-zh">开源 SoC 图数据集工具链</span></h3><p>把多种开源 SoC 设计整理成可训练的图数据集与配套工具，便于在真实 RTL 上做机器学习与智能体研究。</p></div>
+    <span class="resource-category">AI for EDA</span>
+    <span class="resource-source">NYU-MLDA/OpenABC · ★152</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/zhongkaiyu/ChipMATE" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai4eda" data-search="zhongkaiyu/chipmate 多智能体 rtl 生成框架 多智能体 rtl 生成框架，verilog 智能体与 python 参考模型智能体交叉验证，不依赖黄金测试平台。 zhongkaiyu/chipmate 多智能体 rtl生成 verilog"
+   aria-label="zhongkaiyu/ChipMATE，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>zhongkaiyu/ChipMATE <span class="resource-zh">多智能体 RTL 生成框架</span></h3><p>多智能体 RTL 生成框架，Verilog 智能体与 Python 参考模型智能体交叉验证，不依赖黄金测试平台。</p></div>
+    <span class="resource-category">AI for EDA</span>
+    <span class="resource-source">zhongkaiyu/ChipMATE · ★34</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/NellyW8/VeriReason" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai4eda" data-search="nellyw8/verireason 强化学习提升 verilog 生成 用测试平台反馈做强化学习来提升 verilog 生成质量，论文配套实现，适合研究大模型加验证闭环。 nellyw8/verireason 强化学习 verilog 验证反馈"
+   aria-label="NellyW8/VeriReason，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>NellyW8/VeriReason <span class="resource-zh">强化学习提升 Verilog 生成</span></h3><p>用测试平台反馈做强化学习来提升 Verilog 生成质量，论文配套实现，适合研究大模型加验证闭环。</p></div>
+    <span class="resource-category">AI for EDA</span>
+    <span class="resource-source">NellyW8/VeriReason · ★29</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/wuhy68/ChatEDA" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai4eda" data-search="wuhy68/chateda 对话式 eda 流程助手 把自然语言需求翻译成 eda 脚本并驱动工具链执行的对话式框架，适合了解语言模型如何落地设计流程。 wuhy68/chateda llm 流程编排 eda脚本"
+   aria-label="wuhy68/ChatEDA，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>wuhy68/ChatEDA <span class="resource-zh">对话式 EDA 流程助手</span></h3><p>把自然语言需求翻译成 EDA 脚本并驱动工具链执行的对话式框架，适合了解语言模型如何落地设计流程。</p></div>
+    <span class="resource-category">AI for EDA</span>
+    <span class="resource-source">wuhy68/ChatEDA · ★62</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/shailja-thakur/AutoChip" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai4eda" data-search="shailja-thakur/autochip 自动生成并自修复 verilog 让大模型自动生成 verilog 并用仿真报错迭代修正的系统，是学习自动调试闭环的一个清晰范例。 shailja-thakur/autochip 代码生成 自动调试 仿真"
+   aria-label="shailja-thakur/AutoChip，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>shailja-thakur/AutoChip <span class="resource-zh">自动生成并自修复 Verilog</span></h3><p>让大模型自动生成 Verilog 并用仿真报错迭代修正的系统，是学习自动调试闭环的一个清晰范例。</p></div>
+    <span class="resource-category">AI for EDA</span>
+    <span class="resource-source">shailja-thakur/AutoChip · ★64</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/chateda-ichip/Awesome-AI-for-Chip-Design" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai4eda" data-search="chateda-ichip/awesome-ai-for-chip-design ai 芯片设计资源总览 覆盖芯片设计全流程的 ai 研究与工具清单，条目按流程环节分组，适合作为查找具体课题的索引。 chateda-ichip/awesome-ai-for-chip-design ai4eda 资源清单 芯片设计"
+   aria-label="chateda-ichip/Awesome-AI-for-Chip-Design，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>chateda-ichip/Awesome-AI-for-Chip-Design <span class="resource-zh">AI 芯片设计资源总览</span></h3><p>覆盖芯片设计全流程的 AI 研究与工具清单，条目按流程环节分组，适合作为查找具体课题的索引。</p></div>
+    <span class="resource-category">AI for EDA</span>
+    <span class="resource-source">chateda-ichip/Awesome-AI-for-Chip-Design · ★26</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/Thinklab-SJTU/awesome-ai4eda" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="paper-list" data-search="thinklab-sjtu/awesome-ai4eda 上交 ai4eda 论文合集 上交 thinklab 维护的 ai4eda 论文合集，持续跟踪顶会新作，适合研究生按方向快速检索。 thinklab-sjtu ai4eda 论文 顶会"
+   aria-label="Thinklab-SJTU/awesome-ai4eda，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg></span>
+    <div><h3>Thinklab-SJTU/awesome-ai4eda <span class="resource-zh">上交 AI4EDA 论文合集</span></h3><p>上交 Thinklab 维护的 AI4EDA 论文合集，持续跟踪顶会新作，适合研究生按方向快速检索。</p></div>
+    <span class="resource-category">论文清单</span>
+    <span class="resource-source">Thinklab-SJTU · ★215</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/thu-nics/awesome_ai4eda" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="paper-list" data-search="thu-nics/awesome_ai4eda 清华 ai4eda 资料汇总 清华团队的 ai4eda 资料汇总，囊括论文、数据集与工具，适合本科生先建立对整个方向的全局认识。 thu-nics ai4eda 论文 资料汇总"
+   aria-label="thu-nics/awesome_ai4eda，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg></span>
+    <div><h3>thu-nics/awesome_ai4eda <span class="resource-zh">清华 AI4EDA 资料汇总</span></h3><p>清华团队的 AI4EDA 资料汇总，囊括论文、数据集与工具，适合本科生先建立对整个方向的全局认识。</p></div>
+    <span class="resource-category">论文清单</span>
+    <span class="resource-source">thu-nics · ★296</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/panhaiqi/awesome-llm-for-rtl-generation" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="paper-list" data-search="panhaiqi/awesome-llm-for-rtl-generation rtl 生成论文清单 专注大模型生成 rtl 的清单，收录论文、基准与数据集，是进入 verilog 生成方向的检索入口。 panhaiqi rtl生成 论文清单 基准"
+   aria-label="panhaiqi/awesome-llm-for-rtl-generation，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg></span>
+    <div><h3>panhaiqi/awesome-llm-for-rtl-generation <span class="resource-zh">RTL 生成论文清单</span></h3><p>专注大模型生成 RTL 的清单，收录论文、基准与数据集，是进入 Verilog 生成方向的检索入口。</p></div>
+    <span class="resource-category">论文清单</span>
+    <span class="resource-source">panhaiqi · ★9</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/RaviVijay/awesome-dl-hw-resources" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="paper-list" data-search="ravivijay/awesome-dl-hw-resources 深度学习硬件资源清单 面向深度学习硬件的资源清单，涵盖加速器架构与芯片设计资料，适合做 ai 芯片方向的调研起步。 ravivijay ai芯片 加速器 资源清单"
+   aria-label="RaviVijay/awesome-dl-hw-resources，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg></span>
+    <div><h3>RaviVijay/awesome-dl-hw-resources <span class="resource-zh">深度学习硬件资源清单</span></h3><p>面向深度学习硬件的资源清单，涵盖加速器架构与芯片设计资料，适合做 AI 芯片方向的调研起步。</p></div>
+    <span class="resource-category">论文清单</span>
+    <span class="resource-source">RaviVijay · ★61</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/OrchTron/Awesome-Agentic-Chip-Design" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="paper-list" data-search="orchtron/awesome-agentic-chip-design 智能体芯片设计论文清单 智能体驱动芯片设计的论文清单，跟踪 agent 用于设计流程的最新工作，条目较少但更新及时。 orchtron 智能体 芯片设计 论文"
+   aria-label="OrchTron/Awesome-Agentic-Chip-Design，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg></span>
+    <div><h3>OrchTron/Awesome-Agentic-Chip-Design <span class="resource-zh">智能体芯片设计论文清单</span></h3><p>智能体驱动芯片设计的论文清单，跟踪 Agent 用于设计流程的最新工作，条目较少但更新及时。</p></div>
+    <span class="resource-category">论文清单</span>
+    <span class="resource-source">OrchTron · ★3</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://arxiv.org/abs/2102.03357" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="paper-list" data-search="machine learning for electronic design automation: a survey 机器学习用于 eda 综述 经典综述，系统梳理机器学习在 eda 各环节的方法与数据表示，适合作为入门阅读的第一篇综述。 arxiv 综述 机器学习 eda"
+   aria-label="Machine Learning for Electronic Design Automation: A Survey，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg></span>
+    <div><h3>Machine Learning for Electronic Design Automation: A Survey <span class="resource-zh">机器学习用于 EDA 综述</span></h3><p>经典综述，系统梳理机器学习在 EDA 各环节的方法与数据表示，适合作为入门阅读的第一篇综述。</p></div>
+    <span class="resource-category">论文清单</span>
+    <span class="resource-source">arXiv</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://arxiv.org/abs/2403.07257" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="paper-list" data-search="the dawn of ai-native eda: opportunities and challenges of large circuit models ai 原生 eda 综述 提出大电路模型概念的综述，讨论把电路当作语言来建模的思路，适合判断研究方向的价值与边界。 arxiv 综述 大电路模型 ai原生eda"
+   aria-label="The Dawn of AI-Native EDA: Opportunities and Challenges of Large Circuit Models，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg></span>
+    <div><h3>The Dawn of AI-Native EDA: Opportunities and Challenges of Large Circuit Models <span class="resource-zh">AI 原生 EDA 综述</span></h3><p>提出大电路模型概念的综述，讨论把电路当作语言来建模的思路，适合判断研究方向的价值与边界。</p></div>
+    <span class="resource-category">论文清单</span>
+    <span class="resource-source">arXiv</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/circuitnet/CircuitNet" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="dataset-model" data-search="circuitnet/circuitnet circuitnet eda 数据集 面向 eda 机器学习研究的开源数据集，含布局布线特征与标签，附完整读取脚本，可直接跑基线模型。 circuitnet 数据集 布局布线 机器学习"
+   aria-label="circuitnet/CircuitNet，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-layers"/></svg></span>
+    <div><h3>circuitnet/CircuitNet <span class="resource-zh">CircuitNet EDA 数据集</span></h3><p>面向 EDA 机器学习研究的开源数据集，含布局布线特征与标签，附完整读取脚本，可直接跑基线模型。</p></div>
+    <span class="resource-category">数据集/模型</span>
+    <span class="resource-source">circuitnet · ★515</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/hkust-zhiyao/RTLLM" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="dataset-model" data-search="hkust-zhiyao/rtllm rtllm 开源 rtl 生成基准 由真实设计需求构建的 rtl 生成基准，提供自校验测试平台，适合评测大模型的 verilog 设计能力。 hkust-zhiyao 基准 rtl生成 verilog"
+   aria-label="hkust-zhiyao/RTLLM，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-layers"/></svg></span>
+    <div><h3>hkust-zhiyao/RTLLM <span class="resource-zh">RTLLM 开源 RTL 生成基准</span></h3><p>由真实设计需求构建的 RTL 生成基准，提供自校验测试平台，适合评测大模型的 Verilog 设计能力。</p></div>
+    <span class="resource-category">数据集/模型</span>
+    <span class="resource-source">hkust-zhiyao · ★237</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/AUCOHL/RTL-Repo" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="dataset-model" data-search="aucohl/rtl-repo 大型 rtl 工程理解基准 面向大型 rtl 工程理解能力的评测基准，用真实仓库考察模型跨文件推理，适合做代码智能研究。 aucohl 基准 代码理解 rtl"
+   aria-label="AUCOHL/RTL-Repo，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-layers"/></svg></span>
+    <div><h3>AUCOHL/RTL-Repo <span class="resource-zh">大型 RTL 工程理解基准</span></h3><p>面向大型 RTL 工程理解能力的评测基准，用真实仓库考察模型跨文件推理，适合做代码智能研究。</p></div>
+    <span class="resource-category">数据集/模型</span>
+    <span class="resource-source">AUCOHL · ★35</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/weiber2002/ICRTL-Benchmark" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="dataset-model" data-search="weiber2002/icrtl-benchmark 工业级 rtl 设计基准 工业级 rtl 设计任务基准，关注 ppa 优化与代码生成，适合评估模型在真实约束下的表现。 weiber2002 基准 ppa 工业级"
+   aria-label="weiber2002/ICRTL-Benchmark，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-layers"/></svg></span>
+    <div><h3>weiber2002/ICRTL-Benchmark <span class="resource-zh">工业级 RTL 设计基准</span></h3><p>工业级 RTL 设计任务基准，关注 PPA 优化与代码生成，适合评估模型在真实约束下的表现。</p></div>
+    <span class="resource-category">数据集/模型</span>
+    <span class="resource-source">weiber2002 · ★35</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/Intelligent-Computing-Research-Group/HaVen" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="dataset-model" data-search="intelligent-computing-research-group/haven verilog 生成幻觉抑制 针对 verilog 生成幻觉问题的方法与数据，按工程师习惯组织语料，适合研究代码生成的可靠性。 intelligent-computing-research-group 幻觉 verilog 数据"
+   aria-label="Intelligent-Computing-Research-Group/HaVen，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-layers"/></svg></span>
+    <div><h3>Intelligent-Computing-Research-Group/HaVen <span class="resource-zh">Verilog 生成幻觉抑制</span></h3><p>针对 Verilog 生成幻觉问题的方法与数据，按工程师习惯组织语料，适合研究代码生成的可靠性。</p></div>
+    <span class="resource-category">数据集/模型</span>
+    <span class="resource-source">Intelligent-Computing-Research-Group · ★44</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/zhongkaiyu/ChipBench" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="dataset-model" data-search="zhongkaiyu/chipbench ai 辅助芯片设计基准 ai 辅助芯片设计的综合基准，覆盖多类设计任务与评测脚本，适合横向比较不同方法的实际效果。 zhongkaiyu 基准 芯片设计 评测"
+   aria-label="zhongkaiyu/ChipBench，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-layers"/></svg></span>
+    <div><h3>zhongkaiyu/ChipBench <span class="resource-zh">AI 辅助芯片设计基准</span></h3><p>AI 辅助芯片设计的综合基准，覆盖多类设计任务与评测脚本，适合横向比较不同方法的实际效果。</p></div>
+    <span class="resource-category">数据集/模型</span>
+    <span class="resource-source">zhongkaiyu · ★43</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/OpenXiangShan/XiangShan" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ic-design" data-search="openxiangshan/xiangshan 香山开源 risc-v 处理器 开源高性能 risc-v 处理器，具备工业级代码规范与验证流程，适合研究生深入学习处理器微架构。 openxiangshan risc-v 处理器 开源芯片"
+   aria-label="OpenXiangShan/XiangShan，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>OpenXiangShan/XiangShan <span class="resource-zh">香山开源 RISC-V 处理器</span></h3><p>开源高性能 RISC-V 处理器，具备工业级代码规范与验证流程，适合研究生深入学习处理器微架构。</p></div>
+    <span class="resource-category">IC 设计</span>
+    <span class="resource-source">OpenXiangShan · ★7,312</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/ucb-bar/chipyard" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ic-design" data-search="ucb-bar/chipyard chipyard soc 设计框架 伯克利可敏捷定制的 risc-v soc 生成框架，含乱序核与加速器模板，适合做体系结构研究。 ucb-bar soc risc-v 敏捷开发"
+   aria-label="ucb-bar/chipyard，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>ucb-bar/chipyard <span class="resource-zh">Chipyard SoC 设计框架</span></h3><p>伯克利可敏捷定制的 RISC-V SoC 生成框架，含乱序核与加速器模板，适合做体系结构研究。</p></div>
+    <span class="resource-category">IC 设计</span>
+    <span class="resource-source">ucb-bar · ★2,421</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/chipsalliance/chisel" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ic-design" data-search="chipsalliance/chisel chisel 硬件构造语言 用 scala 写硬件的现代设计语言，参数化能力强，适合快速生成复杂 rtl 并与自动生成代码衔接。 chipsalliance chisel 硬件描述 参数化"
+   aria-label="chipsalliance/chisel，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>chipsalliance/chisel <span class="resource-zh">Chisel 硬件构造语言</span></h3><p>用 Scala 写硬件的现代设计语言，参数化能力强，适合快速生成复杂 RTL 并与自动生成代码衔接。</p></div>
+    <span class="resource-category">IC 设计</span>
+    <span class="resource-source">chipsalliance · ★4,809</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/google/skywater-pdk" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ic-design" data-search="google/skywater-pdk skywater 130nm 开源 pdk skywater 130nm 开源工艺设计套件，含标准单元与器件模型，是学生免费流片的物理设计基础。 google pdk 130nm 流片"
+   aria-label="google/skywater-pdk，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>google/skywater-pdk <span class="resource-zh">SkyWater 130nm 开源 PDK</span></h3><p>SkyWater 130nm 开源工艺设计套件，含标准单元与器件模型，是学生免费流片的物理设计基础。</p></div>
+    <span class="resource-category">IC 设计</span>
+    <span class="resource-source">Google · ★3,753</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/VLSIDA/OpenRAM" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ic-design" data-search="vlsida/openram 开源 sram 编译器 开源静态存储器编译器，可自动生成 sram 版图与仿真模型，适合做存储阵列相关设计与验证。 vlsida sram 存储器 版图"
+   aria-label="VLSIDA/OpenRAM，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>VLSIDA/OpenRAM <span class="resource-zh">开源 SRAM 编译器</span></h3><p>开源静态存储器编译器，可自动生成 SRAM 版图与仿真模型，适合做存储阵列相关设计与验证。</p></div>
+    <span class="resource-category">IC 设计</span>
+    <span class="resource-source">VLSIDA · ★1,156</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/ultraembedded/riscv" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ic-design" data-search="ultraembedded/riscv rv32im 处理器核 小巧的 rv32im 处理器核，代码量适中便于通读，适合本科生第一次完整读懂一个 cpu 实现。 ultraembedded risc-v verilog cpu"
+   aria-label="ultraembedded/riscv，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>ultraembedded/riscv <span class="resource-zh">RV32IM 处理器核</span></h3><p>小巧的 RV32IM 处理器核，代码量适中便于通读，适合本科生第一次完整读懂一个 CPU 实现。</p></div>
+    <span class="resource-category">IC 设计</span>
+    <span class="resource-source">ultraembedded · ★1,804</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/efabless/caravel" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ic-design" data-search="efabless/caravel 开源流片 soc 模板 面向开源流片的 soc 模板，提供片上资源与接口约束，适合把自研模块装配成可提交的芯片。 efabless 流片 soc caravel"
+   aria-label="efabless/caravel，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>efabless/caravel <span class="resource-zh">开源流片 SoC 模板</span></h3><p>面向开源流片的 SoC 模板，提供片上资源与接口约束，适合把自研模块装配成可提交的芯片。</p></div>
+    <span class="resource-category">IC 设计</span>
+    <span class="resource-source">efabless · ★414</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/ZipCPU/zipcpu" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ic-design" data-search="zipcpu/zipcpu 教学型精简 cpu 带完整设计博客的精简 cpu 实现，作者逐条讲解取舍，适合边读代码边学形式化验证方法。 zipcpu cpu 形式化验证 verilog"
+   aria-label="ZipCPU/zipcpu，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
+    <div><h3>ZipCPU/zipcpu <span class="resource-zh">教学型精简 CPU</span></h3><p>带完整设计博客的精简 CPU 实现，作者逐条讲解取舍，适合边读代码边学形式化验证方法。</p></div>
+    <span class="resource-category">IC 设计</span>
+    <span class="resource-source">ZipCPU · ★1,592</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/YosysHQ/yosys" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="eda-tool" data-search="yosyshq/yosys yosys 开源综合工具 开源逻辑综合工具，把 verilog 转换成门级网表，是开源数字流程的第一环，适合动手跑通全流程。 yosyshq 综合 verilog 开源eda"
+   aria-label="YosysHQ/yosys，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-route"/></svg></span>
+    <div><h3>YosysHQ/yosys <span class="resource-zh">Yosys 开源综合工具</span></h3><p>开源逻辑综合工具，把 Verilog 转换成门级网表，是开源数字流程的第一环，适合动手跑通全流程。</p></div>
+    <span class="resource-category">EDA 工具</span>
+    <span class="resource-source">YosysHQ · ★4,812</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/The-OpenROAD-Project/OpenROAD" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="eda-tool" data-search="the-openroad-project/openroad openroad 开源后端工具 从 rtl 到 gdsii 的开源实现工具，集成布局布线与时序优化，适合体验工业界真实的后端流程。 the-openroad-project 物理设计 布局布线 rtl2gds"
+   aria-label="The-OpenROAD-Project/OpenROAD，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-route"/></svg></span>
+    <div><h3>The-OpenROAD-Project/OpenROAD <span class="resource-zh">OpenROAD 开源后端工具</span></h3><p>从 RTL 到 GDSII 的开源实现工具，集成布局布线与时序优化，适合体验工业界真实的后端流程。</p></div>
+    <span class="resource-category">EDA 工具</span>
+    <span class="resource-source">The-OpenROAD-Project · ★3,180</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/verilator/verilator" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="eda-tool" data-search="verilator/verilator verilator 高速仿真器 把 systemverilog 编译成 c++ 的高速仿真器，同时做静态检查，适合大规模 rtl 的日常回归验证。 verilator 仿真 systemverilog 性能"
+   aria-label="verilator/verilator，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-route"/></svg></span>
+    <div><h3>verilator/verilator <span class="resource-zh">Verilator 高速仿真器</span></h3><p>把 SystemVerilog 编译成 C++ 的高速仿真器，同时做静态检查，适合大规模 RTL 的日常回归验证。</p></div>
+    <span class="resource-category">EDA 工具</span>
+    <span class="resource-source">verilator · ★4,015</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/KLayout/klayout" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="eda-tool" data-search="klayout/klayout klayout 版图工具 版图查看与编辑工具，支持脚本化 drc 与 gds 处理，适合分析流片结果并做批量版图检查。 klayout 版图 drc gds"
+   aria-label="KLayout/klayout，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-route"/></svg></span>
+    <div><h3>KLayout/klayout <span class="resource-zh">KLayout 版图工具</span></h3><p>版图查看与编辑工具，支持脚本化 DRC 与 GDS 处理，适合分析流片结果并做批量版图检查。</p></div>
+    <span class="resource-category">EDA 工具</span>
+    <span class="resource-source">KLayout · ★1,232</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/steveicarus/iverilog" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="eda-tool" data-search="steveicarus/iverilog icarus verilog 仿真器 轻量 verilog 仿真器，安装简单启动快，适合课程作业与小型模块的功能验证练习。 steveicarus 仿真 verilog 轻量"
+   aria-label="steveicarus/iverilog，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-route"/></svg></span>
+    <div><h3>steveicarus/iverilog <span class="resource-zh">Icarus Verilog 仿真器</span></h3><p>轻量 Verilog 仿真器，安装简单启动快，适合课程作业与小型模块的功能验证练习。</p></div>
+    <span class="resource-category">EDA 工具</span>
+    <span class="resource-source">steveicarus · ★3,684</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/cocotb/cocotb" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="eda-tool" data-search="cocotb/cocotb cocotb python 验证框架 用 python 写测试平台驱动 verilog 仿真器，便于复用 python 生态做随机激励与覆盖率统计。 cocotb 验证 python 测试平台"
+   aria-label="cocotb/cocotb，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-route"/></svg></span>
+    <div><h3>cocotb/cocotb <span class="resource-zh">cocotb Python 验证框架</span></h3><p>用 Python 写测试平台驱动 Verilog 仿真器，便于复用 Python 生态做随机激励与覆盖率统计。</p></div>
+    <span class="resource-category">EDA 工具</span>
+    <span class="resource-source">cocotb · ★2,543</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/RTimothyEdwards/magic" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="eda-tool" data-search="rtimothyedwards/magic magic 版图编辑器 经典版图编辑器，支持交互式绘制与网表提取，配合开源 pdk 可完成完整的定制电路设计。 rtimothyedwards 版图 定制电路 网表提取"
+   aria-label="RTimothyEdwards/magic，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-route"/></svg></span>
+    <div><h3>RTimothyEdwards/magic <span class="resource-zh">Magic 版图编辑器</span></h3><p>经典版图编辑器，支持交互式绘制与网表提取，配合开源 PDK 可完成完整的定制电路设计。</p></div>
+    <span class="resource-category">EDA 工具</span>
+    <span class="resource-source">RTimothyEdwards · ★719</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/ngspice/ngspice" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="eda-tool" data-search="ngspice/ngspice ngspice 电路仿真引擎 开源 spice 电路仿真引擎，支持模拟与混合信号分析，适合做电路参数扫描与批量自动化仿真。 ngspice spice 仿真 模拟电路"
+   aria-label="ngspice/ngspice，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-route"/></svg></span>
+    <div><h3>ngspice/ngspice <span class="resource-zh">ngspice 电路仿真引擎</span></h3><p>开源 SPICE 电路仿真引擎，支持模拟与混合信号分析，适合做电路参数扫描与批量自动化仿真。</p></div>
+    <span class="resource-category">EDA 工具</span>
+    <span class="resource-source">ngspice · ★290</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/OSCC-Project/iEDA" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="eda-tool" data-search="oscc-project/ieda ieda 国产开源 eda 国内高校主导的开源数字 eda 工具链，覆盖综合到布线，适合在中文环境下学习国产化设计流程。 oscc-project 国产eda 工具链 数字后端"
+   aria-label="OSCC-Project/iEDA，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-route"/></svg></span>
+    <div><h3>OSCC-Project/iEDA <span class="resource-zh">iEDA 国产开源 EDA</span></h3><p>国内高校主导的开源数字 EDA 工具链，覆盖综合到布线，适合在中文环境下学习国产化设计流程。</p></div>
+    <span class="resource-category">EDA 工具</span>
+    <span class="resource-source">OSCC-Project · ★550</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/modelcontextprotocol/servers" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai-agent" data-search="modelcontextprotocol/servers mcp 官方服务器合集 官方 mcp 服务器合集，把文件、数据库、命令行等能力接给大模型，适合搭建科研自动化助手。 modelcontextprotocol mcp 工具调用 智能体"
+   aria-label="modelcontextprotocol/servers，在新窗口打开">
     <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-agent"/></svg></span>
-    <div><h3>AI Agents for Beginners <span class="resource-zh">AI Agent 入门课程</span></h3><p>Microsoft 开源课程，从基础概念讲到动手搭建，适合作为第一次接触 Agent 的系统入口。</p></div>
+    <div><h3>modelcontextprotocol/servers <span class="resource-zh">MCP 官方服务器合集</span></h3><p>官方 MCP 服务器合集，把文件、数据库、命令行等能力接给大模型，适合搭建科研自动化助手。</p></div>
     <span class="resource-category">AI / Agent</span>
-    <span class="resource-source">microsoft/ai-agents-for-beginners</span>
+    <span class="resource-source">modelcontextprotocol · ★91,284</span>
     <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
-  </a><a class="resource-row" href="https://cli.github.com/manual/" target="_blank" rel="noopener noreferrer"
-   data-filter-item data-filter-cat="workflow" data-search="github cli 官方手册 gh 命令手册 gh 命令行完整手册，把本地开发与 github 协作接起来，是参与社区仓库最省事的工具。 github docs github cli 协作"
-   aria-label="GitHub CLI 官方手册，在新窗口打开">
-    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-git"/></svg></span>
-    <div><h3>GitHub CLI 官方手册 <span class="resource-zh">gh 命令手册</span></h3><p>gh 命令行完整手册，把本地开发与 GitHub 协作接起来，是参与社区仓库最省事的工具。</p></div>
-    <span class="resource-category">工作流</span>
-    <span class="resource-source">GitHub Docs</span>
+  </a><a class="resource-row" href="https://github.com/modelcontextprotocol/python-sdk" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai-agent" data-search="modelcontextprotocol/python-sdk mcp python 开发包 mcp 的 python 开发包，几十行代码就能把自研的 eda 或仿真脚本封装成模型可调用的工具。 modelcontextprotocol mcp python sdk"
+   aria-label="modelcontextprotocol/python-sdk，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-agent"/></svg></span>
+    <div><h3>modelcontextprotocol/python-sdk <span class="resource-zh">MCP Python 开发包</span></h3><p>MCP 的 Python 开发包，几十行代码就能把自研的 EDA 或仿真脚本封装成模型可调用的工具。</p></div>
+    <span class="resource-category">AI / Agent</span>
+    <span class="resource-source">modelcontextprotocol · ★24,585</span>
     <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
-  </a><a class="resource-row" href="https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages" target="_blank" rel="noopener noreferrer"
-   data-filter-item data-filter-cat="workflow" data-search="用 github actions 部署静态网站 pages 自定义工作流 github pages 官方发布指南，本站就是按这套流程部署的，可以照抄。 github docs github actions pages 部署"
-   aria-label="用 GitHub Actions 部署静态网站，在新窗口打开">
-    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-git"/></svg></span>
-    <div><h3>用 GitHub Actions 部署静态网站 <span class="resource-zh">Pages 自定义工作流</span></h3><p>GitHub Pages 官方发布指南，本站就是按这套流程部署的，可以照抄。</p></div>
-    <span class="resource-category">工作流</span>
-    <span class="resource-source">GitHub Docs</span>
+  </a><a class="resource-row" href="https://github.com/langchain-ai/langgraph" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai-agent" data-search="langchain-ai/langgraph langgraph 状态图智能体 用状态图编排多步智能体流程的框架，适合把仿真、综合、验证串成可自动迭代的流水线。 langchain-ai 智能体 流程编排 工作流"
+   aria-label="langchain-ai/langgraph，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-agent"/></svg></span>
+    <div><h3>langchain-ai/langgraph <span class="resource-zh">LangGraph 状态图智能体</span></h3><p>用状态图编排多步智能体流程的框架，适合把仿真、综合、验证串成可自动迭代的流水线。</p></div>
+    <span class="resource-category">AI / Agent</span>
+    <span class="resource-source">langchain-ai · ★43,310</span>
     <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
-  </a><a class="resource-row" href="https://skills.github.com/" target="_blank" rel="noopener noreferrer"
-   data-filter-item data-filter-cat="workflow" data-search="github 入门练习 github skills 官方交互式练习，通过真实仓库操作学会提交、分支与协作流程，约一小时能做完。 github git 协作 练习"
-   aria-label="GitHub 入门练习，在新窗口打开">
-    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-git"/></svg></span>
-    <div><h3>GitHub 入门练习 <span class="resource-zh">GitHub Skills</span></h3><p>官方交互式练习，通过真实仓库操作学会提交、分支与协作流程，约一小时能做完。</p></div>
-    <span class="resource-category">工作流</span>
-    <span class="resource-source">GitHub</span>
+  </a><a class="resource-row" href="https://github.com/anthropics/skills" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai-agent" data-search="anthropics/skills agent skills 官方仓库 官方 agent skills 仓库，示范如何把领域知识写成模型可加载的技能包，可仿写 eda 相关技能。 anthropic skills 智能体 知识封装"
+   aria-label="anthropics/skills，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-agent"/></svg></span>
+    <div><h3>anthropics/skills <span class="resource-zh">Agent Skills 官方仓库</span></h3><p>官方 Agent Skills 仓库，示范如何把领域知识写成模型可加载的技能包，可仿写 EDA 相关技能。</p></div>
+    <span class="resource-category">AI / Agent</span>
+    <span class="resource-source">Anthropic · ★181,290</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/obra/superpowers" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai-agent" data-search="obra/superpowers 智能体技能框架 工程化的技能框架，给出技能拆分与开发流程方法论，适合团队沉淀可复用的自动化能力。 obra skills 方法论 自动化"
+   aria-label="obra/superpowers，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-agent"/></svg></span>
+    <div><h3>obra/superpowers <span class="resource-zh">智能体技能框架</span></h3><p>工程化的技能框架，给出技能拆分与开发流程方法论，适合团队沉淀可复用的自动化能力。</p></div>
+    <span class="resource-category">AI / Agent</span>
+    <span class="resource-source">obra · ★299,568</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/microsoft/autogen" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="ai-agent" data-search="microsoft/autogen autogen 多智能体框架 微软的多智能体对话框架，支持角色分工与工具调用，适合搭建互相审查的设计或验证智能体。 microsoft 多智能体 框架 工具调用"
+   aria-label="microsoft/autogen，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-agent"/></svg></span>
+    <div><h3>microsoft/autogen <span class="resource-zh">AutoGen 多智能体框架</span></h3><p>微软的多智能体对话框架，支持角色分工与工具调用，适合搭建互相审查的设计或验证智能体。</p></div>
+    <span class="resource-category">AI / Agent</span>
+    <span class="resource-source">Microsoft · ★61,421</span>
     <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
   </a><a class="resource-row" href="https://hdlbits.01xz.net/wiki/Main_Page" target="_blank" rel="noopener noreferrer"
-   data-filter-item data-filter-cat="ic-design" data-search="hdlbits verilog 在线练习 在线刷 verilog 小电路题库，从组合逻辑到状态机，写完即判，适合数字逻辑课后练手。 hdlbits verilog 数字逻辑 在线题库"
+   data-filter-item data-filter-cat="course" data-search="hdlbits hdlbits 在线 verilog 题库 在线 verilog 练习题库，在浏览器内即时仿真纠错，题目由浅入深且支持中文，适合零基础入门。 hdlbits verilog 练习 在线"
    aria-label="HDLBits，在新窗口打开">
-    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span>
-    <div><h3>HDLBits <span class="resource-zh">Verilog 在线练习</span></h3><p>在线刷 Verilog 小电路题库，从组合逻辑到状态机，写完即判，适合数字逻辑课后练手。</p></div>
-    <span class="resource-category">IC 设计</span>
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg></span>
+    <div><h3>HDLBits <span class="resource-zh">HDLBits 在线 Verilog 题库</span></h3><p>在线 Verilog 练习题库，在浏览器内即时仿真纠错，题目由浅入深且支持中文，适合零基础入门。</p></div>
+    <span class="resource-category">课程教程</span>
     <span class="resource-source">HDLBits</span>
     <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
-  </a><a class="resource-row" href="https://openroad.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer"
-   data-filter-item data-filter-cat="eda-tool" data-search="openroad 开源数字芯片设计流程 从 rtl 到 gdsii 的完整开源实现流程，适合想了解工业界真实设计链路的学生。 the-openroad-project 开源eda 数字后端 设计流程"
-   aria-label="OpenROAD，在新窗口打开">
-    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-route"/></svg></span>
-    <div><h3>OpenROAD <span class="resource-zh">开源数字芯片设计流程</span></h3><p>从 RTL 到 GDSII 的完整开源实现流程，适合想了解工业界真实设计链路的学生。</p></div>
-    <span class="resource-category">EDA 工具</span>
-    <span class="resource-source">The-OpenROAD-Project</span>
+  </a><a class="resource-row" href="https://nptel.ac.in/courses/106106145" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="course" data-search="nptel digital vlsi design nptel 数字 vlsi 设计公开课 印度 nptel 的数字超大规模集成电路设计公开课，讲解综合与时序，适合配合教材补理论基础。 nptel 公开课 数字vlsi 时序"
+   aria-label="NPTEL Digital VLSI Design，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg></span>
+    <div><h3>NPTEL Digital VLSI Design <span class="resource-zh">NPTEL 数字 VLSI 设计公开课</span></h3><p>印度 NPTEL 的数字超大规模集成电路设计公开课，讲解综合与时序，适合配合教材补理论基础。</p></div>
+    <span class="resource-category">课程教程</span>
+    <span class="resource-source">NPTEL</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://www.zerotoasiccourse.com/" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="course" data-search="zero to asic course 从零到流片课程 从写 rtl 到提交流片的完整公开课，全程使用开源工具链，适合作本科生第一次接触真实流片。 zero to asic 流片 开源工具链 公开课"
+   aria-label="Zero to ASIC Course，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg></span>
+    <div><h3>Zero to ASIC Course <span class="resource-zh">从零到流片课程</span></h3><p>从写 RTL 到提交流片的完整公开课，全程使用开源工具链，适合作本科生第一次接触真实流片。</p></div>
+    <span class="resource-category">课程教程</span>
+    <span class="resource-source">Zero to ASIC</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="course" data-search="mit 6.004 computation structures mit 计算结构基础课 mit 计算结构基础课，从逻辑门讲到处理器与流水线，开放讲义与作业，适合打体系结构的底子。 mit opencourseware 体系结构 公开课 数字逻辑"
+   aria-label="MIT 6.004 Computation Structures，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg></span>
+    <div><h3>MIT 6.004 Computation Structures <span class="resource-zh">MIT 计算结构基础课</span></h3><p>MIT 计算结构基础课，从逻辑门讲到处理器与流水线，开放讲义与作业，适合打体系结构的底子。</p></div>
+    <span class="resource-category">课程教程</span>
+    <span class="resource-source">MIT OpenCourseWare</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/OSCPU/ysyx" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="course" data-search="oscpu/ysyx 一生一芯开源芯片人才培养计划 中科院计算所发起的开源芯片人才培养计划，提供从入门到流片的完整中文学习路径与实验环境。 oscpu 中文教程 开源芯片 培养计划"
+   aria-label="OSCPU/ysyx，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg></span>
+    <div><h3>OSCPU/ysyx <span class="resource-zh">一生一芯开源芯片人才培养计划</span></h3><p>中科院计算所发起的开源芯片人才培养计划，提供从入门到流片的完整中文学习路径与实验环境。</p></div>
+    <span class="resource-category">课程教程</span>
+    <span class="resource-source">OSCPU · ★139</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/WangXuan95/BSV_Tutorial_cn" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="course" data-search="wangxuan95/bsv_tutorial_cn bsv 中文教程 bluespec systemverilog 中文教程，讲解调度与数据流等高级特性，适合想摆脱手写状态机的学生。 wangxuan95 中文教程 bsv 高层次综合"
+   aria-label="WangXuan95/BSV_Tutorial_cn，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg></span>
+    <div><h3>WangXuan95/BSV_Tutorial_cn <span class="resource-zh">BSV 中文教程</span></h3><p>Bluespec SystemVerilog 中文教程，讲解调度与数据流等高级特性，适合想摆脱手写状态机的学生。</p></div>
+    <span class="resource-category">课程教程</span>
+    <span class="resource-source">WangXuan95 · ★612</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://www.chipverify.com/" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="course" data-search="chipverify chipverify 数字设计教程站 网站形式的 verilog 与 systemverilog 教程，配大量示例与面试题，适合边查语法边动手练习。 chipverify verilog 教程 面试题"
+   aria-label="ChipVerify，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg></span>
+    <div><h3>ChipVerify <span class="resource-zh">ChipVerify 数字设计教程站</span></h3><p>网站形式的 Verilog 与 SystemVerilog 教程，配大量示例与面试题，适合边查语法边动手练习。</p></div>
+    <span class="resource-category">课程教程</span>
+    <span class="resource-source">ChipVerify</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/The-OpenROAD-Project/DAC-2020-Tutorial" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="course" data-search="the-openroad-project/dac-2020-tutorial openroad 官方教程材料 openroad 官方教程材料，带完整脚本与示例数据，适合按步骤亲手跑通一次开源后端全流程。 the-openroad-project openroad 教程 后端流程"
+   aria-label="The-OpenROAD-Project/DAC-2020-Tutorial，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg></span>
+    <div><h3>The-OpenROAD-Project/DAC-2020-Tutorial <span class="resource-zh">OpenROAD 官方教程材料</span></h3><p>OpenROAD 官方教程材料，带完整脚本与示例数据，适合按步骤亲手跑通一次开源后端全流程。</p></div>
+    <span class="resource-category">课程教程</span>
+    <span class="resource-source">The-OpenROAD-Project · ★47</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/ASU-VDA-Lab/ASP-DAC24-Tutorial" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="course" data-search="asu-vda-lab/asp-dac24-tutorial openroad 与 circuitops 教程 asp-dac 2024 教程配套仓库，讲解 openroad 与 circuitops 数据流，适合做 ai4eda 的数据准备。 asu-vda-lab 教程 circuitops 数据流"
+   aria-label="ASU-VDA-Lab/ASP-DAC24-Tutorial，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg></span>
+    <div><h3>ASU-VDA-Lab/ASP-DAC24-Tutorial <span class="resource-zh">OpenROAD 与 CircuitOps 教程</span></h3><p>ASP-DAC 2024 教程配套仓库，讲解 OpenROAD 与 CircuitOps 数据流，适合做 AI4EDA 的数据准备。</p></div>
+    <span class="resource-category">课程教程</span>
+    <span class="resource-source">ASU-VDA-Lab · ★55</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/chipsalliance/verible" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="workflow" data-search="chipsalliance/verible verible rtl 代码规范工具 systemverilog 解析、格式化与风格检查工具集，可接入持续集成统一代码规范，适合团队协作前先立规矩。 chipsalliance 代码规范 ci systemverilog"
+   aria-label="chipsalliance/verible，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-git"/></svg></span>
+    <div><h3>chipsalliance/verible <span class="resource-zh">Verible RTL 代码规范工具</span></h3><p>SystemVerilog 解析、格式化与风格检查工具集，可接入持续集成统一代码规范，适合团队协作前先立规矩。</p></div>
+    <span class="resource-category">工作流</span>
+    <span class="resource-source">chipsalliance · ★1,959</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/The-OpenROAD-Project/OpenLane" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="workflow" data-search="the-openroad-project/openlane openlane 一键后端流程 自动化 rtl 到 gdsii 流程，用配置文件驱动整套工具，适合把重复的后端步骤固化成一键脚本。 the-openroad-project 流程自动化 rtl2gds 配置驱动"
+   aria-label="The-OpenROAD-Project/OpenLane，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-git"/></svg></span>
+    <div><h3>The-OpenROAD-Project/OpenLane <span class="resource-zh">OpenLane 一键后端流程</span></h3><p>自动化 RTL 到 GDSII 流程，用配置文件驱动整套工具，适合把重复的后端步骤固化成一键脚本。</p></div>
+    <span class="resource-category">工作流</span>
+    <span class="resource-source">The-OpenROAD-Project · ★1,974</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/fossi-foundation/open-pdks" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="workflow" data-search="fossi-foundation/open-pdks 开源 pdk 安装脚本 开源 pdk 安装脚本，自动拉取 skywater 与 gf 工艺数据，省去手工配置仿真与版图环境的麻烦。 fossi foundation pdk 环境搭建 脚本"
+   aria-label="fossi-foundation/open-pdks，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-git"/></svg></span>
+    <div><h3>fossi-foundation/open-pdks <span class="resource-zh">开源 PDK 安装脚本</span></h3><p>开源 PDK 安装脚本，自动拉取 SkyWater 与 GF 工艺数据，省去手工配置仿真与版图环境的麻烦。</p></div>
+    <span class="resource-category">工作流</span>
+    <span class="resource-source">FOSSi Foundation · ★457</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/YosysHQ/sby" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="workflow" data-search="yosyshq/sby symbiyosys 形式验证前端 yosys 的形式验证前端，用属性描述期望行为并自动证明，适合给关键模块加一层数学上的保障。 yosyshq 形式验证 yosys 属性检查"
+   aria-label="YosysHQ/sby，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-git"/></svg></span>
+    <div><h3>YosysHQ/sby <span class="resource-zh">SymbiYosys 形式验证前端</span></h3><p>Yosys 的形式验证前端，用属性描述期望行为并自动证明，适合给关键模块加一层数学上的保障。</p></div>
+    <span class="resource-category">工作流</span>
+    <span class="resource-source">YosysHQ · ★557</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://fossi-foundation.org/" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="community" data-search="fossi foundation fossi 开源芯片基金会 推动开源芯片设计的国际基金会，组织会议与项目协调，适合寻找合作项目与社区活动机会。 fossi foundation 社区 开源硬件 基金会"
+   aria-label="FOSSi Foundation，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-users"/></svg></span>
+    <div><h3>FOSSi Foundation <span class="resource-zh">FOSSi 开源芯片基金会</span></h3><p>推动开源芯片设计的国际基金会，组织会议与项目协调，适合寻找合作项目与社区活动机会。</p></div>
+    <span class="resource-category">社区竞赛</span>
+    <span class="resource-source">FOSSi Foundation</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://tinytapeout.com/" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="community" data-search="tiny tapeout tiny tapeout 学生流片平台 面向学生的低成本流片平台，几百元就能把设计做进真实硅片，适合第一次体验流片全流程。 tiny tapeout 流片 学生项目 社区"
+   aria-label="Tiny Tapeout，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-users"/></svg></span>
+    <div><h3>Tiny Tapeout <span class="resource-zh">Tiny Tapeout 学生流片平台</span></h3><p>面向学生的低成本流片平台，几百元就能把设计做进真实硅片，适合第一次体验流片全流程。</p></div>
+    <span class="resource-category">社区竞赛</span>
+    <span class="resource-source">Tiny Tapeout</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://oscpu.github.io/NutShell-doc/" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="community" data-search="oscpu nutshell documentation 国科大开源处理器文档 国科大开源 risc-v 处理器项目的文档站，中文讲解设计流程与验证方法，适合本科生按图索骥入门。 oscpu 中文文档 risc-v 开源处理器"
+   aria-label="OSCPU NutShell Documentation，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-users"/></svg></span>
+    <div><h3>OSCPU NutShell Documentation <span class="resource-zh">国科大开源处理器文档</span></h3><p>国科大开源 RISC-V 处理器项目的文档站，中文讲解设计流程与验证方法，适合本科生按图索骥入门。</p></div>
+    <span class="resource-category">社区竞赛</span>
+    <span class="resource-source">OSCPU</span>
+    <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+  </a><a class="resource-row" href="https://github.com/MrYanYe/NUECSDC_FPGA_National_Competition_Verilog_Skills_Test_V1" target="_blank" rel="noopener noreferrer"
+   data-filter-item data-filter-cat="community" data-search="mryanye/nuecsdc_fpga_national_competition_verilog_skills_test_v1 嵌赛 fpga 赛道历年决赛真题 全国大学生嵌入式芯片与系统设计竞赛 fpga 赛道的历年决赛考题，适合赛前刷题并熟悉出题风格。 mryanye 竞赛 fpga 真题"
+   aria-label="MrYanYe/NUECSDC_FPGA_National_Competition_Verilog_Skills_Test_V1，在新窗口打开">
+    <span class="resource-icon"><svg class="icon" aria-hidden="true"><use href="#icon-users"/></svg></span>
+    <div><h3>MrYanYe/NUECSDC_FPGA_National_Competition_Verilog_Skills_Test_V1 <span class="resource-zh">嵌赛 FPGA 赛道历年决赛真题</span></h3><p>全国大学生嵌入式芯片与系统设计竞赛 FPGA 赛道的历年决赛考题，适合赛前刷题并熟悉出题风格。</p></div>
+    <span class="resource-category">社区竞赛</span>
+    <span class="resource-source">MrYanYe · ★46</span>
     <span class="resource-out"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
   </a></div>
     <div class="empty-state" data-reveal><svg class="icon" aria-hidden="true"><use href="#icon-book"/></svg>

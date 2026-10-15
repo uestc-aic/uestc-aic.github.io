@@ -127,6 +127,15 @@ def md_inline(text: str) -> str:
     text = re.sub(r"(?<!\*)\*([^*]+?)\*(?!\*)", r"<em>\1</em>", text)
     text = re.sub(r"`([^`]+?)`", r"<code>\1</code>", text)
 
+    # 图片必须在链接之前处理，否则 ![alt](url) 会被链接规则吃成 !<a>
+    def _img(m):
+        url = safe_url(m.group(2))
+        if not url:
+            return m.group(1)
+        alt = re.sub(r"<[^>]*>", "", m.group(1))
+        return f'<img src="{url}" alt="{alt}" loading="lazy" decoding="async">'
+    text = re.sub(r"!\[([^\]]*?)\]\((https?://[^\s)]+)\)", _img, text)
+
     def _link(m):
         url = safe_url(m.group(2))
         return (f'<a href="{url}" target="_blank" rel="noopener noreferrer">{m.group(1)}</a>'
@@ -161,6 +170,25 @@ def render_md(text: str) -> str:
 
         if re.fullmatch(r"-{3,}", s):
             out.append("<hr>")
+            i += 1
+            continue
+
+        # 独占一行的图片 → <figure>（可带 *说明文字* 作为图注）
+        img = re.fullmatch(r"!\[([^\]]*?)\]\((https?://[^\s)]+)\)", s)
+        if img:
+            url = safe_url(img.group(2))
+            alt = img.group(1)
+            caption = ""
+            if i + 1 < len(lines) and lines[i + 1].strip().startswith("*") \
+                    and lines[i + 1].strip().endswith("*") and not lines[i + 1].strip().startswith("**"):
+                caption = lines[i + 1].strip().strip("*")
+                i += 1
+            if url:
+                fig = (f'<figure class="photo"><img src="{url}" alt="{esc(alt)}" '
+                       f'loading="lazy" decoding="async">')
+                if caption:
+                    fig += f"<figcaption>{esc(caption)}</figcaption>"
+                out.append(fig + "</figure>")
             i += 1
             continue
 
@@ -874,6 +902,22 @@ def build_event_detail(site, ev, depth: int = 2) -> str:
                      f'报名参加{icon("arrow")}</a>') if register else \
                     f'<a class="button" href="{p}join/index.html">关注后续通知{icon("arrow")}</a>'
 
+    photos = ev.get("photos") or []
+    gallery = ""
+    if photos:
+        figs = []
+        for ph in photos:
+            img = f'{p}assets/img/{esc(str(ph.get("src", "")).lstrip("/"))}'
+            alt = ph.get("alt") or ph.get("caption") or ""
+            cap = ph.get("caption") or ""
+            cap_html = f"<figcaption>{esc(cap)}</figcaption>" if cap else ""
+            figs.append(f'<figure class="photo"><img src="{img}" alt="{esc(alt)}" '
+                        f'loading="lazy" decoding="async">{cap_html}</figure>')
+        credit = ev.get("photoCredit") or ""
+        credit_html = f'<p class="photo-credit">{icon("info")}<span>{esc(credit)}</span></p>' if credit else ""
+        gallery = ('<section class="photo-gallery-section"><h2>活动现场</h2>'
+                   f'<div class="photo-gallery">{"".join(figs)}</div>{credit_html}</section>')
+
     src = ev.get("source") or {}
     if src.get("url"):
         source_html = (f'<p class="event-source-line">信息来源：<a href="{safe_url(src["url"])}" '
@@ -903,7 +947,9 @@ def build_event_detail(site, ev, depth: int = 2) -> str:
       <div class="callout">{icon("info")}<p><strong>内容会持续更新。</strong>时间、地点与嘉宾确认后同步到本页。</p></div>
       <a class="text-button detail-back" href="{p}events/index.html">返回活动日历{icon("arrow-r")}</a>
     </aside>
-  </div></div></section>"""
+  </div>
+  {gallery}
+  </div></section>"""
     return page(site, depth, "活动", ev.get("title", "活动"), ev.get("summary", ""), body)
 
 

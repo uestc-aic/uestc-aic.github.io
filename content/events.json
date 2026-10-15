@@ -49,7 +49,7 @@
           "title": "教授"
         }
       ],
-      "summary": "首期芯沙龙在成电国际创新中心举办，同步成立 AI 芯动力工作室。孔谋夫教授分享从 LLM 到 Agent 与 Skill 的实践路径，40 余名学生参与交流。",
+      "summary": "首期芯沙龙「芯」声共振·午间共话在成电国际创新中心举办，同步成立 AI 芯动力工作室。孔谋夫教授分享从 LLM 到 Agent 与 Skill 的实践路径，40 余名学生参与交流。",
       "topics": [
         "人工智能：从 LLM 到 Agent 与 Skill 的实践",
         "AI Agent 在芯片设计参数优化中的实战",
@@ -70,7 +70,36 @@
           "label": "AI 芯动力工作室后续活动",
           "url": "https://github.com/uestc-aic"
         }
-      ]
+      ],
+      "subtitle": "「芯」声共振 · 午间共话 第一期",
+      "photos": [
+        {
+          "src": "salon-01/image1.jpg",
+          "caption": "活动开场。屏幕上是本期主题：AI for IC ·「芯」声共振 · 午间共话",
+          "alt": "首期芯沙龙活动现场，屏幕显示 AI for IC 芯声共振午间共话第一期"
+        },
+        {
+          "src": "salon-01/image2.jpg",
+          "caption": "孔谋夫教授分享《人工智能：从 LLM 到 Agent 与 Skill 的实践》",
+          "alt": "孔谋夫教授在讲台前讲解从 LLM 到 Agent 与 Skill 的实践"
+        },
+        {
+          "src": "salon-01/image3.jpg",
+          "caption": "硕士研究生向钧升分享 AI Agent 在芯片设计参数优化中的实战心得",
+          "alt": "硕士研究生向钧升分享 AI Agent 使用体验"
+        },
+        {
+          "src": "salon-01/image4.jpg",
+          "caption": "自由讨论环节，师生围绕「AI 赋能 IC 的技术路径」交流",
+          "alt": "自由讨论环节，与会嘉宾与同学围坐交流"
+        },
+        {
+          "src": "salon-01/image5.jpg",
+          "caption": "活动最后，与会师生合影留念",
+          "alt": "与会师生在活动结束后合影，屏幕显示 AI for IC"
+        }
+      ],
+      "photoCredit": "图片来源：集成电路学院新闻稿（本站已对原图压缩处理）"
     },
     {
       "id": "salon-02",
