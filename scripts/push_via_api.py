@@ -58,17 +58,25 @@ def gh(args, body=None, timeout=180):
 
 
 def collect_local():
-    """工作区里应当提交的文件。"""
+    """工作区里应当提交的文件。
+
+    用 git 自己来判定，这样 .gitignore 语义完全一致
+    （否则会把 __pycache__、content/collected/_state.json 这类运行时文件也提交上去）。
+    """
+    def listed(args):
+        proc = subprocess.run(["git"] + args, capture_output=True, text=True, cwd=ROOT)
+        if proc.returncode != 0:
+            return []
+        return [p for p in proc.stdout.split("\0") if p]
+
+    tracked = listed(["ls-files", "-z"])
+    untracked = listed(["ls-files", "--others", "--exclude-standard", "-z"])
+
     files = {}
-    for path in ROOT.rglob("*"):
-        if path.is_dir():
-            continue
-        rel = str(path.relative_to(ROOT))
-        if set(path.relative_to(ROOT).parts) & SKIP_DIRS:
-            continue
-        if path.name in SKIP_FILES:
-            continue
-        files[rel] = path
+    for rel in set(tracked) | set(untracked):
+        path = ROOT / rel
+        if path.is_file():
+            files[rel] = path
     return files
 
 
