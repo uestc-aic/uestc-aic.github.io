@@ -86,6 +86,8 @@ def main():
     ap.add_argument("--repo", default="uestc-aic/uestc-aic.github.io")
     ap.add_argument("--branch", default="main")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--no-delete", action="store_true",
+                    help="只新增/修改，不删除远端任何文件（改动风险高时的安全模式）")
     args = ap.parse_args()
 
     repo = args.repo
@@ -111,6 +113,15 @@ def main():
     else:
         deletions = sorted(remote_paths - set(local) - {p for p in remote_paths
                                                         if p.startswith(PROTECTED_PREFIX)})
+    if args.no_delete:
+        if deletions:
+            print(f"\n--no-delete：跳过以下 {len(deletions)} 个文件的删除"
+                  f"（远端会保留旧文件，确认无误后再跑一次不带该参数的推送清理）")
+            for d in deletions[:10]:
+                print(f"   = {d}")
+            if len(deletions) > 10:
+                print(f"   … 另有 {len(deletions) - 10} 个")
+        deletions = []
 
     print(f"\n将提交 {len(local)} 个文件")
     if deletions:

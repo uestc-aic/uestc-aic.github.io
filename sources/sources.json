@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-15",
-  "_readme": "「AI 芯动力」官网采集源配置。字段含义见 docs/采集系统说明.md。每条源的 notes 都是 2026-10-15 在 WSL 下用 curl + Python 正则实测的真实记录；enabled:false 的源不要随手打开，先看 notes 里的原因。",
+  "_readme": "「AI 芯动力」官网采集源配置。字段含义见 manuals/采集系统说明.md。每条源的 notes 都是 2026-10-15 在 WSL 下用 curl + Python 正则实测的真实记录；enabled:false 的源不要随手打开，先看 notes 里的原因。",
   "defaults": {
     "timeout": 20,
     "retries": 2,

@@ -1,8 +1,5 @@
-# 说明：远端 pages.yml 直接从仓库读取 dist/ 并发布，
-# 因此在启用「CI 构建」工作流之前，dist/ 必须提交。
-# 升级步骤见 docs/运维手册.md §12（启用后把下面的 dist/ 取消注释即可）。
-
-# dist/
+# 说明：docs/ 是 GitHub Pages 的发布目录（仓库设置里 Source = 分支 main、目录 /docs），
+# 因此构建产物要提交。改完 content/ 跑一次 python3 scripts/build.py 再推送即可。
 
 # 采集运行时状态（本地跑采集时的临时产物）
 content/collected/_state.json

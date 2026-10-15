@@ -15,7 +15,7 @@ AI 芯动力 · UESTC AIC 官网 —— 静态站点生成器
 三条纪律
 --------
 1. **内容与代码分离**：会变的东西都在 content/*.json，运维不碰 Python。
-2. **生成物可丢弃**：dist/ 是产物，随时可由本脚本重建，仓库不提交。
+2. **生成物可丢弃**：docs/ 是产物（也是 GitHub Pages 的发布目录），随时可由本脚本重建。
 3. **图标用 SVG sprite**：全站 `<symbol>` 定义一次，`<use>` 引用，不用 emoji。
 
 用法
@@ -36,7 +36,7 @@ from datetime import datetime, timezone, timedelta
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
 ASSETS = ROOT / "assets"
-DIST = ROOT / "dist"
+DIST = ROOT / "docs"   # 发布目录：GitHub Pages 支持从分支的 /docs 直接发布，无需工作流
 
 CN_TZ = timezone(timedelta(hours=8))
 NOW = datetime.now(CN_TZ)
@@ -470,7 +470,7 @@ def filter_events(items: list, category: str) -> list:
 
 
 def read_page_md(name: str) -> str:
-    """读 content/pages/<name>.md，也支持仓库内相对路径（如 ../docs/运维手册.md）。"""
+    """读 content/pages/<name>.md，也支持仓库内相对路径（如 ../manuals/运维手册.md）。"""
     if not name:
         return ""
     for candidate in (CONTENT / "pages" / name, ROOT / name):
@@ -1155,11 +1155,14 @@ def build_contribute(site) -> str:
 
 
 def build_docs(site) -> str:
-    manual = read_page_md("../docs/运维手册.md") or read_page_md("运维手册.md")
+    manual = read_page_md("manuals/运维手册.md")
+    if not manual:
+        # 不要静默失败：路径写错时页面会显示占位，必须让构建者看见
+        warn("读不到 manuals/运维手册.md，站内「运维手册」页会显示占位（检查文件是否被移动/改名）")
     body = page_hero("Operations", "运维手册",
                      "怎么更新网站内容、怎么管理采集源、出问题怎么修。") + f"""
 <section class="section"><div class="container container-narrow">
-    <div class="callout">{icon("file")}<p><strong>本页内容来自仓库 <code>docs/运维手册.md</code>。</strong>
+    <div class="callout">{icon("file")}<p><strong>本页内容来自仓库 <code>manuals/运维手册.md</code>。</strong>
       改手册 = 改那个文件，提交后自动同步到这里。</p></div>
     <div class="prose manual">{render_md(manual) or '<p class="pending-note">手册尚未生成。</p>'}</div>
   </div></section>"""

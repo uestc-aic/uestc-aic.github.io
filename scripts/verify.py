@@ -19,7 +19,7 @@ from pathlib import Path
 from html.parser import HTMLParser
 
 ROOT = Path(__file__).resolve().parent.parent
-DIST = ROOT / "dist"
+DIST = ROOT / "docs"
 
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input",
              "link", "meta", "param", "source", "track", "wbr"}
@@ -80,7 +80,7 @@ class PageCheck(HTMLParser):
 
 def main() -> int:
     if not DIST.is_dir():
-        print("dist/ 不存在，请先运行 python3 scripts/build.py")
+        print("docs/ 不存在，请先运行 python3 scripts/build.py")
         return 1
 
     pages = sorted(DIST.rglob("*.html"))

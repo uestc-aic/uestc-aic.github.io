@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f8fc">
+<meta name="description" content="AI 芯动力官网的运维与内容更新手册。">
+<title>运维手册 · AI 芯动力 · UESTC AIC</title>
+<meta property="og:title" content="运维手册 · AI 芯动力 · UESTC AIC">
+<meta property="og:description" content="AI 芯动力官网的运维与内容更新手册。">
+<meta property="og:type" content="website">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script src="../assets/js/app.js" defer></script>
+</head>
+<body>
+<svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol><symbol id="icon-arrow-r" viewBox="0 0 24 24"><path d="M4 12h15m-6-7 7 7-7 7"/></symbol><symbol id="icon-down" viewBox="0 0 24 24"><path d="M12 4v16m-7-7 7 7 7-7"/></symbol><symbol id="icon-chip" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v3m6-3v3M9 19v3m6-3v3M2 9h3m-3 6h3m14-6h3m-3 6h3"/></symbol><symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="icon-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol><symbol id="icon-book" viewBox="0 0 24 24"><path d="M12 5v15M3 4c3-1 6-1 9 1 3-2 6-2 9-1v15c-3-1-6-1-9 1-3-2-6-2-9-1Z"/></symbol><symbol id="icon-terminal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3m6 0h4"/></symbol><symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol><symbol id="icon-agent" viewBox="0 0 24 24"><path d="m12 2 2.5 6.5L21 11l-6.5 2.5L12 20l-2.5-6.5L3 11l6.5-2.5Z"/><path d="m20 16 1 2 2 1-2 1-1 2-1-2-2-1 2-1Z"/></symbol><symbol id="icon-git" viewBox="0 0 24 24"><circle cx="7" cy="5" r="2"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="5" r="2"/><path d="M7 7v10m10-10v2a5 5 0 0 1-5 5H7"/></symbol><symbol id="icon-route" viewBox="0 0 24 24"><rect x="2" y="3" width="6" height="6" rx="1"/><rect x="16" y="15" width="6" height="6" rx="1"/><path d="M8 6h8a3 3 0 0 1 0 6H8a3 3 0 0 0 0 6h8"/></symbol><symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m2-16a3 3 0 0 1 0 6m1 4a5 5 0 0 1 3 5"/></symbol><symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol><symbol id="icon-github" viewBox="0 0 24 24"><path d="M9 19c-4 1.5-4-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 4.5-1.4 4.5-4.8 0-1-.4-2-1-2.6.1-.3.5-1.3-.1-2.6 0 0-1-.3-3.3 1.2a11 11 0 0 0-5.8 0C6.5 5.2 5.5 5.5 5.5 5.5c-.6 1.3-.2 2.3-.1 2.6-.6.6-1 1.5-1 2.6 0 3.4 1.7 4.5 4.5 4.8-.5.5-.5 1.1-.5 2V21"/></symbol><symbol id="icon-share" viewBox="0 0 24 24"><path d="M12 16V4M8 8l4-4 4 4"/><path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></symbol><symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></symbol><symbol id="icon-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-1.6 4L16 12H5"/></symbol><symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 13 4 4 10-11"/></symbol><symbol id="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol><symbol id="icon-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8.5v.5"/></symbol><symbol id="icon-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></symbol><symbol id="icon-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/></symbol><symbol id="icon-plug" viewBox="0 0 24 24"><path d="M9 2v6M15 2v6M6 8h12v3a6 6 0 0 1-12 0Z"/><path d="M12 17v5"/></symbol></defs></svg>
+<a class="skip-link" href="#main">跳转到主要内容</a>
+<header class="header"><div class="container nav-wrap">
+    <a class="brand" href="../index.html" aria-label="AI 芯动力 · UESTC AIC首页"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span><span class="brand-name">AI 芯动力<span>UESTC AIC</span></span></a>
+    <nav class="nav" id="navigation" aria-label="主导航"><a href="../index.html">首页</a><a href="../events/index.html">活动</a><a href="../college/index.html">学院资讯</a><a href="../competitions/index.html">竞赛</a><a href="../resources/index.html">资源库</a><a href="../partners/index.html">合作伙伴</a><a href="../about/index.html">关于</a></nav>
+    <div class="nav-actions"><a class="github-link" href="https://github.com/uestc-aic" target="_blank" rel="noopener noreferrer" aria-label="GitHub 社区，在新窗口打开"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg></a><a class="button button-small" href="../join/index.html">加入我们<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a><button class="menu-button" aria-label="打开导航" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button></div>
+  </div></header>
+<main id="main">
+<section class="page-hero">
+  <div class="litho-grid" aria-hidden="true"></div>
+  <div class="container page-hero-inner">
+    <div class="page-hero-copy"><p class="section-label">Operations</p><h1>运维手册</h1><p class="hero-description">怎么更新网站内容、怎么管理采集源、出问题怎么修。</p></div>
+    
+  </div>
+</section>
+<section class="section"><div class="container container-narrow">
+    <div class="callout"><svg class="icon" aria-hidden="true"><use href="#icon-file"/></svg><p><strong>本页内容来自仓库 <code>manuals/运维手册.md</code>。</strong>
+      改手册 = 改那个文件，提交后自动同步到这里。</p></div>
+    <div class="prose manual"><p># AI 芯动力 官网 · 运维手册</p>
+<blockquote>面向对象：社团内容维护者（不需要会写代码）。 原则：<strong>你只改 <code>content/</code> 里的 JSON 和 Markdown，其余交给 GitHub Actions。</strong></blockquote>
+<hr>
+<h2>0. 一分钟速查</h2>
+<div class="table-wrap"><table><thead><tr><th>我想做的事</th><th>改哪个文件</th><th>大概多久生效</th></tr></thead><tbody><tr><td>发布/更新一个活动</td><td><code>content/events.json</code></td><td>提交后 2 分钟</td></tr><tr><td>加一条学院资讯 / 竞赛信息</td><td><code>content/events.json</code></td><td>提交后 2 分钟</td></tr><tr><td>加一份资源库资料</td><td><code>content/resources.json</code></td><td>提交后 2 分钟</td></tr><tr><td>改合作伙伴状态</td><td><code>content/partners.json</code></td><td>提交后 2 分钟</td></tr><tr><td>改联系方式、QQ 群、报名表链接</td><td><code>content/site.json</code></td><td>提交后 2 分钟</td></tr><tr><td>写一篇活动详情长文</td><td><code>content/pages/&lt;活动id&gt;.md</code></td><td>提交后 2 分钟</td></tr><tr><td>改活动预告文案 / 组织架构 / 项目方向</td><td>对应 <code>content/*.json</code></td><td>提交后 2 分钟</td></tr><tr><td>改站点颜色、字号、间距</td><td><code>assets/css/style.css</code> 顶部 <code>:root</code></td><td>提交后 2 分钟</td></tr><tr><td>改页面结构</td><td><code>scripts/build.py</code></td><td>提交后 2 分钟</td></tr></tbody></table></div>
+<p>生效时间取决于 GitHub Actions 排队情况，通常 90 秒到 3 分钟。可以到仓库 <strong>Actions</strong> 标签页看「Deploy website to GitHub Pages」这条工作流的状态。</p>
+<hr>
+<h2>1. 网站是怎么跑起来的</h2>
+<pre><code>你改 content/*.json（内容）          ← 只碰这里
+          │
+          │ 本地跑一次 python3 scripts/build.py
+          │ 再 git commit + push 到 main
+          ▼
+GitHub Actions（.github/workflows/pages.yml）
+  把仓库里 dist/ 目录发布为 Pages 产物
+          │
+          ▼
+https://uestc-aic.github.io/         ← 约 1-3 分钟上线</code></pre>
+<blockquote><strong>当前处于「手动构建」模式</strong>：改完内容需要本地跑一次 <code>python3 scripts/build.py</code> 并一起提交 <code>dist/</code>。 想省掉这一步（让 Actions 自动构建），见 [§12 启用自动构建](#12-启用自动构建推荐)。</blockquote>
+<p>另一条线：<code>collect.yml</code> 每天定时运行 <code>scripts/collect.py</code>， 抓取校级公开信息源，把新条目写进 <code>content/collected/</code>， 如果抓到了新东西就自动提交一次，从而触发上面的构建。</p>
+<p><strong>关键点：<code>dist/</code> 是产物，不要手动改它。</strong> 改 <code>content/</code> 和 <code>assets/</code>，重新构建即可。</p>
+<h3>目录职责</h3>
+<div class="table-wrap"><table><thead><tr><th>目录</th><th>谁维护</th><th>说明</th></tr></thead><tbody><tr><td><code>content/</code></td><td><strong>内容维护者</strong></td><td>所有会变的内容。JSON + Markdown</td></tr><tr><td><code>content/collected/</code></td><td>采集脚本（自动）</td><td>自动抓来的条目，人工不要手改</td></tr><tr><td><code>content/inbox/</code></td><td>投稿者</td><td>未整理的人工投稿，编辑审核后搬到 <code>content/</code></td></tr><tr><td><code>assets/</code></td><td>视觉维护者</td><td>CSS / JS / 图片。改样式只改 <code>style.css</code> 的 <code>:root</code></td></tr><tr><td><code>scripts/</code></td><td>技术维护者</td><td>构建器与采集器</td></tr><tr><td><code>docs/</code></td><td>技术维护者</td><td>本手册与采集系统说明</td></tr><tr><td><code>sources/</code></td><td>技术维护者</td><td>采集源配置</td></tr><tr><td><code>dist/</code></td><td><strong>自动生成</strong></td><td>不要手改</td></tr></tbody></table></div>
+<hr>
+<h2>2. 最常见操作：发布一个活动</h2>
+<h3>2.1 直接改 JSON（推荐，适合一次性发布）</h3>
+<p>打开 <code>content/events.json</code>，在 <code>items</code> 数组<strong>最前面</strong>加一条：</p>
+<pre><code class="lang-json">{
+  &quot;id&quot;: &quot;salon-01&quot;,
+  &quot;category&quot;: &quot;salon&quot;,
+  &quot;status&quot;: &quot;upcoming&quot;,
+  &quot;featured&quot;: true,
+  &quot;title&quot;: &quot;第一期芯沙龙&quot;,
+  &quot;titleEn&quot;: &quot;THE FIRST CONNECTION&quot;,
+  &quot;vol&quot;: &quot;VOL. 01&quot;,
+  &quot;dateText&quot;: &quot;11月20日 周四 19:00&quot;,
+  &quot;time&quot;: &quot;19:00–21:00&quot;,
+  &quot;location&quot;: &quot;科研楼 A 栋 305&quot;,
+  &quot;organizer&quot;: &quot;AI 芯动力（UESTC AIC）&quot;,
+  &quot;speakers&quot;: [
+    { &quot;role&quot;: &quot;主讲&quot;, &quot;name&quot;: &quot;张三&quot;, &quot;title&quot;: &quot;2024级&quot;, &quot;org&quot;: &quot;集成电路科学与工程学院&quot; }
+  ],
+  &quot;summary&quot;: &quot;一句话说明，会显示在卡片上，控制在 40 字以内。&quot;,
+  &quot;topics&quot;: [&quot;议题一&quot;, &quot;议题二&quot;],
+  &quot;tags&quot;: [&quot;AI × IC&quot;],
+  &quot;registerUrl&quot;: &quot;https://你的报名表链接&quot;,
+  &quot;body&quot;: &quot;salon-01.md&quot;,
+  &quot;locked&quot;: true,
+  &quot;source&quot;: null,
+  &quot;links&quot;: [
+    { &quot;label&quot;: &quot;活动推文&quot;, &quot;url&quot;: &quot;https://mp.weixin.qq.com/s/xxxx&quot; }
+  ]
+}</code></pre>
+<h3>2.2 字段含义（照抄即可）</h3>
+<div class="table-wrap"><table><thead><tr><th>字段</th><th>必填</th><th>取值</th><th>说明</th></tr></thead><tbody><tr><td><code>id</code></td><td>✅</td><td>英文小写 + 连字符</td><td><strong>唯一</strong>，也是详情页网址：<code>events/&lt;id&gt;/</code></td></tr><tr><td><code>category</code></td><td>✅</td><td><code>salon</code> / <code>regular</code> / <code>campus</code> / <code>competition</code></td><td>活动分类，决定筛选归属</td></tr><tr><td><code>status</code></td><td>✅</td><td><code>tbd</code> / <code>upcoming</code> / <code>ongoing</code> / <code>past</code></td><td>待定 / 即将开始 / 进行中 / 已结束</td></tr><tr><td><code>featured</code></td><td></td><td><code>true</code> / <code>false</code></td><td>首页优先展示（一般只给一个）</td></tr><tr><td><code>title</code></td><td>✅</td><td>中文标题</td><td>卡片与详情页标题</td></tr><tr><td><code>titleEn</code> / <code>vol</code></td><td></td><td>字符串</td><td>详情页页头的英文小标注</td></tr><tr><td><code>dateText</code></td><td></td><td>字符串</td><td>显示用日期，<strong>没确定就写 <code>待公布</code></strong></td></tr><tr><td><code>time</code> / <code>location</code></td><td></td><td>字符串</td><td>没确定写 <code>待公布</code>，页面会高亮成橙色&quot;待公布&quot;</td></tr><tr><td><code>organizer</code></td><td></td><td>字符串</td><td>默认「AI 芯动力（UESTC AIC）」</td></tr><tr><td><code>speakers</code></td><td></td><td>数组</td><td>每项 <code>{role, name, title, org}</code></td></tr><tr><td><code>summary</code></td><td>✅</td><td>一句话</td><td>卡片描述，≤40 字最好看</td></tr><tr><td><code>topics</code></td><td></td><td>字符串数组</td><td>议题 / 候选主题</td></tr><tr><td><code>tags</code></td><td></td><td>字符串数组</td><td>标签</td></tr><tr><td><code>registerUrl</code></td><td></td><td>https 链接</td><td>报名表；空着会显示「关注后续通知」</td></tr><tr><td><code>body</code></td><td></td><td>文件名</td><td>指向 <code>content/pages/&lt;文件名&gt;</code>，写长文用</td></tr><tr><td><code>locked</code></td><td></td><td><code>true</code> / <code>false</code></td><td><strong><code>true</code> = 人工维护，采集脚本永不覆盖</strong></td></tr><tr><td><code>source</code></td><td></td><td><code>null</code> 或 <code>{name,url}</code></td><td>采集来源，人工录入填 <code>null</code></td></tr><tr><td><code>links</code></td><td></td><td>数组</td><td>附加链接，每项 <code>{label, url}</code></td></tr></tbody></table></div>
+<h3>2.3 发布前自检（很重要）</h3>
+<ul><li><code>id</code> 不能和已有的重复（重复构建会报错）</li><li><code>category</code> 和 <code>status</code> 只能用上表里的值（写错构建会报错）</li><li>所有 URL 必须是 <code>https://</code> 或 <code>http://</code> 开头</li><li>JSON 里<strong>不能有多余的逗号</strong>（最后一项后面不能加 <code>,</code>）</li><li>中文引号 <code>&quot;&quot;</code> 不能当 JSON 的引号用，必须用英文 <code>&quot;</code></li></ul>
+<h3>2.4 本地自检命令</h3>
+<pre><code class="lang-bash">python3 scripts/build.py --check     # 只校验内容，不生成</code></pre>
+<p>有问题的条目会一条条列出来，一次改完。<strong>建议提交前跑一次。</strong></p>
+<hr>
+<h2>3. 写一篇活动详情长文</h2>
+<ol><li>在 <code>content/pages/</code> 新建 <code>&lt;活动id&gt;.md</code>，例如 <code>salon-01.md</code></li><li>用 Markdown 写，支持：<code>##</code> <code>###</code> 标题、段落、<code>-</code> 列表、<code>1.</code> 列表、</li></ol>
+<p><code><strong>加粗</strong></code>、<code>[文字](链接)</code>、<code>&gt;</code> 引用、<code>| 表格 |</code>、<code>---</code> 分隔线</p>
+<ol><li>在 <code>content/events.json</code> 里把该条活动的 <code>body</code> 设为 <code>&quot;salon-01.md&quot;</code></li></ol>
+<blockquote>图片：放到 <code>assets/img/</code> 下，Markdown 里写 <code>![说明](../assets/img/xxx.png)</code>。</blockquote>
+<hr>
+<h2>4. 加一条资源库资料</h2>
+<p>打开 <code>content/resources.json</code>，在 <code>items</code> 里加：</p>
+<pre><code class="lang-json">{
+  &quot;id&quot;: &quot;openroad&quot;,
+  &quot;title&quot;: &quot;OpenROAD&quot;,
+  &quot;titleZh&quot;: &quot;开源数字芯片设计全流程&quot;,
+  &quot;category&quot;: &quot;eda-tool&quot;,
+  &quot;description&quot;: &quot;从 RTL 到 GDSII 的完整开源实现流程，适合想了解工业界真实设计链路的学生。&quot;,
+  &quot;source&quot;: &quot;The-OpenROAD-Project/OpenROAD&quot;,
+  &quot;url&quot;: &quot;https://github.com/The-OpenROAD-Project/OpenROAD&quot;,
+  &quot;stars&quot;: 2400,
+  &quot;language&quot;: &quot;C++&quot;,
+  &quot;license&quot;: &quot;Apache-2.0&quot;,
+  &quot;level&quot;: &quot;进阶&quot;,
+  &quot;tags&quot;: [&quot;开源EDA&quot;, &quot;数字后端&quot;],
+  &quot;verified&quot;: &quot;2026-10-15&quot;,
+  &quot;http_status&quot;: 200
+}</code></pre>
+<p><code>category</code> 只能取：</p>
+<div class="table-wrap"><table><thead><tr><th>值</th><th>页面显示</th></tr></thead><tbody><tr><td><code>ai4eda</code></td><td>AI for EDA</td></tr><tr><td><code>ic-design</code></td><td>IC 设计</td></tr><tr><td><code>eda-tool</code></td><td>EDA 工具</td></tr><tr><td><code>ai-agent</code></td><td>AI / Agent</td></tr><tr><td><code>course</code></td><td>课程教程</td></tr><tr><td><code>paper-list</code></td><td>论文清单</td></tr><tr><td><code>dataset-model</code></td><td>数据集/模型</td></tr><tr><td><code>workflow</code></td><td>工作流</td></tr><tr><td><code>community</code></td><td>社区竞赛</td></tr></tbody></table></div>
+<p><code>level</code> 只能取 <code>入门</code> / <code>进阶</code> / <code>研究</code>。</p>
+<blockquote><strong>投稿要求：<code>url</code> 必须是你亲手点开确认能访问的。</strong> 添加后请把 <code>verified</code> 写成本次确认日期，<code>http_status</code> 写实测状态码（200 为正常）。</blockquote>
+<hr>
+<h2>5. 学院资讯与竞赛信息</h2>
+<h3>5.1 自动采集（覆盖校级公开源）</h3>
+<p>每<strong>天</strong>定时运行一次，抓到的内容进入 <code>content/collected/</code>。 不需要人工干预，只管用。</p>
+<p>已接入的源见 <code>sources/sources.json</code>。采不到的情况有两种：</p>
+<ul><li><strong>源失效</strong>：学校网站改版，选择器对不上了。表现为连续多天抓取数为 0。</li></ul>
+<p>修法见 <code>manuals/采集系统说明.md</code>。</p>
+<ul><li><strong>源本身抓不到</strong>：例如**集成电路科学与工程学院官网 <code>icse.uestc.edu.cn</code></li></ul>
+<p>装了 JS 挑战型 WAF，程序直连一律返回 HTTP 412**，自动化抓取不可行。 这类内容只能靠人工投稿 —— 见下一条。</p>
+<h3>5.2 人工投稿（覆盖学院内部信息）</h3>
+<p>学院内网通知、班级/课题组层面的消息，走人工：</p>
+<ol><li>投稿人按格式提交：</li></ol>
+<pre><code>   资料标题：
+   原始链接：
+   内容简介：
+   适合人群：</code></pre>
+<ol><li>维护者把它整理成 <code>content/events.json</code> 里的一条，<code>category</code> 填 <code>campus</code></li></ol>
+<p>或 <code>competition</code>，<code>locked</code> 填 <code>true</code>，<code>source</code> 填 <code>null</code>， <code>links</code> 里放原文链接。</p>
+<ol><li>提交，1–3 分钟上线。</li></ol>
+<blockquote><code>locked: true</code> 的意义：自动采集<strong>永远不会覆盖</strong>这条。人工修正过的信息 不会被下一次采集改回去。</blockquote>
+<h3>5.3 手动补一条采集不到的通知（快速法）</h3>
+<pre><code class="lang-json">{
+  &quot;id&quot;: &quot;campus-20261120-lecture&quot;,
+  &quot;category&quot;: &quot;campus&quot;,
+  &quot;status&quot;: &quot;upcoming&quot;,
+  &quot;title&quot;: &quot;关于举办 XX 学术讲座的通知&quot;,
+  &quot;dateText&quot;: &quot;2026年11月20日&quot;,
+  &quot;location&quot;: &quot;科研楼 A305&quot;,
+  &quot;summary&quot;: &quot;讲座题目与主讲人简介。&quot;,
+  &quot;locked&quot;: true,
+  &quot;source&quot;: null,
+  &quot;links&quot;: [
+    { &quot;label&quot;: &quot;原文链接&quot;, &quot;url&quot;: &quot;https://icse.uestc.edu.cn/info/1057/xxxx.htm&quot; }
+  ]
+}</code></pre>
+<hr>
+<h2>6. 改站点全局信息</h2>
+<p><code>content/site.json</code>：</p>
+<pre><code class="lang-json">{
+  &quot;qqGroup&quot;: &quot;https://qm.qq.com/q/xxxx&quot;,          // 填了加入页自动显示可复制入口
+  &quot;joinForm&quot;: &quot;https://你的招新报名表&quot;,            // 填了「加入我们」出现按钮
+  &quot;contributeForm&quot;: &quot;https://你的投稿表单&quot;,        // 填了投稿页出现按钮
+  &quot;salonRegisterForm&quot;: &quot;https://沙龙报名表&quot;,       // 沙龙详情页的报名按钮
+  &quot;email&quot;: &quot;contact@example.com&quot;
+}</code></pre>
+<p><strong>留空是安全的</strong>：页面会显示明确的「待公布」占位，不会出现死按钮。 填上链接后按钮自动出现，不需要改任何 HTML。</p>
+<p><code>nav</code> 数组控制顶部导航，增删项即可（<code>href</code> 是相对仓库根目录的路径）。</p>
+<hr>
+<h2>7. 改样式</h2>
+<p>只改 <code>assets/css/style.css</code> 顶部的 <code>:root</code>：</p>
+<pre><code class="lang-css">:root {
+  --bg: #fafbf6;        /* 页面背景（暖米白） */
+  --text: #203d32;      /* 主文字（深松绿） */
+  --accent: #355c43;    /* 主强调色（按钮、链接、活跃态） */
+  --accent-soft: #d6e6b7;  /* 高光（标签、选中背景） */
+  --radius: 12px;       /* 卡片圆角 */
+}</code></pre>
+<p><strong>不要</strong>在组件里写死颜色值。设计规范全文见仓库根目录 <code>DESIGN.md</code>， 里面写清了「什么能做什么不能做」（禁止霓虹渐变、禁止卡片投影、禁止 emoji 当图标等）。</p>
+<hr>
+<h2>8. 出问题怎么查</h2>
+<div class="table-wrap"><table><thead><tr><th>症状</th><th>原因</th><th>处理</th></tr></thead><tbody><tr><td>提交后页面没变</td><td>Actions 还在跑 / 失败了</td><td>仓库 Actions 标签页看红色 ✗，点进去看日志</td></tr><tr><td>页面显示 404</td><td>该 <code>id</code> 没有生成详情页</td><td>检查 <code>content/events.json</code> 里有没有 <code>id</code> 字段</td></tr><tr><td>Actions 报「不是合法 JSON」</td><td>JSON 语法错</td><td>用 <code>python3 scripts/build.py --check</code> 本地查，通常是多余逗号或中文引号</td></tr><tr><td>Actions 报 category 非法</td><td>分类值写错</td><td>见 §2.2 表格</td></tr><tr><td>链接点开是空白</td><td><code>url</code> 少了 <code>https://</code></td><td>补全</td></tr><tr><td>采集连续几天 0 条</td><td>源改版了</td><td>见 <code>manuals/采集系统说明.md</code> 的「源失效」一节</td></tr><tr><td>页面样式错乱</td><td>CSS 改坏了</td><td><code>git revert</code> 上一个提交，或对照 <code>DESIGN.md</code> 检查变量名</td></tr></tbody></table></div>
+<p><strong>紧急回滚</strong>：在仓库里找到最后一个正常提交，Actions → 该 commit → Re-run， 或者本地 <code>git revert &lt;坏提交的hash&gt;</code> 再 push。</p>
+<hr>
+<h2>9. 权限管理</h2>
+<div class="table-wrap"><table><thead><tr><th>角色</th><th>权限</th><th>能做什么</th></tr></thead><tbody><tr><td>Owner</td><td>Admin</td><td>全部，包括改仓库设置、加协作者</td></tr><tr><td>内容维护者</td><td>Write</td><td>推送 <code>content/</code>、<code>assets/</code>、<code>docs/</code></td></tr><tr><td>投稿者</td><td>无仓库权限</td><td>通过投稿表单 / GitHub Issue 提交，由维护者录入</td></tr></tbody></table></div>
+<p>加人：仓库 <strong>Settings → Collaborators and teams → Add people</strong>，权限选 <strong>Write</strong>。</p>
+<blockquote>Write 权限可以推送 <code>.github/workflows/</code> 以外的任何文件。要改工作流文件， 推送者的 token 需要额外的 <code>workflow</code> 权限（<code>gh auth refresh -h github.com -s workflow</code>）。</blockquote>
+<hr>
+<h2>10. 本地预览（可选，改版前建议做）</h2>
+<pre><code class="lang-bash">git clone https://github.com/uestc-aic/uestc-aic.github.io.git
+cd uestc-aic.github.io
+python3 scripts/build.py            # 生成 dist/
+python3 -m http.server 8000 --directory dist
+# 浏览器打开 http://localhost:8000</code></pre>
+<p>只要装了 Python 3，不需要 Node、不需要 npm、不需要任何第三方包。</p>
+<hr>
+<h2>11. 每个月的例行检查</h2>
+<ul><li>[ ] 活动日历里过期的 <code>status</code> 改成 <code>past</code></li><li>[ ] 「待公布」的位置补齐（时间、地点、报名链接）</li><li>[ ] 资源库抽查 5 条链接是否还能打开</li><li>[ ] 看 Actions 里 <code>collect.yml</code> 最近是否有失败</li><li>[ ] <code>content/inbox/</code> 里的投稿是否都处理了</li></ul>
+<hr>
+<p><em>本手册随仓库一起维护。改这个文件 = 改网站「运维手册」页面的内容。</em></p>
+<hr>
+<h2>12. 启用自动构建（推荐）</h2>
+<p>当前 <code>dist/</code> 需要本地构建后提交。启用下面的升级后，**你只需要改 <code>content/</code> 并提交， Actions 会自动构建并发布**，<code>dist/</code> 不再需要进仓库。</p>
+<h3>为什么现在没开</h3>
+<p>推送 <code>.github/workflows/</code> 下的文件需要一个额外的 <code>workflow</code> 权限， 而当前维护账号的 GitHub 令牌没有这个权限（GitHub 会直接拒绝，报 404 / 403）。 这不是仓库设置问题，是令牌权限问题。</p>
+<h3>升级步骤（维护者操作，约 1 分钟）</h3>
+<ol><li>在本机终端执行，按提示在浏览器里点一次授权：</li></ol>
+<pre><code class="lang-bash">   gh auth refresh -h github.com -s workflow</code></pre>
+<ol><li>让管理员把仓库里<strong>已备好的新版工作流</strong>推上去（内容已随仓库提交，无需你手写）：</li></ol>
+<pre><code class="lang-bash">   git push origin main</code></pre>
+<p>推送后仓库会多出 <code>.github/workflows/collect.yml</code>， 且 <code>pages.yml</code> 会变成「校验内容 → 构建 → 发布」三步。</p>
+<ol><li>把 <code>.gitignore</code> 里的 <code># dist/</code> 改成 <code>dist/</code>，然后：</li></ol>
+<pre><code class="lang-bash">   git rm -r --cached dist
+   git commit -m &quot;chore: dist/ 交给 CI 构建&quot;
+   git push</code></pre>
+<h3>升级后你会得到</h3>
+<ul><li><strong>改 JSON → 提交 → 自动上线</strong>，不用再本地构建</li><li><strong>内容校验门禁</strong>：<code>content/</code> 里写错分类、缺 id、链接不是 http(s)，</li></ul>
+<p>Actions 会直接失败并指出哪一条有问题，坏数据不会上线</p>
+<ul><li><strong>每日自动采集</strong>：每天北京时间 03:10 自动抓取 <code>sources/sources.json</code> 里启用的源，</li></ul>
+<p>有新条目就自动提交并触发重新发布</p>
+<h3>只想先要采集、不想改构建方式</h3>
+<p>也可以只推 <code>collect.yml</code>。采集结果会写进 <code>content/collected/</code>， 但你仍需本地跑一次 <code>python3 scripts/build.py</code> 并提交 <code>dist/</code> 才能看到新内容。</p>
+<hr>
+<h2>13. 推送（重要：本机 <code>git push</code> 会被墙）</h2>
+<p>本机到 <code>github.com:443</code> 的连接会被干扰，<code>git push</code> 会卡住并报 <code>Failed to connect to github.com port 443</code>。<strong>但 <code>api.github.com</code> 是通的。</strong></p>
+<p>所以本仓库提供一个等效的推送脚本，用 GitHub Git Data API 完成一次原子提交：</p>
+<pre><code class="lang-bash">python3 scripts/push_via_api.py --dry-run --message &quot;看看会改什么&quot;   # 先看清单
+python3 scripts/push_via_api.py --message &quot;更新活动日历&quot;</code></pre>
+<p>它做的事和 <code>git push</code> 一样：把工作区文件差异做成<strong>一个提交</strong>推到 main。</p>
+<p><strong>注意两点：</strong></p>
+<ol><li>它<strong>不会动 <code>.github/workflows/</code></strong>（没有 workflow 权限时 API 会拒绝，脚本会跳过并提示）。</li></ol>
+<p>这很重要——脚本已经做了保护，不会误删工作流文件。</p>
+<ol><li>它不做合并。如果别人在你之后推了新提交，先确认远端状态：</li></ol>
+<pre><code class="lang-bash">   gh api /repos/uestc-aic/uestc-aic.github.io/commits --jq &#x27;.[0:3][] | &quot;\(.sha[0:8])  \(.commit.message | split(&quot;\n&quot;)[0])&quot;&#x27;</code></pre>
+<p>有你不认识的提交时，先 <code>git pull</code>（若也被墙，就用 <code>gh api /repos/uestc-aic/uestc-aic.github.io/tarball &gt; /tmp/repo.tgz</code> 取回最新代码）。</p>
+<h3>网络正常时</h3>
+<p>如果哪天 <code>github.com</code> 能连上了，直接用原生的：</p>
+<pre><code class="lang-bash">git add -A &amp;&amp; git commit -m &quot;...&quot; &amp;&amp; git push</code></pre></div>
+  </div></section>
+</main>
+<footer class="footer"><div class="container footer-top">
+    <a class="brand" href="../index.html"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span><span class="brand-name">AI 芯动力<span>UESTC AIC</span></span></a>
+    <p>一个关于 AI 与 IC 的开放技术社区。</p>
+    <nav class="footer-links" aria-label="页脚导航">
+      <a href="../events/index.html">活动</a>
+      <a href="../resources/index.html">资源库</a>
+      <a href="../partners/index.html">合作伙伴</a>
+      <a href="../contribute/index.html">投稿</a>
+      <a href="../docs/index.html">运维手册</a>
+      <a href="https://github.com/uestc-aic" target="_blank" rel="noopener noreferrer">GitHub<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+    </nav>
+  </div><div class="container footer-bottom">
+    <span>© 2026 AI 芯动力 · UESTC AIC．Built with curiosity.</span>
+    <span>电子科技大学 · 集成电路科学与工程学院（示范性微电子学院）</span>
+    <span>内容更新于 2026-10-15</span>
+  </div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

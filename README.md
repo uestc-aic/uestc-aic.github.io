@@ -30,8 +30,8 @@ assets/               ← CSS / JS / 图片
 sources/sources.json  ← 采集源配置
 scripts/build.py      ← 静态生成器（零依赖）
 scripts/collect.py    ← 采集器（零依赖）
-docs/                 ← 运维手册、采集系统说明
-dist/                 ← 构建产物（不提交，Actions 生成）
+manuals/              ← 运维手册、采集系统说明（手写文档）
+docs/                 ← 构建产物 = GitHub Pages 发布目录
 ```
 
 三条流水线（GitHub Actions）：
@@ -60,7 +60,7 @@ python3 scripts/build.py --check
 
 ## 我要改内容，从哪开始
 
-看 [`docs/运维手册.md`](docs/运维手册.md)。速查：
+看 [`manuals/运维手册.md`](manuals/运维手册.md)。速查：
 
 | 想做的事 | 改哪 |
 |---|---|
@@ -83,7 +83,7 @@ Do's & Don'ts、响应式断点），改样式前请先读它。
   在 `content/events.json` 里以 `locked: true` 录入，采集永不覆盖。
 - 合规：串行抓取、间隔 ≥3 秒、遵守 `robots.txt`、只存结构化字段 + 原文链接不转载全文。
 
-细节见 [`docs/采集系统说明.md`](docs/采集系统说明.md)。
+细节见 [`manuals/采集系统说明.md`](manuals/采集系统说明.md)。
 
 ## 环境要求
 
