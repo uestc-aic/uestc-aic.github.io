@@ -45,7 +45,7 @@
     navigation.addEventListener('click', (e) => { if (e.target.closest('a')) setOpen(false); });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
     document.addEventListener('click', (e) => { if (!e.target.closest('.header')) setOpen(false); });
-    window.matchMedia('(min-width: 851px)').addEventListener('change', (e) => { if (e.matches) setOpen(false); });
+    window.matchMedia('(min-width: 1101px)').addEventListener('change', (e) => { if (e.matches) setOpen(false); });
   }
 
   /* ── 入场 reveal ────────────────────────────────────────── */

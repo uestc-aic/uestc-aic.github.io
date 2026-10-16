@@ -363,7 +363,8 @@ def page(site: dict, depth: int, active: str, title: str, description: str, body
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:type" content="website">
 <link rel="icon" href="{p}assets/img/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="{p}assets/css/style.css">
+<link rel="preload" href="{p}assets/fonts/ma-shan-zheng-headings.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{p}assets/css/style.css?v=20261016-fonts">
 <script src="{p}assets/js/app.js" defer></script>
 </head>
 <body>

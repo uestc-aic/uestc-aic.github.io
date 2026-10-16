@@ -114,7 +114,7 @@ def main() -> int:
         for href in chk.links:
             if href.startswith(("http://", "https://", "mailto:", "tel:", "data:", "#")):
                 continue
-            path = href.split("#")[0]
+            path = href.split("#")[0].split("?")[0]
             if not path:
                 continue
             checked_links += 1
@@ -129,7 +129,7 @@ def main() -> int:
             if src.startswith(("http", "data:")):
                 continue
             checked_links += 1
-            target = (base / src).resolve()
+            target = (base / src.split("#")[0].split("?")[0]).resolve()
             if not target.exists():
                 problems.append(f"{rel}: 资源缺失 -> {src}")
 
