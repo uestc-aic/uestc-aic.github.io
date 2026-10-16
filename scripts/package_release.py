@@ -102,7 +102,7 @@ def main(argv=None):
         else:
             check_repository()
             for script in ('build.py', 'verify.py'):
-                subprocess.run([sys.executable, str(ROOT / 'scripts' / script)], cwd=ROOT, check=True)
+                subprocess.run([sys.executable, '-X', 'utf8', str(ROOT / 'scripts' / script)], cwd=ROOT, check=True)
             count = make_package(args.output)
             print(f'交付包已生成并通过校验：{args.output}（{count} 个文件）')
         return 0
