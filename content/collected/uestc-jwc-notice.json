@@ -2,7 +2,7 @@
   "source_id": "uestc-jwc-notice",
   "source_name": "电子科技大学教务处 · 重要公告",
   "source_url": "https://www.jwc.uestc.edu.cn/",
-  "fetched_at": "2026-10-15T22:44:19+08:00",
+  "fetched_at": "2026-10-16T14:31:40+08:00",
   "items": [
     {
       "id": "05306de1402bcda2",
@@ -17,6 +17,21 @@
         "source_id": "uestc-jwc-notice"
       },
       "collected_at": "2026-10-15T22:38:29+08:00",
+      "locked": false
+    },
+    {
+      "id": "d45fae26d55154b5",
+      "title": "关于开展2025-2026-1学期中期教学检查工作的通知",
+      "url": "https://www.jwc.uestc.edu.cn/info/46c418585907347ae5dbbede63f6dd4c",
+      "date": "2026-10-14",
+      "date_text": "10-14",
+      "category": "campus",
+      "source": {
+        "name": "电子科技大学教务处 · 重要公告",
+        "url": "https://www.jwc.uestc.edu.cn/info/46c418585907347ae5dbbede63f6dd4c",
+        "source_id": "uestc-jwc-notice"
+      },
+      "collected_at": "2026-10-16T14:31:40+08:00",
       "locked": false
     },
     {
@@ -77,6 +92,21 @@
         "source_id": "uestc-jwc-notice"
       },
       "collected_at": "2026-10-15T22:38:29+08:00",
+      "locked": false
+    },
+    {
+      "id": "dbced09e35837963",
+      "title": "2024年四川省大学生电子设计竞赛总结暨颁奖典礼圆满举行",
+      "url": "https://www.jwc.uestc.edu.cn/info/ba6ce37d874ec964adc2834108133a8f",
+      "date": "2026-09-20",
+      "date_text": "09-20",
+      "category": "campus",
+      "source": {
+        "name": "电子科技大学教务处 · 重要公告",
+        "url": "https://www.jwc.uestc.edu.cn/info/ba6ce37d874ec964adc2834108133a8f",
+        "source_id": "uestc-jwc-notice"
+      },
+      "collected_at": "2026-10-16T14:31:40+08:00",
       "locked": false
     },
     {
@@ -170,6 +200,21 @@
       "locked": false
     },
     {
+      "id": "b7e4f065c5d7adde",
+      "title": "教授开放日安排表(2025年度秋季学期）",
+      "url": "https://www.jwc.uestc.edu.cn/info/ccf7a588aeb6b76ffac1cd08f711f5bc",
+      "date": "2026-09-08",
+      "date_text": "09-08",
+      "category": "campus",
+      "source": {
+        "name": "电子科技大学教务处 · 重要公告",
+        "url": "https://www.jwc.uestc.edu.cn/info/ccf7a588aeb6b76ffac1cd08f711f5bc",
+        "source_id": "uestc-jwc-notice"
+      },
+      "collected_at": "2026-10-16T14:31:40+08:00",
+      "locked": false
+    },
+    {
       "id": "d65ca3d85c924fbd",
       "title": "成电学子在第十九届中国大学生计算机设计大赛中再创佳绩",
       "url": "https://www.jwc.uestc.edu.cn/info/7ed5bd7cee758e88ed4cdcd3467a9056",
@@ -200,6 +245,21 @@
       "locked": false
     },
     {
+      "id": "ce730e80fd4b6631",
+      "title": "第九届全国大学生生命科学竞赛落下帷幕 医学院学子获得5项奖励",
+      "url": "https://www.jwc.uestc.edu.cn/info/92050ddc20e809c20ae413a715263e60",
+      "date": "2026-07-30",
+      "date_text": "07-30",
+      "category": "campus",
+      "source": {
+        "name": "电子科技大学教务处 · 重要公告",
+        "url": "https://www.jwc.uestc.edu.cn/info/92050ddc20e809c20ae413a715263e60",
+        "source_id": "uestc-jwc-notice"
+      },
+      "collected_at": "2026-10-16T14:31:40+08:00",
+      "locked": false
+    },
+    {
       "id": "cb0612926d0af6ca",
       "title": "“线性代数与空间解析几何”课程组举行 “智慧课程建设”教学研讨活动",
       "url": "https://www.jwc.uestc.edu.cn/info/172324b48e8b1a24cd56423b486054c4",
@@ -215,6 +275,21 @@
       "locked": false
     },
     {
+      "id": "4341a98cf84f4d67",
+      "title": "格拉斯哥学院举办全体教师大会暨教学工作坊活动",
+      "url": "https://www.jwc.uestc.edu.cn/info/7d2c7fb8f103012eb536e88c1ebb9968",
+      "date": "2026-07-11",
+      "date_text": "07-11",
+      "category": "campus",
+      "source": {
+        "name": "电子科技大学教务处 · 重要公告",
+        "url": "https://www.jwc.uestc.edu.cn/info/7d2c7fb8f103012eb536e88c1ebb9968",
+        "source_id": "uestc-jwc-notice"
+      },
+      "collected_at": "2026-10-16T14:31:40+08:00",
+      "locked": false
+    },
+    {
       "id": "70cf10bea878106a",
       "title": "从实验室到产业场|成电inno Lab科创营暨科创暑期学校（十四期）启动！",
       "url": "https://www.jwc.uestc.edu.cn/info/2a5b559adf203eed28a1cbfc82a964be",
@@ -227,6 +302,141 @@
         "source_id": "uestc-jwc-notice"
       },
       "collected_at": "2026-10-15T22:38:29+08:00",
+      "locked": false
+    },
+    {
+      "id": "24d85d819c0fecf3",
+      "title": "公管学院等八个学院联合开展2026年春季学期期末监考培训",
+      "url": "https://www.jwc.uestc.edu.cn/info/3fc567ef15c2bb753d2ec4c69f073fbc",
+      "date": "2026-06-18",
+      "date_text": "06-18",
+      "category": "campus",
+      "source": {
+        "name": "电子科技大学教务处 · 重要公告",
+        "url": "https://www.jwc.uestc.edu.cn/info/3fc567ef15c2bb753d2ec4c69f073fbc",
+        "source_id": "uestc-jwc-notice"
+      },
+      "collected_at": "2026-10-16T14:31:40+08:00",
+      "locked": false
+    },
+    {
+      "id": "140fb50e491dcd71",
+      "title": "英才学院开展自主专业选择与自主设计个人培养方案主题培训",
+      "url": "https://www.jwc.uestc.edu.cn/info/d641d1ca3c9e497251a854235a9ce1ed",
+      "date": "2026-04-16",
+      "date_text": "04-16",
+      "category": "campus",
+      "source": {
+        "name": "电子科技大学教务处 · 重要公告",
+        "url": "https://www.jwc.uestc.edu.cn/info/d641d1ca3c9e497251a854235a9ce1ed",
+        "source_id": "uestc-jwc-notice"
+      },
+      "collected_at": "2026-10-16T14:31:40+08:00",
+      "locked": false
+    },
+    {
+      "id": "f405613447ef3af6",
+      "title": "英才实验学院召开本科教育教学审核评估动员会",
+      "url": "https://www.jwc.uestc.edu.cn/info/95616c9deeda412bd7dd9ff36bc18f45",
+      "date": "2026-04-15",
+      "date_text": "04-15",
+      "category": "campus",
+      "source": {
+        "name": "电子科技大学教务处 · 重要公告",
+        "url": "https://www.jwc.uestc.edu.cn/info/95616c9deeda412bd7dd9ff36bc18f45",
+        "source_id": "uestc-jwc-notice"
+      },
+      "collected_at": "2026-10-16T14:31:40+08:00",
+      "locked": false
+    },
+    {
+      "id": "b844f7f0995537a2",
+      "title": "英才学院开展2025年自主选择专业自主设计培养方案工作",
+      "url": "https://www.jwc.uestc.edu.cn/info/9aa12953f3262767c6da2945af1b3ae6",
+      "date": "2026-04-14",
+      "date_text": "04-14",
+      "category": "campus",
+      "source": {
+        "name": "电子科技大学教务处 · 重要公告",
+        "url": "https://www.jwc.uestc.edu.cn/info/9aa12953f3262767c6da2945af1b3ae6",
+        "source_id": "uestc-jwc-notice"
+      },
+      "collected_at": "2026-10-16T14:31:40+08:00",
+      "locked": false
+    },
+    {
+      "id": "827ebdb11097a1a4",
+      "title": "电子科技大学第二批人工智能技术赋能本科教学改革项目申报通知",
+      "url": "https://www.jwc.uestc.edu.cn/info/c9a14ad76b5c761fcd3945fcf2d1fa56",
+      "date": "2026-03-12",
+      "date_text": "03-12",
+      "category": "campus",
+      "source": {
+        "name": "电子科技大学教务处 · 重要公告",
+        "url": "https://www.jwc.uestc.edu.cn/info/c9a14ad76b5c761fcd3945fcf2d1fa56",
+        "source_id": "uestc-jwc-notice"
+      },
+      "collected_at": "2026-10-16T14:31:40+08:00",
+      "locked": false
+    },
+    {
+      "id": "29fc1237d3839792",
+      "title": "教授开放日安排表(2026年度春季学期）",
+      "url": "https://www.jwc.uestc.edu.cn/info/f079772b8bc95f6106b8d4c49b4e5b99",
+      "date": "2026-03-11",
+      "date_text": "03-11",
+      "category": "campus",
+      "source": {
+        "name": "电子科技大学教务处 · 重要公告",
+        "url": "https://www.jwc.uestc.edu.cn/info/f079772b8bc95f6106b8d4c49b4e5b99",
+        "source_id": "uestc-jwc-notice"
+      },
+      "collected_at": "2026-10-16T14:31:40+08:00",
+      "locked": false
+    },
+    {
+      "id": "75e25c92cba6b8c2",
+      "title": "2025级“电子和计算机（ECE）关键核心领域科技创新领军人才培养计划”春季校内遴选通知",
+      "url": "https://www.jwc.uestc.edu.cn/info/9a09b2f3031a6a2abbd4ba85c1e1eca5",
+      "date": "2026-01-07",
+      "date_text": "01-07",
+      "category": "campus",
+      "source": {
+        "name": "电子科技大学教务处 · 重要公告",
+        "url": "https://www.jwc.uestc.edu.cn/info/9a09b2f3031a6a2abbd4ba85c1e1eca5",
+        "source_id": "uestc-jwc-notice"
+      },
+      "collected_at": "2026-10-16T14:31:40+08:00",
+      "locked": false
+    },
+    {
+      "id": "a9705a8f0bbbc013",
+      "title": "关于2024-2025-2学期本科生选课工作的通知",
+      "url": "https://www.jwc.uestc.edu.cn/info/a47aeba515a6f801e469f62ef0f08569",
+      "date": "2025-12-17",
+      "date_text": "12-17",
+      "category": "campus",
+      "source": {
+        "name": "电子科技大学教务处 · 重要公告",
+        "url": "https://www.jwc.uestc.edu.cn/info/a47aeba515a6f801e469f62ef0f08569",
+        "source_id": "uestc-jwc-notice"
+      },
+      "collected_at": "2026-10-16T14:31:40+08:00",
+      "locked": false
+    },
+    {
+      "id": "c03b7be9a2f8f4b2",
+      "title": "关于组织四川省2024—2026年高等教育人才培养质量和教学改革项目申报工作的通知",
+      "url": "https://www.jwc.uestc.edu.cn/info/4b4f260f1f945382bd44d26d857aadbe",
+      "date": "2025-10-22",
+      "date_text": "10-22",
+      "category": "campus",
+      "source": {
+        "name": "电子科技大学教务处 · 重要公告",
+        "url": "https://www.jwc.uestc.edu.cn/info/4b4f260f1f945382bd44d26d857aadbe",
+        "source_id": "uestc-jwc-notice"
+      },
+      "collected_at": "2026-10-16T14:31:40+08:00",
       "locked": false
     }
   ]

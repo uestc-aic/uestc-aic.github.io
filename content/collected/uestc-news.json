@@ -2,8 +2,23 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-10-15T22:43:36+08:00",
+  "fetched_at": "2026-10-16T14:31:33+08:00",
   "items": [
+    {
+      "id": "f3e4a759c61db1d8",
+      "title": "学者论坛：Finite-Time Singularity Formation for Supercritical Evolution Equations",
+      "url": "https://news.uestc.edu.cn/info/1015/44428.htm",
+      "date": "2026-10-15",
+      "date_text": "2026-10-15",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1015/44428.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-16T14:31:33+08:00",
+      "locked": false
+    },
     {
       "id": "2fc8d02df8e046e7",
       "title": "学者论坛：Pickup Opportunity as Resource A Probabilistic Approach for Demand-Aware Ride-Sharing Optimization",
@@ -434,21 +449,6 @@
       "source": {
         "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
         "url": "https://news.uestc.edu.cn/info/1003/44158.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-15T22:37:45+08:00",
-      "locked": false
-    },
-    {
-      "id": "037fa98899875518",
-      "title": "邓泰华校友、彭志辉校友向母校捐赠100台机器人",
-      "url": "https://news.uestc.edu.cn/info/1003/44131.htm",
-      "date": "2026-09-30",
-      "date_text": "2026-09-30",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/44131.htm",
         "source_id": "uestc-news"
       },
       "collected_at": "2026-10-15T22:37:45+08:00",
