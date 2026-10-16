@@ -2,8 +2,53 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-10-16T14:31:33+08:00",
+  "fetched_at": "2026-10-17T03:36:39+08:00",
   "items": [
+    {
+      "id": "90fec76cee114a17",
+      "title": "学者论坛：光子莫尔晶格中光波的局域和输运",
+      "url": "https://news.uestc.edu.cn/info/1015/44438.htm",
+      "date": "2026-10-16",
+      "date_text": "2026-10-16",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1015/44438.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-17T03:36:39+08:00",
+      "locked": false
+    },
+    {
+      "id": "3f05fd3aca68ca0a",
+      "title": "学校2026年新进教职工培训班暨第十七期教师思政及师德师风培训班开班",
+      "url": "https://news.uestc.edu.cn/info/1003/44451.htm",
+      "date": "2026-10-16",
+      "date_text": "2026-10-16",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44451.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-17T03:36:39+08:00",
+      "locked": false
+    },
+    {
+      "id": "5df5e43c5c2293c4",
+      "title": "2026-2030年四川省本科高等学校实验室建设指导委员会成立大会暨第一次全体委员会议在我校召开",
+      "url": "https://news.uestc.edu.cn/info/1003/44445.htm",
+      "date": "2026-10-16",
+      "date_text": "2026-10-16",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44445.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-17T03:36:39+08:00",
+      "locked": false
+    },
     {
       "id": "f3e4a759c61db1d8",
       "title": "学者论坛：Finite-Time Singularity Formation for Supercritical Evolution Equations",
@@ -404,51 +449,6 @@
       "source": {
         "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
         "url": "https://news.uestc.edu.cn/info/1003/44173.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-15T22:37:45+08:00",
-      "locked": false
-    },
-    {
-      "id": "bb05dcb0af37e939",
-      "title": "我校与俄“密西斯”大学硕士项目2026级新生开学典礼举行",
-      "url": "https://news.uestc.edu.cn/info/1003/44175.htm",
-      "date": "2026-10-03",
-      "date_text": "2026-10-03",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/44175.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-15T22:37:45+08:00",
-      "locked": false
-    },
-    {
-      "id": "4116cc0a02786c3d",
-      "title": "医学院肖波教授团队在Nature Communications发表结直肠癌治疗研究成果",
-      "url": "https://news.uestc.edu.cn/info/1005/44186.htm",
-      "date": "2026-10-02",
-      "date_text": "2026-10-02",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/44186.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-15T22:37:45+08:00",
-      "locked": false
-    },
-    {
-      "id": "07ab5c67c6fdb29a",
-      "title": "精彩！“银杏颂”文艺晚会献礼建校七十周年",
-      "url": "https://news.uestc.edu.cn/info/1003/44158.htm",
-      "date": "2026-10-01",
-      "date_text": "2026-10-01",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/44158.htm",
         "source_id": "uestc-news"
       },
       "collected_at": "2026-10-15T22:37:45+08:00",
