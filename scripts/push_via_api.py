@@ -1,31 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+"""在普通 Git 推送不可用时，通过 GitHub API 提交暂存区中的改动。
+
+只支持正确克隆且与远端处于同一提交的仓库。先 git add，再 --dry-run 检查。
+默认保留远端文件；删除必须显式指定 --allow-delete。工作流文件始终跳过。
+API 提交完成后，本地 HEAD 不会自动移动；继续编辑前需要同步远端。
 """
-通过 GitHub API 推送（绕开被墙的 github.com）
-================================================
-
-**为什么需要它**：本机到 `github.com:443` 的连接会被干扰（超时/重置），
-`git push` 因此失败；但 `api.github.com` 是通的。
-本脚本用 GitHub 的 Git Data API 完成一次原子提交：
-    blobs → tree → commit → 更新 ref
-效果与 `git push` 等价（一个提交，包含全部改动），走的是能通的域名。
-
-用法：
-    python3 scripts/push_via_api.py --message "更新内容"
-    python3 scripts/push_via_api.py --message "..." --dry-run    # 只列出行将提交的文件
-    python3 scripts/push_via_api.py --message "..." --repo owner/repo
-
-前置条件：
-- 已安装并在本机登录 `gh`（`gh auth status` 有输出即可）
-- 令牌具备 `repo` 权限
-
-限制（重要）：
-- **不会提交 `.github/workflows/` 下的文件**。GitHub 规定写工作流文件需要额外的
-  `workflow` 权限，缺失时 API 会返回 404。脚本会明确提示并跳过，不会误删已有的工作流。
-- 不做 merge / rebase。若远端已有别人的新提交，脚本以远端为父提交，
-  把你本地的文件覆盖上去（本地未同步的远端改动会被覆盖，先 `git fetch` 看看）。
-"""
-
 import argparse
 import base64
 import json
@@ -34,152 +14,169 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-
-SKIP_DIRS = {".git", "__pycache__", ".vscode", ".idea", "node_modules", ".sites-runtime"}
-SKIP_FILES = {".DS_Store", "Thumbs.db"}
-# 无 workflow 权限时无法写入，必须显式排除（否则会被当成删除，把工作流删掉）
 PROTECTED_PREFIX = ".github/workflows/"
+ESSENTIAL_FILES = {
+    "content/site.json", "scripts/build.py", "assets/css/style.css",
+    "assets/js/app.js", "docs/index.html",
+}
 
 
-def gh(args, body=None, timeout=180):
-    cmd = ["gh", "api"] + args
-    if body is not None:
-        cmd += ["--input", "-"]
-        proc = subprocess.run(cmd, input=json.dumps(body), capture_output=True, text=True,
-                              timeout=timeout, cwd=ROOT)
-    else:
-        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout, cwd=ROOT)
-    if proc.returncode != 0:
-        return {"__error__": proc.stderr.strip()[:500]}
-    try:
-        return json.loads(proc.stdout)
-    except json.JSONDecodeError:
-        return {"__raw__": proc.stdout[:300]}
+def git(args):
+    """失败时停止，禁止将 Git 错误当成空文件清单。"""
+    proc = subprocess.run(["git"] + args, capture_output=True, cwd=ROOT)
+    if proc.returncode:
+        detail = proc.stderr.decode("utf-8", errors="replace").strip()
+        raise RuntimeError("Git 检查失败，请使用完整克隆的仓库：" + detail[:300])
+    return proc.stdout
 
 
 def collect_local():
-    """工作区里应当提交的文件。
-
-    用 git 自己来判定，这样 .gitignore 语义完全一致
-    （否则会把 __pycache__、content/collected/_state.json 这类运行时文件也提交上去）。
-    """
-    def listed(args):
-        proc = subprocess.run(["git"] + args, capture_output=True, text=True, cwd=ROOT)
-        if proc.returncode != 0:
-            return []
-        return [p for p in proc.stdout.split("\0") if p]
-
-    tracked = listed(["ls-files", "-z"])
-    untracked = listed(["ls-files", "--others", "--exclude-standard", "-z"])
-
+    actual_root = Path(git(["rev-parse", "--show-toplevel"]).decode("utf-8").strip()).resolve()
+    if actual_root != ROOT.resolve():
+        raise RuntimeError("脚本目录不是仓库根目录；请勿在解压副本或另一个仓库内运行。")
+    records = git(["ls-files", "--stage", "-z"]).split(b"\0")
     files = {}
-    for rel in set(tracked) | set(untracked):
-        path = ROOT / rel
-        if path.is_file():
-            files[rel] = path
+    for record in records:
+        if not record:
+            continue
+        metadata, raw_name = record.split(b"\t", 1)
+        mode, sha, stage = metadata.decode("ascii").split()
+        name = raw_name.decode("utf-8")
+        if stage != "0":
+            raise RuntimeError("存在未解决的合并冲突，请先处理后再提交。")
+        if mode not in ("100644", "100755"):
+            raise RuntimeError("不支持的文件类型：" + name)
+        path = ROOT / name
+        if not path.resolve().is_relative_to(ROOT.resolve()):
+            raise RuntimeError("文件路径超出仓库：" + name)
+        files[name] = {"mode": mode, "sha": sha}
+    if not files:
+        raise RuntimeError("Git 文件清单为空，已停止；不会删除远端文件。")
+    missing = sorted(ESSENTIAL_FILES - files.keys())
+    missing += sorted(name for name in ESSENTIAL_FILES if not (ROOT / name).is_file())
+    if missing:
+        raise RuntimeError("网站关键文件缺失，已停止：" + ", ".join(sorted(set(missing))))
     return files
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--message", "-m", required=True, help="提交信息")
-    ap.add_argument("--repo", default="uestc-aic/uestc-aic.github.io")
-    ap.add_argument("--branch", default="main")
-    ap.add_argument("--dry-run", action="store_true")
-    ap.add_argument("--no-delete", action="store_true",
-                    help="只新增/修改，不删除远端任何文件（改动风险高时的安全模式）")
-    args = ap.parse_args()
+def gh(args, body=None, timeout=180):
+    command = ["gh", "api"] + args
+    if body is not None:
+        command += ["--input", "-"]
+    proc = subprocess.run(
+        command, input=json.dumps(body) if body is not None else None,
+        capture_output=True, text=True, encoding="utf-8", timeout=timeout, cwd=ROOT,
+    )
+    if proc.returncode:
+        raise RuntimeError("GitHub API 请求失败：" + proc.stderr.strip()[:400])
+    try:
+        result = json.loads(proc.stdout)
+    except json.JSONDecodeError as error:
+        raise RuntimeError("GitHub API 未返回有效 JSON，已停止。") from error
+    if not isinstance(result, dict):
+        raise RuntimeError("GitHub API 返回格式异常，已停止。")
+    return result
 
-    repo = args.repo
-    print(f"目标仓库：{repo}  分支：{args.branch}")
 
-    ref = gh([f"/repos/{repo}/git/ref/heads/{args.branch}"])
-    if "object" not in ref:
-        print(f"  [错误] 读不到分支：{ref.get('__error__')}")
-        return 1
-    head = ref["object"]["sha"]
-    base_tree = gh([f"/repos/{repo}/git/commits/{head}"])["tree"]["sha"]
-    remote_tree = gh([f"/repos/{repo}/git/trees/{base_tree}?recursive=1"])
-    remote_paths = {x["path"] for x in remote_tree.get("tree", []) if x["type"] == "blob"}
-    print(f"远端当前提交：{head[:8]}（{len(remote_paths)} 个文件）")
-
-    local = collect_local()
-    skipped = sorted(p for p in local if p.startswith(PROTECTED_PREFIX))
-    local = {k: v for k, v in local.items() if not k.startswith(PROTECTED_PREFIX)}
-
-    if not remote_paths:
-        # 分支为空时没人会「被删」，保守起见不做任何删除
-        deletions = []
+def check_repository(repo, branch):
+    current_branch = git(["symbolic-ref", "--short", "HEAD"]).decode("utf-8").strip()
+    if current_branch != branch:
+        raise RuntimeError("当前分支与目标分支不一致，已停止。")
+    origin = git(["remote", "get-url", "origin"]).decode("utf-8").strip().rstrip("/")
+    slug = origin.removesuffix(".git")
+    if slug.startswith("https://github.com/"):
+        slug = slug[len("https://github.com/"):]
+    elif slug.startswith("git@github.com:"):
+        slug = slug[len("git@github.com:"):]
     else:
-        deletions = sorted(remote_paths - set(local) - {p for p in remote_paths
-                                                        if p.startswith(PROTECTED_PREFIX)})
-    if args.no_delete:
-        if deletions:
-            print(f"\n--no-delete：跳过以下 {len(deletions)} 个文件的删除"
-                  f"（远端会保留旧文件，确认无误后再跑一次不带该参数的推送清理）")
-            for d in deletions[:10]:
-                print(f"   = {d}")
-            if len(deletions) > 10:
-                print(f"   … 另有 {len(deletions) - 10} 个")
-        deletions = []
+        raise RuntimeError("origin 不是支持的 GitHub 仓库地址，已停止。")
+    if slug.lower() != repo.lower():
+        raise RuntimeError("origin 与目标仓库不一致，已停止。")
+    return git(["rev-parse", "HEAD"]).decode("ascii").strip()
 
-    print(f"\n将提交 {len(local)} 个文件")
-    if deletions:
-        print(f"将删除 {len(deletions)} 个文件：")
-        for d in deletions[:20]:
-            print(f"   - {d}")
-        if len(deletions) > 20:
-            print(f"   … 另有 {len(deletions) - 20} 个")
-    if skipped:
-        print(f"\n跳过 {len(skipped)} 个工作流文件（需要 workflow 权限）：")
-        for s_ in skipped:
-            print(f"   ! {s_}")
-        print("   → 授权方式：gh auth refresh -h github.com -s workflow")
 
-    if args.dry_run:
-        print("\n--dry-run：未做任何改动。")
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--message", "-m", required=True)
+    parser.add_argument("--repo", default="uestc-aic/uestc-aic.github.io")
+    parser.add_argument("--branch", default="main")
+    parser.add_argument("--dry-run", action="store_true", help="只预览，不写入远端")
+    deletion = parser.add_mutually_exclusive_group()
+    deletion.add_argument("--allow-delete", action="store_true", help="明确允许删除暂存区已移除的非关键文件")
+    deletion.add_argument("--no-delete", action="store_true", help="兼容旧用法；默认已禁止删除")
+    args = parser.parse_args(argv)
+    try:
+        # 所有本地检查均在访问 GitHub 前进行。
+        local = collect_local()
+        local_head = check_repository(args.repo, args.branch)
+        print(f"目标：{args.repo} / {args.branch}；仅提交 git add 后的暂存区内容。")
+        ref = gh([f"repos/{args.repo}/git/ref/heads/{args.branch}"])
+        head = (ref.get("object") or {}).get("sha")
+        if not head or head != local_head:
+            raise RuntimeError("本地 HEAD 与远端不一致；请先同步并处理差异，禁止用旧副本覆盖。")
+        commit = gh([f"repos/{args.repo}/git/commits/{head}"])
+        tree_sha = (commit.get("tree") or {}).get("sha")
+        if not tree_sha:
+            raise RuntimeError("无法读取远端文件树，已停止。")
+        tree = gh([f"repos/{args.repo}/git/trees/{tree_sha}?recursive=1"])
+        if tree.get("truncated") or not isinstance(tree.get("tree"), list):
+            raise RuntimeError("远端文件清单不完整，已停止。")
+        remote = {item["path"]: item for item in tree["tree"] if item.get("type") == "blob"}
+        if not remote:
+            raise RuntimeError("远端文件清单为空，已停止。")
+
+        skipped = sorted(name for name in local if name.startswith(PROTECTED_PREFIX))
+        local = {name: item for name, item in local.items() if not name.startswith(PROTECTED_PREFIX)}
+        changes = {
+            name: item for name, item in local.items()
+            if name not in remote or any(item[key] != remote[name].get(key) for key in ("sha", "mode"))
+        }
+        removed = sorted(name for name in remote if name not in local and not name.startswith(PROTECTED_PREFIX))
+        deletions = removed if args.allow_delete else []
+        if removed and not args.allow_delete:
+            print(f"保留远端 {len(removed)} 个文件：删除未获显式授权。")
+        if skipped:
+            print(f"保留远端工作流配置；本地 {len(skipped)} 个工作流文件不通过此工具提交。")
+        print(f"新增或修改 {len(changes)} 个文件，删除 {len(deletions)} 个文件。")
+        for name in sorted(changes):
+            print("  + " + name)
+        for name in deletions:
+            print("  - " + name)
+        if args.dry_run:
+            print("试运行完成，未修改远端。")
+            return 0
+        if not changes and not deletions:
+            print("没有需要提交的改动。")
+            return 0
+
+        entries = []
+        for name, item in sorted(changes.items()):
+            data = git(["cat-file", "blob", item["sha"]])
+            blob = gh([f"repos/{args.repo}/git/blobs", "--method", "POST"],
+                      {"content": base64.b64encode(data).decode("ascii"), "encoding": "base64"})
+            if blob.get("sha") != item["sha"]:
+                raise RuntimeError("上传校验失败，未创建提交：" + name)
+            entries.append({"path": name, "mode": item["mode"], "type": "blob", "sha": blob["sha"]})
+        entries += [{"path": name, "mode": remote[name]["mode"], "type": "blob", "sha": None} for name in deletions]
+        new_tree = gh([f"repos/{args.repo}/git/trees", "--method", "POST"],
+                      {"base_tree": tree_sha, "tree": entries})
+        if not new_tree.get("sha"):
+            raise RuntimeError("未能创建文件树，已停止。")
+        new_commit = gh([f"repos/{args.repo}/git/commits", "--method", "POST"],
+                        {"message": args.message, "tree": new_tree["sha"], "parents": [head]})
+        if not new_commit.get("sha"):
+            raise RuntimeError("未能创建提交，已停止。")
+        # 非快进更新会被 GitHub 拒绝，避免覆盖处理期间出现的新提交。
+        updated = gh([f"repos/{args.repo}/git/refs/heads/{args.branch}", "--method", "PATCH"],
+                     {"sha": new_commit["sha"], "force": False})
+        if (updated.get("object") or {}).get("sha") != new_commit["sha"]:
+            raise RuntimeError("远端分支未更新，请检查 GitHub。")
+        print(f"提交成功：https://github.com/{args.repo}/commit/{new_commit['sha']}")
+        print("继续编辑前请同步远端；本工具没有移动本地 HEAD。")
         return 0
-
-    print("\n上传文件…")
-    entries, failed = [], []
-    for i, (rel, path) in enumerate(sorted(local.items()), 1):
-        res = gh([f"/repos/{repo}/git/blobs", "--method", "POST"],
-                 {"content": base64.b64encode(path.read_bytes()).decode(), "encoding": "base64"})
-        if "sha" in res:
-            entries.append({"path": rel, "mode": "100644", "type": "blob", "sha": res["sha"]})
-        else:
-            failed.append((rel, res.get("__error__")))
-        if i % 20 == 0:
-            print(f"   … {i}/{len(local)}")
-    if failed:
-        print("\n[错误] 以下文件上传失败，已中止（未做任何提交）：")
-        for rel, err in failed:
-            print(f"   {rel}: {err}")
+    except (RuntimeError, OSError, ValueError, subprocess.SubprocessError) as error:
+        print("[已停止] " + str(error), file=sys.stderr)
         return 1
-
-    tree = gh([f"/repos/{repo}/git/trees", "--method", "POST"],
-              {"base_tree": base_tree,
-               "tree": entries + [{"path": d, "mode": "100644", "type": "blob", "sha": None}
-                                  for d in deletions]})
-    if "sha" not in tree:
-        print(f"\n[错误] 建树失败：{tree.get('__error__')}")
-        return 1
-
-    commit = gh([f"/repos/{repo}/git/commits", "--method", "POST"],
-                {"message": args.message, "tree": tree["sha"], "parents": [head]})
-    if "sha" not in commit:
-        print(f"\n[错误] 建提交失败：{commit.get('__error__')}")
-        return 1
-
-    updated = gh([f"/repos/{repo}/git/refs/heads/{args.branch}", "--method", "PATCH"],
-                 {"sha": commit["sha"], "force": False})
-    if "object" not in updated:
-        print(f"\n[错误] 更新分支失败：{updated.get('__error__')}")
-        return 1
-
-    print(f"\n完成。新提交：{commit['sha'][:8]}")
-    print(f"查看：https://github.com/{repo}/commit/{commit['sha']}")
-    return 0
 
 
 if __name__ == "__main__":

@@ -754,13 +754,18 @@ def process_source(source, cfg, args, today, locked_ids, locked_urls):
                     % (it["date"] or "（无日期）", it["title"][:38], it["url"][:70]), verbose=verbose)
         return
 
-    save_json(out_path, {
+    payload = {
         "source_id": sid,
         "source_name": name,
         "source_url": source["url"],
         "fetched_at": now_iso,
         "items": items,
-    })
+    }
+    # 抓取时间保存在本地状态中；内容未变时保留原文件，避免每天产生空更新。
+    previous_content = {k: v for k, v in existing_doc.items() if k != "fetched_at"}
+    next_content = {k: v for k, v in payload.items() if k != "fetched_at"}
+    if previous_content != next_content:
+        save_json(out_path, payload)
     append_anomalies(anomalies)
     log("  → 已写入 %s（%d 条）" % (os.path.relpath(out_path, ROOT), len(items)), verbose=verbose)
 
@@ -899,6 +904,9 @@ def main(argv=None):
 
     print_summary(dry_run=args.dry_run)
     update_state(today, dry_run=args.dry_run)
+    if not any(st.get("health") == "ok" for st in STATS.values()):
+        print("本轮没有成功的采集来源；停止自动发布，保留线上版本。", file=sys.stderr)
+        return 1
     return 0
 
 

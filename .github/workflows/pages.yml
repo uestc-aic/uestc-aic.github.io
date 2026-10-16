@@ -1,0 +1,158 @@
+name: Update and deploy website
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Beijing time 03:10, the following day.
+    - cron: '10 19 * * *'
+  workflow_dispatch:
+    inputs:
+      collect:
+        description: '先采集学院资讯与竞赛信息'
+        type: boolean
+        default: true
+      dry_run:
+        description: '试运行：只检查，不提交、不发布'
+        type: boolean
+        default: false
+      source:
+        description: '采集来源 ID；留空运行所有已启用来源'
+        type: string
+        default: ''
+
+concurrency:
+  group: website-main
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      pages: read
+    env:
+      TZ: Asia/Shanghai
+      PYTHONUTF8: '1'
+    outputs:
+      publish: ${{ steps.mode.outputs.publish }}
+    steps:
+      - name: Check out latest main
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Choose operation
+        id: mode
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          INPUT_COLLECT: ${{ inputs.collect }}
+          INPUT_DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          collect=false
+          publish=true
+          if [[ "$EVENT_NAME" == schedule || ( "$EVENT_NAME" == workflow_dispatch && "$INPUT_COLLECT" == true ) ]]; then
+            collect=true
+          fi
+          if [[ "$EVENT_NAME" == workflow_dispatch && "$INPUT_DRY_RUN" == true ]]; then
+            publish=false
+          fi
+          echo "collect=$collect" >> "$GITHUB_OUTPUT"
+          echo "publish=$publish" >> "$GITHUB_OUTPUT"
+      - name: Run regression checks
+        run: python3 -m unittest discover -s tests -v
+      - name: Restore collector memory
+        if: steps.mode.outputs.collect == 'true'
+        uses: actions/cache/restore@v5
+        with:
+          path: |
+            content/collected/_state.json
+            content/collected/_anomalies.json
+          key: collector-state-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: collector-state-v1-
+      - name: Collect public information
+        id: collect
+        if: steps.mode.outputs.collect == 'true'
+        env:
+          DRY_RUN: ${{ inputs.dry_run }}
+          ONLY_SOURCE: ${{ inputs.source }}
+        run: |
+          args=(--verbose)
+          if [[ "$DRY_RUN" == true ]]; then args+=(--dry-run); fi
+          if [[ -n "$ONLY_SOURCE" ]]; then args+=(--source "$ONLY_SOURCE"); fi
+          python3 scripts/collect.py "${args[@]}"
+      - name: Build and check all pages
+        run: |
+          python3 scripts/build.py
+          python3 scripts/verify.py
+      - name: Commit collected content and generated pages
+        if: steps.mode.outputs.collect == 'true' && steps.mode.outputs.publish == 'true'
+        run: |
+          git add -- content/collected docs
+          if git diff --cached --quiet; then
+            echo 'No content changes; no commit needed.'
+          else
+            git config user.name 'uestc-aic-bot'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'chore: update public campus and competition information'
+            # A concurrent manual push stops this run rather than overwriting it.
+            git push origin HEAD:main
+          fi
+      - name: Save collector memory after successful validation
+        if: steps.mode.outputs.collect == 'true' && steps.mode.outputs.publish == 'true'
+        uses: actions/cache/save@v5
+        with:
+          path: |
+            content/collected/_state.json
+            content/collected/_anomalies.json
+          key: collector-state-v1-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Configure Pages
+        if: steps.mode.outputs.publish == 'true'
+        uses: actions/configure-pages@v5
+      - name: Upload checked website
+        if: steps.mode.outputs.publish == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+      - name: Write operation summary
+        if: always()
+        env:
+          COLLECT: ${{ steps.mode.outputs.collect }}
+          PUBLISH: ${{ steps.mode.outputs.publish }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          lines = ['## Website update', f'Collection requested: {os.environ["COLLECT"]}', f'Publishing enabled: {os.environ["PUBLISH"]}', '']
+          state = Path('content/collected/_state.json')
+          if state.exists():
+              data = json.loads(state.read_text(encoding='utf-8'))
+              for sid, item in data.get('sources', {}).items():
+                  lines.append(f'- {sid}: {item.get("last_health", "unknown")}; new items: {item.get("last_new", 0)}; {item.get("note", "")}')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as output:
+              output.write('\n'.join(lines) + '\n')
+          PY
+
+  deploy:
+    needs: build
+    if: needs.build.outputs.publish == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy checked website
+        id: deployment
+        uses: actions/deploy-pages@v4

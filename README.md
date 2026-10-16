@@ -15,7 +15,7 @@
 
 ## 它长什么样
 
-- **首页**：芯片插画 hero、活动预告、项目方向、资源库精选、组织架构、合作伙伴、加入入口
+- **首页**：沙龙现场照片、活动回顾与预告、项目方向、资源库精选、组织架构、合作伙伴、加入入口
 - **活动日历** `/events/`：按「芯沙龙 / 常规活动 / 学院资讯 / 竞赛信息」分类筛选
 - **活动详情** `/events/<id>/`：每场活动独立页面，支持长文、议题、嘉宾、报名
 - **学院资讯** `/college/`：自动同步校级公开信息源 + 社区投稿
@@ -40,23 +40,40 @@ manuals/              ← 运维手册、采集系统说明（手写文档）
 docs/                 ← 构建产物 = GitHub Pages 发布目录
 ```
 
-三条流水线（GitHub Actions）：
+统一自动流程：`.github/workflows/pages.yml`（Actions 中显示为 **Update and deploy website**）。
 
-| 工作流 | 触发 | 作用 |
+| 触发方式 | 是否采集 | 后续操作 |
 |---|---|---|
-| `pages.yml` | push 到 main | 校验内容 → `build.py` → 发布到 Pages |
-| `collect.yml` | 每天 03:10 (CST) | `collect.py` 抓取校级公开源 → 有新条目则提交 |
-| `deploy` job | 由上面构建后 | 部署 artifact |
+| 推送到 main | 否 | 运行回归检查 → 生成 `docs/` → 检查全部页面 → 发布 |
+| 每天北京时间 03:10 | 是 | 采集 → 生成与检查网页 → 有内容变动才提交 → 在同一次运行中发布 |
+| 手动运行 | 可选 | 可选择来源；勾选试运行时不提交、不发布 |
+
+Pages 的 Source 使用 **GitHub Actions**。机器人提交后，在同一次运行中继续发布，不依赖它触发另一条工作流。采集全部失败或网页检查失败时停止，保留已上线版本；部分来源失败会在运行摘要中列出。定时任务可能受 GitHub 排队影响。
+
+`docs/` 继续作为可重建的网页快照保留；自动采集有变动时会一起更新它。直接编辑内容后，线上页面由自动构建产生。
 
 ## 本地预览
 
 ```bash
 python3 scripts/build.py --clean
-python3 -m http.server 8000 --directory dist
+python3 -m http.server 8000 --directory docs
 # 打开 http://localhost:8000
 ```
 
 不需要 Node、不需要 npm、不需要任何第三方 Python 包。
+
+## 发布保护与交付
+
+日常使用完整克隆的仓库，先同步远端，再编辑并正常提交。普通 Git 推送不可用时，才使用 `scripts/push_via_api.py`；它仅提交 `git add` 后的暂存区内容，默认不删除远端文件。本地版本落后、仓库不完整、关键文件缺失或文件清单读取失败时会停止。具体步骤见 [交付说明](manuals/交付说明.md)。
+
+生成交付包（自动构建、自检并附文件大小及 SHA-256 清单）：
+
+```bash
+python3 scripts/package_release.py --output ../uestc-aic-website-delivery.zip
+python3 scripts/package_release.py --verify ../uestc-aic-website-delivery.zip
+```
+
+ZIP 用于归档与阅读，不包含 Git 历史。不要从解压副本执行推送。新增文件应先加入 Git，再生成交付包。
 
 只校验内容不生成：
 
@@ -93,8 +110,8 @@ Do's & Don'ts、响应式断点），改样式前请先读它。
 
 ## 环境要求
 
-- 本地：Python 3.9+（生成器与采集器都只用标准库）
-- CI：GitHub Actions（ubuntu-latest，自带 Python）
+- 本地与 CI：Python 3.12；生成、采集、测试及打包只用标准库
+- 日常维护与生成交付包需要 Git；API 推送备用工具另需已登录的 GitHub CLI
 
 ## 参考
 

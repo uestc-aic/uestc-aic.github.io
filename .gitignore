@@ -1,5 +1,5 @@
-# 说明：docs/ 是 GitHub Pages 的发布目录（仓库设置里 Source = 分支 main、目录 /docs），
-# 因此构建产物要提交。改完 content/ 跑一次 python3 scripts/build.py 再推送即可。
+# docs/ 保留可重建的网页快照；线上由 GitHub Actions 构建并发布。
+# 自动采集有内容变化时，会一起提交采集数据和 docs/ 快照。
 
 # 采集运行时状态（本地跑采集时的临时产物）
 content/collected/_state.json
@@ -14,6 +14,8 @@ __pycache__/
 node_modules/
 *.log
 *.tar.gz
+*.zip
+*.zip.sha256
 
 # 编辑器与系统
 .vscode/
