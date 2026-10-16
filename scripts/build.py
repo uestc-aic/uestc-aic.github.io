@@ -364,7 +364,8 @@ def page(site: dict, depth: int, active: str, title: str, description: str, body
 <meta property="og:type" content="website">
 <link rel="icon" href="{p}assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="{p}assets/fonts/ma-shan-zheng-headings.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{p}assets/css/style.css?v=20261016-fonts">
+<link rel="preload" href="{p}assets/fonts/space-grotesk-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{p}assets/css/style.css?v=20261016-community">
 <script src="{p}assets/js/app.js" defer></script>
 </head>
 <body>
@@ -616,8 +617,8 @@ def featured_event(ev: dict, depth: int) -> str:
     vol = ev.get("vol") or "VOL. 01"
     return f"""<article class="featured-event" data-reveal>
       <div class="event-poster">
-        <p class="poster-series">{esc(ev.get("titleEn") or "COMMUNITY SALON")} · {esc(vol)}</p>
-        <p class="poster-title">{esc(ev.get("title"))}</p>
+        <p class="poster-series">AI for IC<br>{esc(vol)}</p>
+        <p class="poster-title">{esc('芯沙龙' if ev.get('category') == 'salon' else ev.get('title'))}</p>
         <div class="poster-circuit">{POSTER_CIRCUIT}</div>
         <div class="poster-bottom"><span>{esc(ev.get("category") == "salon" and "从一个问题开始" or "活动")}</span><span>AI × IC</span></div>
       </div>
@@ -755,28 +756,49 @@ def filter_buttons(cats_present: dict, all_label: str = "全部") -> str:
 def build_home(site, events, partners, projects, org, resources, collected) -> str:
     items = all_events(events, collected)
     salons = filter_events(items, "salon")
-    featured = next((e for e in salons if e.get("status") in ("upcoming", "ongoing")),
-                    salons[0] if salons else None)
-    next_salon = next((e for e in salons if e is not featured), None)
+    completed_salons = sorted((e for e in salons if e.get("status") == "past"),
+                              key=lambda e: e.get("date") or "", reverse=True)
+    featured = completed_salons[0] if completed_salons else (salons[0] if salons else None)
+    next_salon = next((e for e in salons if e is not featured and
+                       e.get("status") in ("upcoming", "ongoing", "tbd")), None)
     latest = [e for e in items if e.get("category") in ("campus", "competition")][:5]
     res_items = resources.get("items", [])
     featured_res = [r for r in res_items if r.get("featured")][:2]
     top_res = sorted([r for r in res_items if not r.get("featured")],
                      key=lambda r: -(r.get("stars") or 0))[:6]
 
+    # 已举办活动的真实照片优先；没有照片时继续使用芯片示意。
+    photo_event = next((e for e in completed_salons if e.get("photos")), None)
+    community_visual = CHIP_ART_FIGURE
+    if photo_event:
+        ph = photo_event["photos"][0]
+        photo_src = "assets/img/" + esc(str(ph.get("src", "")).lstrip("/"))
+        photo_href, _, _ = event_destination(photo_event, 0)
+        community_visual = f"""<figure class="community-feature">
+      <div class="feature-heading"><span>芯沙龙现场</span><span>AI 芯动力</span></div>
+      <a class="feature-photo" href="{photo_href}" aria-label="回看{esc(photo_event.get('title'))}">
+        <img src="{photo_src}" width="1600" height="1067" fetchpriority="high" decoding="async" alt="{esc(ph.get('alt') or ph.get('caption'))}">
+      </a>
+      <figcaption><div><p class="feature-meta">{esc(photo_event.get('dateText') or photo_event.get('date'))}</p>
+        <a class="feature-title" href="{photo_href}">{esc(photo_event.get('title'))}{icon('arrow')}</a>
+        <p class="feature-location">{esc(photo_event.get('location'))}</p></div>
+        <span class="feature-mark" aria-hidden="true">{icon('chip')}</span>
+      </figcaption>
+    </figure>"""
+
     hero = f"""<section class="hero container" id="home">
     <div class="hero-copy"><p class="hero-label"><span class="live-dot"></span>{esc(site.get("university"))} · AI for IC 社区</p>
-      <h1>一起探索<br>AI × IC 的可能</h1>
+      <h1><span class="hero-title-opening">一起探索</span><span class="hero-title-line"><span class="hero-latin" lang="en">AI × IC</span><span class="hero-title-ending">的可能</span></span></h1>
       <p class="hero-description">让 AI 成为手中的工具，让想法走向真实的项目。<br class="desktop-break">从第一次使用 Agent，到一起探索集成电路。</p>
       <div class="hero-buttons"><a class="button" href="events/index.html">看看近期活动{icon("arrow")}</a><a class="text-button" href="resources/index.html">从学习资源开始{icon("down")}</a></div>
       <p class="hero-note">带上好奇心，和我们一起动手。</p></div>
-{CHIP_ART_FIGURE}
+{community_visual}
   </section>
 {quick_links(site)}"""
 
     events_block = section_open("近期活动", "见面，让想法发生。",
                                 "芯沙龙 · 常规活动 · 学院资讯 · 竞赛信息 · 全部活动入口") + f"""
-    <div class="events-grid">{featured_event(featured, 0) if featured else ''}{next_event_card(next_salon, 0) if next_salon else ''}</div>
+    <div class="events-grid home-events-grid">{featured_event(featured, 0) if featured else ''}{next_event_card(next_salon, 0) if next_salon else ''}</div>
     <p class="project-footnote">{icon("info")}<span>完整列表（含自动同步的学院资讯与竞赛信息）在 <a class="inline-link" href="events/index.html">活动日历</a>。</span></p>
 """ + section_close()
 
@@ -812,7 +834,7 @@ def build_home(site, events, partners, projects, org, resources, collected) -> s
     {feat_block}
     <div class="library-heading"><h3 class="resource-subheading">资源库 <span>按用途分类，全部实测可访问</span></h3></div>
     <div class="resource-list">{"".join(resource_row(r) for r in top_res)}</div>
-    <div class="resource-bottom"><span>显示 {len(top_res)} / {len(res_items)} 份资源</span><span>提交于 content/resources.json</span></div>
+    <div class="resource-bottom"><span>显示 {len(top_res)} / {len(res_items)} 份资源</span><a class="inline-link" href="contribute/index.html">分享你的学习资源</a></div>
   </div></section>"""
 
     campus_block = ""
@@ -991,8 +1013,9 @@ def build_resources(site, resources) -> str:
         feat_block = ('<h3 class="resource-subheading">社区精选 <span>同学自己整理的笔记、课程与站点</span></h3>'
                       f'<div class="featured-resources">{"".join(featured_resource(r) for r in featured)}</div>')
 
-    empty = empty_state("资源库正在建设", "我们正在整理 AI × IC 方向的优质资料，欢迎你推荐。",
+    empty = empty_state("没有找到匹配的资源", "试试其他关键词，或切换到「全部资源」。",
                         "推荐一份资料", "../contribute/index.html", "book")
+    empty = f'<div data-filter-empty{" hidden" if library else ""}>{empty}</div>'
     body = page_hero("The Shared Toolbox", "资源库",
                      "AI × IC 方向的工具、项目、课程与论文清单。每条都实测可访问，按用途分类。",
                      counts=[(len(items), "份资源"), (len(counts), "个分类")]) + f"""
@@ -1005,7 +1028,7 @@ def build_resources(site, resources) -> str:
       <span data-resource-count role="status" aria-live="polite"></span></div>
     <div class="resource-list">{"".join(resource_row(r) for r in library)}</div>
     {empty}
-    <div class="resource-bottom"><span>所有链接均实测可访问</span><span>提交于 content/resources.json（维护方式见运维手册）</span></div>
+    <div class="resource-bottom"><span>发现链接失效？欢迎告诉我们。</span><a class="inline-link" href="../contribute/index.html">分享你的学习资源</a></div>
   </div></section>"""
     return page(site, 1, "资源库", "资源库",
                 "AI × IC 方向精选工具、项目、课程与论文清单。", body)
