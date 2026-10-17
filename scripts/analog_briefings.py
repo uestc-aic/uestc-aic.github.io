@@ -52,10 +52,10 @@ def pages(site,issues,b):
         texts=markdown(issue)
         body=b.page_hero('Analog circuits / '+d,b.esc(issue['title']),b.esc(issue['overview']))
         body+=f'<section class="section"><div class="container container-narrow"><nav class="detail-actions" aria-label="周报阅读与下载"><a class="text-button" href="../index.html">返回周报归档</a><a class="text-button" href="../data/{d}.json" download>下载结构化数据</a><a class="text-button" href="../data/{d}.md" download>下载阅读笔记</a></nav><div class="prose">{b.render_md(markdown(issue,include_header=False))}</div></div></section>'
-        yield f'briefings/{d}/index.html',b.page(site,2,'周报',issue['title']+'｜'+d,issue['overview'],body)
+        yield f'briefings/{d}/index.html',b.page(site,2,'周报',issue['title']+'｜'+d,issue['overview'],body).replace('\n    \n','\n\n')
         yield f'briefings/data/{d}.json',json.dumps(issue,ensure_ascii=False,indent=2)+'\n'
         yield f'briefings/data/{d}.md',texts
     lead='每周精选少量论文与工程文章，关注运放、有源滤波、反馈稳定性与传感前端；注明证据、局限和动手验证步骤。'
     body=b.page_hero('Weekly / Analog circuits','模拟电路周报',lead)
     body+='<section class="section"><div class="container container-narrow">'+(''.join(cards) or '<p>周报正在整理中。</p>')+'</div></section>'
-    yield 'briefings/index.html',b.page(site,1,'周报','模拟电路周报',lead,body)
+    yield 'briefings/index.html',b.page(site,1,'周报','模拟电路周报',lead,body).replace('\n    \n','\n\n')
