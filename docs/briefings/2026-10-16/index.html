@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f8fc">
+<meta name="description" content="本期覆盖 2026 年 10 月 9–16 日，精选三项与传感前端、滤波和低噪声放大有关的阅读。第一篇是综述，后两篇仅有电路仿真结果。未发现足够扎实且具有实测数据的新运放补偿工作。">
+<title>模拟电路与信号处理周报｜2026-10-16 · AI 芯动力 · UESTC AIC</title>
+<meta property="og:title" content="模拟电路与信号处理周报｜2026-10-16 · AI 芯动力 · UESTC AIC">
+<meta property="og:description" content="本期覆盖 2026 年 10 月 9–16 日，精选三项与传感前端、滤波和低噪声放大有关的阅读。第一篇是综述，后两篇仅有电路仿真结果。未发现足够扎实且具有实测数据的新运放补偿工作。">
+<meta property="og:type" content="website">
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/ma-shan-zheng-headings.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/space-grotesk-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../assets/css/style.css?v=20261016-community">
+<script src="../../assets/js/app.js" defer></script>
+</head>
+<body>
+<svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol><symbol id="icon-arrow-r" viewBox="0 0 24 24"><path d="M4 12h15m-6-7 7 7-7 7"/></symbol><symbol id="icon-down" viewBox="0 0 24 24"><path d="M12 4v16m-7-7 7 7 7-7"/></symbol><symbol id="icon-chip" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v3m6-3v3M9 19v3m6-3v3M2 9h3m-3 6h3m14-6h3m-3 6h3"/></symbol><symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="icon-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol><symbol id="icon-book" viewBox="0 0 24 24"><path d="M12 5v15M3 4c3-1 6-1 9 1 3-2 6-2 9-1v15c-3-1-6-1-9 1-3-2-6-2-9-1Z"/></symbol><symbol id="icon-terminal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3m6 0h4"/></symbol><symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol><symbol id="icon-agent" viewBox="0 0 24 24"><path d="m12 2 2.5 6.5L21 11l-6.5 2.5L12 20l-2.5-6.5L3 11l6.5-2.5Z"/><path d="m20 16 1 2 2 1-2 1-1 2-1-2-2-1 2-1Z"/></symbol><symbol id="icon-git" viewBox="0 0 24 24"><circle cx="7" cy="5" r="2"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="5" r="2"/><path d="M7 7v10m10-10v2a5 5 0 0 1-5 5H7"/></symbol><symbol id="icon-route" viewBox="0 0 24 24"><rect x="2" y="3" width="6" height="6" rx="1"/><rect x="16" y="15" width="6" height="6" rx="1"/><path d="M8 6h8a3 3 0 0 1 0 6H8a3 3 0 0 0 0 6h8"/></symbol><symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m2-16a3 3 0 0 1 0 6m1 4a5 5 0 0 1 3 5"/></symbol><symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol><symbol id="icon-github" viewBox="0 0 24 24"><path d="M9 19c-4 1.5-4-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 4.5-1.4 4.5-4.8 0-1-.4-2-1-2.6.1-.3.5-1.3-.1-2.6 0 0-1-.3-3.3 1.2a11 11 0 0 0-5.8 0C6.5 5.2 5.5 5.5 5.5 5.5c-.6 1.3-.2 2.3-.1 2.6-.6.6-1 1.5-1 2.6 0 3.4 1.7 4.5 4.5 4.8-.5.5-.5 1.1-.5 2V21"/></symbol><symbol id="icon-share" viewBox="0 0 24 24"><path d="M12 16V4M8 8l4-4 4 4"/><path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></symbol><symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></symbol><symbol id="icon-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-1.6 4L16 12H5"/></symbol><symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 13 4 4 10-11"/></symbol><symbol id="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol><symbol id="icon-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8.5v.5"/></symbol><symbol id="icon-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></symbol><symbol id="icon-file" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/></symbol><symbol id="icon-plug" viewBox="0 0 24 24"><path d="M9 2v6M15 2v6M6 8h12v3a6 6 0 0 1-12 0Z"/><path d="M12 17v5"/></symbol></defs></svg>
+<a class="skip-link" href="#main">跳转到主要内容</a>
+<header class="header"><div class="container nav-wrap">
+    <a class="brand" href="../../index.html" aria-label="AI 芯动力 · UESTC AIC首页"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span><span class="brand-name">AI 芯动力<span>UESTC AIC</span></span></a>
+    <nav class="nav" id="navigation" aria-label="主导航"><a href="../../index.html">首页</a><a href="../../events/index.html">活动</a><a href="../../college/index.html">学院资讯</a><a href="../../competitions/index.html">竞赛</a><a href="../../briefings/index.html" class="current">周报</a><a href="../../resources/index.html">资源库</a><a href="../../partners/index.html">合作伙伴</a><a href="../../about/index.html">关于</a></nav>
+    <div class="nav-actions"><a class="github-link" href="https://github.com/uestc-aic" target="_blank" rel="noopener noreferrer" aria-label="GitHub 社区，在新窗口打开"><svg class="icon" aria-hidden="true"><use href="#icon-github"/></svg></a><a class="button button-small" href="../../join/index.html">加入我们<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a><button class="menu-button" aria-label="打开导航" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button></div>
+  </div></header>
+<main id="main">
+<section class="page-hero">
+  <div class="litho-grid" aria-hidden="true"></div>
+  <div class="container page-hero-inner">
+    <div class="page-hero-copy"><p class="section-label">Analog circuits / 2026-10-16</p><h1>模拟电路与信号处理周报</h1><p class="hero-description">本期覆盖 2026 年 10 月 9–16 日，精选三项与传感前端、滤波和低噪声放大有关的阅读。第一篇是综述，后两篇仅有电路仿真结果。未发现足够扎实且具有实测数据的新运放补偿工作。</p></div>
+    
+  </div>
+</section><section class="section"><div class="container container-narrow"><nav class="detail-actions" aria-label="周报阅读与下载"><a class="text-button" href="../index.html">返回周报归档</a><a class="text-button" href="../data/2026-10-16.json" download>下载结构化数据</a><a class="text-button" href="../data/2026-10-16.md" download>下载阅读笔记</a></nav><div class="prose"><h3>1. 本期最佳阅读 · Circuit Innovations for Wearable Biomedical Monitoring: CMOS Analog Front-Ends and Data Converter Architectures</h3>
+<p>发布 / 更新：2026-10-13</p>
+<p>原始来源：<a href="https://www.mdpi.com/2079-9292/15/20/4695" target="_blank" rel="noopener noreferrer">查看论文原文</a></p>
+<p><strong>新内容：</strong> 以功耗（Power）、精度（Precision）、鲁棒性（Robustness）三个目标梳理近五年的 CMOS 生物电前端，比较独立模拟前端与融合 AFE–ADC 架构。AFE 指模拟前端，ADC 指模数转换器；这里的新内容是综述与比较框架，而非新制造的芯片。</p>
+<p><strong>为什么值得读：</strong> 低噪声指标不能代表实际使用的稳定性。电极偏置、运动干扰和电极阻抗不平衡都可能让高增益前端饱和，设计还要考虑大信号后的恢复能力。</p>
+<p><strong>证据与结果：</strong> 综述汇总了 33 项具有电路或系统实测结果的实现，讨论最高约 ±300–500 mV 电极直流偏置、10–100 mV 运动伪迹等输入条件。这些是所综述工作与场景的范围，不能当成某一芯片同时达到的指标。</p>
+<p><strong>权衡与局限：</strong> 降低输入噪声通常需要更高跨导和偏置电流；提高输入阻抗、抑制共模干扰及增加偏置消除环路，又会增加功耗与面积。各研究的带宽、测试负载和干扰条件不同，表格排名不等于同条件性能排名。</p>
+<p><strong>动手验证：</strong> 在仿真中给差分传感前端叠加 ±300 mV 差分直流偏置、适当幅度的 50 Hz 共模信号和一个 50 mV 瞬态脉冲，记录是否饱和、恢复时间及恢复后的偏置。所有输入应保持在器件允许的共模范围内。</p>
+<h3>2. CFOA-based mixed-mode first-order universal filter implemented with commercially available ICs</h3>
+<p>发布 / 更新：在线发布 2026-10-11；期刊页面另列印刷日期 2026-10-01</p>
+<p>原始来源：<a href="https://reference-global.com/article/10.2478/jee-2026-0047" target="_blank" rel="noopener noreferrer">查看论文原文</a></p>
+<p><strong>新内容：</strong> 使用三个电流反馈运算放大器（CFOA）、三个电阻和一个电容，在同一结构中产生一阶低通、高通及全通响应，并支持电压、电流、跨阻和跨导四种工作模式；可通过一个电阻调节极点频率。</p>
+<p><strong>为什么值得读：</strong> 可学习电流反馈结构的非理想端口、跟踪误差和寄生参数如何影响实际滤波。全通滤波器的理想幅度不变，主要改变相位。</p>
+<p><strong>证据与结果：</strong> 论文采用商用 AD844 的 PSpice 模型进行验证，包含非理想分析与正交振荡器应用；没有面包板或 PCB 测量。CFOA 的闭环带宽对增益的依赖通常较弱，但反馈电阻仍受稳定性要求限制。</p>
+<p><strong>权衡与局限：</strong> 三个有源器件用于单独的一阶滤波并不精简；商用芯片模型验证不等于已经制作硬件。频率调节范围、噪声和负载驱动能力仍需结合数据手册与实际寄生评估。</p>
+<p><strong>动手验证：</strong> 复现一个低通输出，先用理想受控源，再换 AD844 宏模型；加入源阻抗、输出负载电容和连线寄生，比较截止频率、幅度与相位误差。</p>
+<h3>3. Design, Noise Modelling, and Performance Analysis of a GaAs pHEMT Low Noise Amplifier for Sub-6 GHz Receiver Front-Ends</h3>
+<p>发布 / 更新：2026-10-13</p>
+<p>原始来源：<a href="https://link.springer.com/article/10.1007/s11277-026-12246-3" target="_blank" rel="noopener noreferrer">查看论文原文</a></p>
+<p><strong>新内容：</strong> 把偏置、器件噪声模型、输入噪声匹配、输出增益匹配和稳定性评估组合成一套设计流程。GaAs pHEMT 是适合微波低噪声放大的砷化镓高电子迁移率晶体管。</p>
+<p><strong>为什么值得读：</strong> 最低噪声对应的源阻抗不一定带来最大功率增益；选择输入匹配网络时要把噪声、增益和稳定性放在一起考虑。</p>
+<p><strong>证据与结果：</strong> 作者报告 ADS 电路仿真在 5.9 GHz 获得约 10.04 dB 增益和 0.91 dB 噪声指标，并在所考察频段满足 K &gt; 1、|Δ| &lt; 1 的两端口小信号无条件稳定判据。论文图中使用 NFmin（最小噪声系数），实际匹配后噪声应另行核查。没有 PCB 或芯片实测。</p>
+<p><strong>权衡与局限：</strong> 偏置约 4 V、64 mA，功耗约 254 mW；不适合直接作为超低功耗方案。还需要真实器件、网络损耗、封装和 PCB 电磁仿真验证；工作频段内的稳定判据不等于所有频率与所有非线性条件都稳定。</p>
+<p><strong>动手验证：</strong> 在 ADS 中分别优化最大增益匹配和最低噪声匹配，比较噪声圆、增益圆与稳定圆；对折中点扫频并改变源、负载阻抗，检查带外潜在振荡。</p>
+<p>资料由 AI 辅助整理，关键指标请结合原文核验；原文版权归原作者所有。</p></div></div></section>
+</main>
+<footer class="footer"><div class="container footer-top">
+    <a class="brand" href="../../index.html"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#icon-chip"/></svg></span><span class="brand-name">AI 芯动力<span>UESTC AIC</span></span></a>
+    <p>一个关于 AI 与 IC 的开放技术社区。</p>
+    <nav class="footer-links" aria-label="页脚导航">
+      <a href="../../events/index.html">活动</a>
+      <a href="../../resources/index.html">资源库</a>
+      <a href="../../partners/index.html">合作伙伴</a>
+      <a href="../../contribute/index.html">投稿</a>
+      <a href="../../docs/index.html">运维手册</a>
+      <a href="https://github.com/uestc-aic" target="_blank" rel="noopener noreferrer">GitHub<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+    </nav>
+  </div><div class="container footer-bottom">
+    <span>© 2026 AI 芯动力 · UESTC AIC．Built with curiosity.</span>
+    <span>电子科技大学 · 集成电路科学与工程学院（示范性微电子学院）</span>
+    <span>内容更新于 2026-10-15</span>
+  </div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

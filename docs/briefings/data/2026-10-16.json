@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-16",
+  "title": "模拟电路与信号处理周报",
+  "overview": "本期覆盖 2026 年 10 月 9–16 日，精选三项与传感前端、滤波和低噪声放大有关的阅读。第一篇是综述，后两篇仅有电路仿真结果。未发现足够扎实且具有实测数据的新运放补偿工作。",
+  "selections": [
+    {
+      "title": "Circuit Innovations for Wearable Biomedical Monitoring: CMOS Analog Front-Ends and Data Converter Architectures",
+      "url": "https://www.mdpi.com/2079-9292/15/20/4695",
+      "publishedDate": "2026-10-13",
+      "bestRead": true,
+      "novelty": "以功耗（Power）、精度（Precision）、鲁棒性（Robustness）三个目标梳理近五年的 CMOS 生物电前端，比较独立模拟前端与融合 AFE–ADC 架构。AFE 指模拟前端，ADC 指模数转换器；这里的新内容是综述与比较框架，而非新制造的芯片。",
+      "whyItMatters": "低噪声指标不能代表实际使用的稳定性。电极偏置、运动干扰和电极阻抗不平衡都可能让高增益前端饱和，设计还要考虑大信号后的恢复能力。",
+      "evidence": "综述汇总了 33 项具有电路或系统实测结果的实现，讨论最高约 ±300–500 mV 电极直流偏置、10–100 mV 运动伪迹等输入条件。这些是所综述工作与场景的范围，不能当成某一芯片同时达到的指标。",
+      "limitations": "降低输入噪声通常需要更高跨导和偏置电流；提高输入阻抗、抑制共模干扰及增加偏置消除环路，又会增加功耗与面积。各研究的带宽、测试负载和干扰条件不同，表格排名不等于同条件性能排名。",
+      "takeaway": "在仿真中给差分传感前端叠加 ±300 mV 差分直流偏置、适当幅度的 50 Hz 共模信号和一个 50 mV 瞬态脉冲，记录是否饱和、恢复时间及恢复后的偏置。所有输入应保持在器件允许的共模范围内。"
+    },
+    {
+      "title": "CFOA-based mixed-mode first-order universal filter implemented with commercially available ICs",
+      "url": "https://reference-global.com/article/10.2478/jee-2026-0047",
+      "publishedDate": "在线发布 2026-10-11；期刊页面另列印刷日期 2026-10-01",
+      "bestRead": false,
+      "novelty": "使用三个电流反馈运算放大器（CFOA）、三个电阻和一个电容，在同一结构中产生一阶低通、高通及全通响应，并支持电压、电流、跨阻和跨导四种工作模式；可通过一个电阻调节极点频率。",
+      "whyItMatters": "可学习电流反馈结构的非理想端口、跟踪误差和寄生参数如何影响实际滤波。全通滤波器的理想幅度不变，主要改变相位。",
+      "evidence": "论文采用商用 AD844 的 PSpice 模型进行验证，包含非理想分析与正交振荡器应用；没有面包板或 PCB 测量。CFOA 的闭环带宽对增益的依赖通常较弱，但反馈电阻仍受稳定性要求限制。",
+      "limitations": "三个有源器件用于单独的一阶滤波并不精简；商用芯片模型验证不等于已经制作硬件。频率调节范围、噪声和负载驱动能力仍需结合数据手册与实际寄生评估。",
+      "takeaway": "复现一个低通输出，先用理想受控源，再换 AD844 宏模型；加入源阻抗、输出负载电容和连线寄生，比较截止频率、幅度与相位误差。"
+    },
+    {
+      "title": "Design, Noise Modelling, and Performance Analysis of a GaAs pHEMT Low Noise Amplifier for Sub-6 GHz Receiver Front-Ends",
+      "url": "https://link.springer.com/article/10.1007/s11277-026-12246-3",
+      "publishedDate": "2026-10-13",
+      "bestRead": false,
+      "novelty": "把偏置、器件噪声模型、输入噪声匹配、输出增益匹配和稳定性评估组合成一套设计流程。GaAs pHEMT 是适合微波低噪声放大的砷化镓高电子迁移率晶体管。",
+      "whyItMatters": "最低噪声对应的源阻抗不一定带来最大功率增益；选择输入匹配网络时要把噪声、增益和稳定性放在一起考虑。",
+      "evidence": "作者报告 ADS 电路仿真在 5.9 GHz 获得约 10.04 dB 增益和 0.91 dB 噪声指标，并在所考察频段满足 K > 1、|Δ| < 1 的两端口小信号无条件稳定判据。论文图中使用 NFmin（最小噪声系数），实际匹配后噪声应另行核查。没有 PCB 或芯片实测。",
+      "limitations": "偏置约 4 V、64 mA，功耗约 254 mW；不适合直接作为超低功耗方案。还需要真实器件、网络损耗、封装和 PCB 电磁仿真验证；工作频段内的稳定判据不等于所有频率与所有非线性条件都稳定。",
+      "takeaway": "在 ADS 中分别优化最大增益匹配和最低噪声匹配，比较噪声圆、增益圆与稳定圆；对折中点扫频并改变源、负载阻抗，检查带外潜在振荡。"
+    }
+  ]
+}

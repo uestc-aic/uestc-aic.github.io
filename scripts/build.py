@@ -26,6 +26,7 @@ AI 芯动力 · UESTC AIC 官网 —— 静态站点生成器
 """
 
 import json
+import analog_briefings
 import re
 import sys
 import shutil
@@ -1267,6 +1268,11 @@ def build() -> int:
     collected = load_collected()
 
     problems = validate(site, events, partners, projects, org, resources, collected)
+    try:
+        briefings = analog_briefings.load_issues(CONTENT)
+    except (ValueError, OSError) as error:
+        briefings = []
+        problems.append(f"模拟电路周报：{error}")
     if problems:
         print(f"\n内容校验：发现 {len(problems)} 个问题")
         for pr in problems:
@@ -1275,7 +1281,7 @@ def build() -> int:
     else:
         print("内容校验：通过")
 
-    if "--check" in sys.argv:
+    if "--check" in sys.argv or problems:
         return 1 if problems else 0
 
     if "--clean" in sys.argv and DIST.exists():
@@ -1309,6 +1315,8 @@ def build() -> int:
     emit("join/index.html", build_join(site))
     emit("contribute/index.html", build_contribute(site))
     emit("docs/index.html", build_docs(site))
+    for route, body in analog_briefings.pages(site, briefings, sys.modules[__name__]):
+        emit(route, body)
     emit("404.html", build_404(site))
     emit(".nojekyll", "")
 
