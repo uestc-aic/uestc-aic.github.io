@@ -2,8 +2,23 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-10-18T03:31:32+08:00",
+  "fetched_at": "2026-10-19T03:31:20+08:00",
   "items": [
+    {
+      "id": "50a65408c52b73c7",
+      "title": "曹萍、胡俊重阳节前夕看望慰问学校老同志",
+      "url": "https://news.uestc.edu.cn/info/1003/44488.htm",
+      "date": "2026-10-18",
+      "date_text": "2026-10-18",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44488.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-19T03:31:20+08:00",
+      "locked": false
+    },
     {
       "id": "2261718fbb12ebc1",
       "title": "成都市委副书记、市长陈书平在电子科技大学调研并座谈交流",
@@ -434,21 +449,6 @@
       "source": {
         "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
         "url": "https://news.uestc.edu.cn/info/1003/44169.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-15T22:37:45+08:00",
-      "locked": false
-    },
-    {
-      "id": "498c1a7d8174e0f1",
-      "title": "学校召开校地定点帮扶工作座谈会",
-      "url": "https://news.uestc.edu.cn/info/1003/44171.htm",
-      "date": "2026-10-03",
-      "date_text": "2026-10-03",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/44171.htm",
         "source_id": "uestc-news"
       },
       "collected_at": "2026-10-15T22:37:45+08:00",
