@@ -2,8 +2,38 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-10-19T03:31:20+08:00",
+  "fetched_at": "2026-10-20T03:40:30+08:00",
   "items": [
+    {
+      "id": "b71dfa8e75502dc7",
+      "title": "国内首个多中心孤独症脑影像数据库发布大样本脑发育图表",
+      "url": "https://news.uestc.edu.cn/info/1005/44458.htm",
+      "date": "2026-10-19",
+      "date_text": "2026-10-19",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/44458.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-20T03:40:30+08:00",
+      "locked": false
+    },
+    {
+      "id": "b72ce4873279eefb",
+      "title": "计算机（网安）学院算法与逻辑团队成果被SODA 2027录用",
+      "url": "https://news.uestc.edu.cn/info/1005/44504.htm",
+      "date": "2026-10-19",
+      "date_text": "2026-10-19",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/44504.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-20T03:40:30+08:00",
+      "locked": false
+    },
     {
       "id": "50a65408c52b73c7",
       "title": "曹萍、胡俊重阳节前夕看望慰问学校老同志",
@@ -32,6 +62,21 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-10-18T03:31:32+08:00",
+      "locked": false
+    },
+    {
+      "id": "3d7d6d4a21cece1d",
+      "title": "赛事预告 | 第十八届“成电杯”新生辩论赛初赛启动！",
+      "url": "https://news.uestc.edu.cn/info/1016/44503.htm",
+      "date": "2026-10-16",
+      "date_text": "2026-10-16",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1016/44503.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-20T03:40:30+08:00",
       "locked": false
     },
     {
@@ -404,51 +449,6 @@
       "source": {
         "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
         "url": "https://news.uestc.edu.cn/info/1005/44190.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-15T22:37:45+08:00",
-      "locked": false
-    },
-    {
-      "id": "3e7875e7877dec3e",
-      "title": "《Photonic Sensors》入选《2025年度世界一流科技期刊目录》",
-      "url": "https://news.uestc.edu.cn/info/1005/43883.htm",
-      "date": "2026-10-06",
-      "date_text": "2026-10-06",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/43883.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-15T22:37:45+08:00",
-      "locked": false
-    },
-    {
-      "id": "19c63ffc9322e1a3",
-      "title": "英国格拉斯哥大学校长Andy Schofield一行来校访问",
-      "url": "https://news.uestc.edu.cn/info/1003/44181.htm",
-      "date": "2026-10-03",
-      "date_text": "2026-10-03",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/44181.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-15T22:37:45+08:00",
-      "locked": false
-    },
-    {
-      "id": "fdadb271690da68c",
-      "title": "微波射频与先进电子大会举行",
-      "url": "https://news.uestc.edu.cn/info/1003/44169.htm",
-      "date": "2026-10-03",
-      "date_text": "2026-10-03",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/44169.htm",
         "source_id": "uestc-news"
       },
       "collected_at": "2026-10-15T22:37:45+08:00",
