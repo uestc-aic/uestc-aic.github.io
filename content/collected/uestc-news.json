@@ -2,8 +2,38 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-10-20T03:40:30+08:00",
+  "fetched_at": "2026-10-21T03:41:19+08:00",
   "items": [
+    {
+      "id": "1d1b9893c40ea3fd",
+      "title": "名师讲堂：Small Droplets, Big Chemistry: Reactivity at Water and Organic Interfaces",
+      "url": "https://news.uestc.edu.cn/info/1015/44526.htm",
+      "date": "2026-10-20",
+      "date_text": "2026-10-20",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1015/44526.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-21T03:41:19+08:00",
+      "locked": false
+    },
+    {
+      "id": "32be70e70a9ba07b",
+      "title": "学者论坛：复杂体系量子物态超快调控和探测",
+      "url": "https://news.uestc.edu.cn/info/1015/44525.htm",
+      "date": "2026-10-20",
+      "date_text": "2026-10-20",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1015/44525.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-21T03:41:19+08:00",
+      "locked": false
+    },
     {
       "id": "b71dfa8e75502dc7",
       "title": "国内首个多中心孤独症脑影像数据库发布大样本脑发育图表",
@@ -32,6 +62,21 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-10-20T03:40:30+08:00",
+      "locked": false
+    },
+    {
+      "id": "f4fb523a6dfac4bf",
+      "title": "电子科技大学研究生教育综合改革大讨论开幕",
+      "url": "https://news.uestc.edu.cn/info/1003/44498.htm",
+      "date": "2026-10-18",
+      "date_text": "2026-10-18",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44498.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-21T03:41:19+08:00",
       "locked": false
     },
     {
@@ -404,51 +449,6 @@
       "source": {
         "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
         "url": "https://news.uestc.edu.cn/info/1005/44212.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-15T22:37:45+08:00",
-      "locked": false
-    },
-    {
-      "id": "14a4cdd6518bcb56",
-      "title": "我校牵头两项国家标准通过审查、一项IEC国际标准完成国内论证",
-      "url": "https://news.uestc.edu.cn/info/1005/43895.htm",
-      "date": "2026-10-08",
-      "date_text": "2026-10-08",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/43895.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-15T22:37:45+08:00",
-      "locked": false
-    },
-    {
-      "id": "f41e1aaf362f4115",
-      "title": "光电学院许向东教授在材料学顶级期刊Materials Today发表研究成果",
-      "url": "https://news.uestc.edu.cn/info/1005/44189.htm",
-      "date": "2026-10-08",
-      "date_text": "2026-10-08",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/44189.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-15T22:37:45+08:00",
-      "locked": false
-    },
-    {
-      "id": "671d150d30fcde3e",
-      "title": "集电学院张晓升教授团队在工业电子领域顶级期刊IEEE Transactions on Industrial Electronics发表研究成果",
-      "url": "https://news.uestc.edu.cn/info/1005/44190.htm",
-      "date": "2026-10-08",
-      "date_text": "2026-10-08",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/44190.htm",
         "source_id": "uestc-news"
       },
       "collected_at": "2026-10-15T22:37:45+08:00",
