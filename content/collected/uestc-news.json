@@ -2,8 +2,83 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-10-23T03:39:43+08:00",
+  "fetched_at": "2026-10-24T03:39:02+08:00",
   "items": [
+    {
+      "id": "bc85f5d2059f4b99",
+      "title": "「人文×科技」思想者论坛第四十一期讲座预告",
+      "url": "https://news.uestc.edu.cn/info/1015/44679.htm",
+      "date": "2026-10-23",
+      "date_text": "2026-10-23",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1015/44679.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-24T03:39:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "bc7e35b58e815bb3",
+      "title": "华为技术有限公司与学校签署战略合作协议",
+      "url": "https://news.uestc.edu.cn/info/1006/44685.htm",
+      "date": "2026-10-23",
+      "date_text": "2026-10-23",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1006/44685.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-24T03:39:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "c32da31ed2cf8eee",
+      "title": "我校学子在第十三届中国研究生能源装备创新设计大赛中获佳绩",
+      "url": "https://news.uestc.edu.cn/info/1004/44680.htm",
+      "date": "2026-10-23",
+      "date_text": "2026-10-23",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1004/44680.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-24T03:39:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "b9bcbdddd00b4338",
+      "title": "学校举行2026年党员基本培训第二次集中大课",
+      "url": "https://news.uestc.edu.cn/info/1003/44657.htm",
+      "date": "2026-10-23",
+      "date_text": "2026-10-23",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44657.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-24T03:39:02+08:00",
+      "locked": false
+    },
+    {
+      "id": "9190b2417d0df240",
+      "title": "上海交通大学李政道研究所王楠林教授做客学者论坛",
+      "url": "https://news.uestc.edu.cn/info/1005/44663.htm",
+      "date": "2026-10-22",
+      "date_text": "2026-10-22",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/44663.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-24T03:39:02+08:00",
+      "locked": false
+    },
     {
       "id": "8cc477e851a0354d",
       "title": "学者论坛：先进电池基础科学与关键技术挑战",
@@ -377,81 +452,6 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-10-17T03:36:39+08:00",
-      "locked": false
-    },
-    {
-      "id": "f3e4a759c61db1d8",
-      "title": "学者论坛：Finite-Time Singularity Formation for Supercritical Evolution Equations",
-      "url": "https://news.uestc.edu.cn/info/1015/44428.htm",
-      "date": "2026-10-15",
-      "date_text": "2026-10-15",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1015/44428.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-16T14:31:33+08:00",
-      "locked": false
-    },
-    {
-      "id": "2fc8d02df8e046e7",
-      "title": "学者论坛：Pickup Opportunity as Resource A Probabilistic Approach for Demand-Aware Ride-Sharing Optimization",
-      "url": "https://news.uestc.edu.cn/info/1015/44384.htm",
-      "date": "2026-10-15",
-      "date_text": "2026-10-15",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1015/44384.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-15T22:37:45+08:00",
-      "locked": false
-    },
-    {
-      "id": "27657a5e3b6adcdc",
-      "title": "电子科技大学与法国格勒诺布尔经济管理学院硕士学位教育项目举行开学典礼",
-      "url": "https://news.uestc.edu.cn/info/1003/44388.htm",
-      "date": "2026-10-15",
-      "date_text": "2026-10-15",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/44388.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-15T22:37:45+08:00",
-      "locked": false
-    },
-    {
-      "id": "5f9ee916691ca72e",
-      "title": "国家自然科学基金委员会化学部学科研讨会在我校召开",
-      "url": "https://news.uestc.edu.cn/info/1003/44391.htm",
-      "date": "2026-10-15",
-      "date_text": "2026-10-15",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/44391.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-15T22:37:45+08:00",
-      "locked": false
-    },
-    {
-      "id": "6da7b620809298b7",
-      "title": "「人文×科技」思想者论坛第三十九期讲座预告",
-      "url": "https://news.uestc.edu.cn/info/1015/44357.htm",
-      "date": "2026-10-14",
-      "date_text": "2026-10-14",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1015/44357.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-15T22:37:45+08:00",
       "locked": false
     }
   ]
