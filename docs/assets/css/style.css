@@ -415,6 +415,7 @@ dialog h2 { font-size: 27px; margin-bottom: 20px; }
 .channel-head { display: flex; align-items: center; gap: 11px; margin-bottom: 10px; }
 .channel-head .icon { width: 20px; height: 20px; color: var(--blue); }
 .channels { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; }
+.channels > .info-panel { margin-top: 0; }
 
 /* ── 关于 / 投稿 / 详情 两栏 ─────────────────────────────────── */
 .about-split { display: grid; grid-template-columns: minmax(0, 1fr) 344px; gap: 56px; align-items: start; }
