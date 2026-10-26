@@ -1122,29 +1122,35 @@ def _channel(icon_name, title, body, value, hint) -> str:
 
 def build_join(site) -> str:
     channels = "".join([
-        _channel("github", "GitHub 社区", "关注我们的仓库，站点源码与全部内容都在这里公开。",
-                 site.get("github"), "待补：content/site.json 的 github 字段"),
         _channel("users", "QQ 交流群", "进群聊 AI、IC 与项目实践，活动通知也会在群里同步。",
-                 site.get("qqGroup"), "待公布 —— 把群链接填入 content/site.json 的 qqGroup"),
-        _channel("share", "招新 / 活动报名", "填写报名表加入我们，或报名参加芯沙龙。",
-                 site.get("joinForm"), "待公布 —— 把报名表链接填入 content/site.json 的 joinForm"),
+                 site.get("qqGroup"), "QQ 交流群信息即将公布。"),
+        _channel("github", "GitHub 社区", "关注我们的仓库，站点源码与全部内容都在这里公开。",
+                 site.get("github"), "GitHub 社区入口即将公布。"),
     ])
     body = page_hero("Join Us", "加入 AI 芯动力",
-                     "对 AI 或 IC 感兴趣，就从这里开始。项目组、活动筹备、内容策划都需要人。") + f"""
+                     "对 AI 或 IC 感兴趣，欢迎加入 QQ 交流群，认识学习伙伴、交流经验与项目想法。") + f"""
 <section class="section"><div class="container"><div class="channels">{channels}</div>
     <div class="callout" style="margin-top:26px">{icon("info")}
-      <p><strong>还没有正式入口？</strong>先关注 GitHub 仓库，或到
-      <a class="inline-link" href="../contribute/index.html">投稿页</a> 给我们留言，我们会联系你。</p></div>
+      <p><strong>工作室招新：</strong>想参与工作室筹备与运营的同学，请加入 QQ 交流群，在群内查看招新报名表。</p></div>
   </div></section>"""
-    return page(site, 1, "关于", "加入我们", "加入 AI 芯动力：招新、QQ 群与活动报名入口。", body)
+    return page(site, 1, "关于", "加入我们", "加入 AI 芯动力 QQ 交流群，交流 AI 与 IC；工作室招新报名表在群内提供。", body)
 
 
 def build_contribute(site) -> str:
     template = "资料标题：\n原始链接：\n内容简介：\n适合人群："
     form = safe_url(site.get("contributeForm"))
-    form_html = (f'<a class="button" href="{form}" target="_blank" rel="noopener noreferrer">'
-                 f'打开投稿表单{icon("arrow")}</a>') if form else \
-                '<p class="pending-note">投稿表单待公布 —— 把链接填入 content/site.json 的 contributeForm。在此期间可通过 GitHub Issue 投稿。</p>'
+    email = str(site.get("email") or "").strip()
+    if email:
+        form_html = (f'<p>欢迎通过邮箱分享学习资料、活动线索和实践记录。</p>'
+                     f'<div class="copy-field"><code>{esc(email)}</code>'
+                     f'<button type="button" data-copy="{esc(email)}" data-copy-message="邮箱已复制">'
+                     f'{icon("copy")}<span>复制邮箱</span></button></div>'
+                     f'<a class="text-button" href="mailto:{esc(email)}">发送投稿邮件{icon("arrow")}</a>')
+    elif form:
+        form_html = (f'<a class="button" href="{form}" target="_blank" rel="noopener noreferrer">'
+                     f'打开投稿表单{icon("arrow")}</a>')
+    else:
+        form_html = '<p>欢迎通过 GitHub Issue 投稿，或到 QQ 交流群与我们联系。</p>'
     body = page_hero("Contribute", "投稿与协作",
                      "把有用的资料留在这里：AI 工具教程、IC 学习资料、活动和竞赛线索，都欢迎。") + f"""
 <section class="section"><div class="container"><div class="about-split">
