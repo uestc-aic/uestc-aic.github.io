@@ -1039,13 +1039,10 @@ def build_resources(site, resources) -> str:
 
 def build_partners(site, partners) -> str:
     items = partners.get("items", [])
-    note = ('<div class="callout callout-warn">' + icon("info") +
-            '<p><strong>合作状态说明：</strong>本页伙伴关系目前均为<strong>洽谈中</strong>，尚未正式对外公布。</p></div>')
     body = page_hero("Partners", "合作伙伴",
                      "连接学院、荣誉班级与学生工作室，让 AI for IC 的实践有更多同路人。",
                      counts=[(len(items), "家伙伴")]) + f"""
 <section class="section"><div class="container">
-    {note}
     <div class="partners-grid">{"".join(partner_card(pt) for pt in items)}</div>
     <div class="callout" style="margin-top:30px">{icon("share")}
       <p>希望与 AI 芯动力合作？欢迎通过 <a class="inline-link" href="../join/index.html">加入我们</a> 页面与我们联络。</p></div>
