@@ -722,7 +722,7 @@ def project_card(pr: dict, detail: bool = False) -> str:
     tags = "".join(f'<span>{esc(t)}</span>' for t in (pr.get("tags") or []))
     return f"""<article class="project-card" data-reveal>
     <div class="project-visual">{workflow_visual()}</div>
-    <div class="project-copy"><p class="project-meta"><span>{esc(pr.get("code"))}</span><span>{esc(pr.get("size"))}</span></p>
+    <div class="project-copy"><p class="project-meta"><span>{esc(pr.get("code"))}</span></p>
       <h3>{esc(pr.get("title"))}</h3><p>{esc(pr.get("intro"))}</p>{extra}
       <div class="project-tags">{tags}</div></div>
   </article>"""
@@ -814,14 +814,12 @@ def build_home(site, events, partners, projects, org, resources, collected) -> s
     </div>
     <div class="organization-heading"><h3>组织架构</h3><span>从内容、活动到知识沉淀</span></div>
     <div class="organization-grid">{"".join(org_card(o) for o in org.get("items", []))}</div>
-    <p class="organization-note">{" · ".join(esc(n) for n in org.get("notes", []))}</p>
   </div></section>"""
 
     projects_block = f"""<section class="projects-section" id="projects"><div class="container section">
     <div class="section-heading"><div><p class="section-label">项目实践</p><h2>好想法，值得动手。</h2></div>
-      <p class="section-aside">项目孵化方向 · 欢迎跨组参与</p></div>
+      <p class="section-aside">项目孵化方向</p></div>
     <div class="projects-grid">{"".join(project_card(pr) for pr in projects.get("items", []))}</div>
-    <p class="project-footnote">{icon("info")}<span>{esc(projects.get("footnote", ""))}</span></p>
   </div></section>"""
 
     feat_html = "".join(featured_resource(r) for r in featured_res)
@@ -1042,9 +1040,7 @@ def build_resources(site, resources) -> str:
 def build_partners(site, partners) -> str:
     items = partners.get("items", [])
     note = ('<div class="callout callout-warn">' + icon("info") +
-            '<p><strong>合作状态说明：</strong>本页伙伴关系目前均为<strong>洽谈中</strong>，尚未正式对外公布。'
-            '确认后请把 <code>content/partners.json</code> 中对应的 <code>relationship</code> '
-            '改为「已合作」，并补充官方链接与 logo。</p></div>')
+            '<p><strong>合作状态说明：</strong>本页伙伴关系目前均为<strong>洽谈中</strong>，尚未正式对外公布。</p></div>')
     body = page_hero("Partners", "合作伙伴",
                      "连接学院、荣誉班级与学生工作室，让 AI for IC 的实践有更多同路人。",
                      counts=[(len(items), "家伙伴")]) + f"""
@@ -1092,23 +1088,22 @@ def build_about(site, org, projects) -> str:
   </div></div></section>
 """ + section_open("Organization", "组织架构", "从内容、活动到知识沉淀", "organization") + f"""
     <div class="organization-grid">{"".join(org_card(o) for o in org.get("items", []))}</div>
-    <p class="organization-note">{" · ".join(esc(n) for n in org.get("notes", []))}</p>
 """ + section_close() + f"""
 <section class="join-section container"><div class="join-panel" data-reveal>
     <div><p class="section-label">加入我们</p><h2>找到你的位置。</h2>
       <p>不管你想做内容、办活动，还是只想安静地学点东西，这里都有位置。</p></div>
-    <div class="join-action"><span>项目组允许非正式成员参加</span>
+    <div class="join-action">
       <a class="button" href="../join/index.html">加入 AI 芯动力{icon("arrow")}</a></div>
   </div></section>"""
     return page(site, 1, "关于", "关于我们", site.get("description", ""), body)
 
 
 def build_projects(site, projects) -> str:
-    body = page_hero("Learn by Building", "项目实践", esc(projects.get("footnote", ""))) + f"""
+    body = page_hero("Learn by Building", "项目实践") + f"""
 <section class="section"><div class="container">
     <div class="projects-grid">{"".join(project_card(pr, detail=True) for pr in projects.get("items", []))}</div>
     <div class="callout" style="margin-top:30px">{icon("users")}
-      <p>项目组开放给非正式成员，职能部门成员也可以跨组参与。想加入？请到
+      <p>想加入？请到
       <a class="inline-link" href="../join/index.html">加入我们</a> 页面查看联系方式。</p></div>
   </div></section>"""
     return page(site, 1, "关于", "项目实践", "AI 芯动力的项目孵化方向。", body)
