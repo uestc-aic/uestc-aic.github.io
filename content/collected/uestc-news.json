@@ -2,8 +2,23 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-10-29T03:51:31+08:00",
+  "fetched_at": "2026-10-30T03:53:42+08:00",
   "items": [
+    {
+      "id": "ddd39f803c5a1a44",
+      "title": "集成电路学院党委创新党员大课研讨模式 推动强芯报国落地见效",
+      "url": "https://news.uestc.edu.cn/info/1047/44850.htm",
+      "date": "2026-10-29",
+      "date_text": "2026-10-29",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1047/44850.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-30T03:53:42+08:00",
+      "locked": false
+    },
     {
       "id": "b1edfabf04e64ec8",
       "title": "成电讲坛 | 美国工程院院士、图灵奖得主Jack Dongarra:HPC in Transition 变革中的高性能计算",
@@ -434,21 +449,6 @@
       "source": {
         "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
         "url": "https://news.uestc.edu.cn/info/1016/44602.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-22T03:39:44+08:00",
-      "locked": false
-    },
-    {
-      "id": "86aee368214a69f6",
-      "title": "电子科技大学2027届系列双选会报名公告",
-      "url": "https://news.uestc.edu.cn/info/1017/44580.htm",
-      "date": "2026-10-21",
-      "date_text": "2026-10-21",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1017/44580.htm",
         "source_id": "uestc-news"
       },
       "collected_at": "2026-10-22T03:39:44+08:00",
