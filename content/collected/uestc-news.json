@@ -2,8 +2,53 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-10-30T03:53:42+08:00",
+  "fetched_at": "2026-10-31T03:50:56+08:00",
   "items": [
+    {
+      "id": "c93cc845f0b99b3a",
+      "title": "沉痛悼念刘盛纲院士",
+      "url": "https://news.uestc.edu.cn/info/1003/44883.htm",
+      "date": "2026-10-30",
+      "date_text": "2026-10-30",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44883.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-31T03:50:56+08:00",
+      "locked": false
+    },
+    {
+      "id": "7810398cc595b7b1",
+      "title": "第六届《中国外语》学术交流会在我校举办",
+      "url": "https://news.uestc.edu.cn/info/1003/44838.htm",
+      "date": "2026-10-30",
+      "date_text": "2026-10-30",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44838.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-31T03:50:56+08:00",
+      "locked": false
+    },
+    {
+      "id": "2a9d3a47fe366e3d",
+      "title": "学校举行本科“专业教育核心课程体系建设计划”结项验收暨交流报告会",
+      "url": "https://news.uestc.edu.cn/info/1004/44871.htm",
+      "date": "2026-10-30",
+      "date_text": "2026-10-30",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1004/44871.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-10-31T03:50:56+08:00",
+      "locked": false
+    },
     {
       "id": "ddd39f803c5a1a44",
       "title": "集成电路学院党委创新党员大课研讨模式 推动强芯报国落地见效",
@@ -407,51 +452,6 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-10-23T03:39:43+08:00",
-      "locked": false
-    },
-    {
-      "id": "fa75727e4cc51a09",
-      "title": "成都理工大学/上海交通大学叶芳伟教授做客学者论坛",
-      "url": "https://news.uestc.edu.cn/info/1005/44629.htm",
-      "date": "2026-10-21",
-      "date_text": "2026-10-21",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/44629.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-23T03:39:43+08:00",
-      "locked": false
-    },
-    {
-      "id": "f781e5e793cb734e",
-      "title": "香港城市大学陈名华教授做客学者论坛",
-      "url": "https://news.uestc.edu.cn/info/1005/44630.htm",
-      "date": "2026-10-21",
-      "date_text": "2026-10-21",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/44630.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-23T03:39:43+08:00",
-      "locked": false
-    },
-    {
-      "id": "203f770b4bafb805",
-      "title": "成电讲坛 | 齐爱云：小舞台，大乾坤",
-      "url": "https://news.uestc.edu.cn/info/1016/44602.htm",
-      "date": "2026-10-21",
-      "date_text": "2026-10-21",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1016/44602.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-22T03:39:44+08:00",
       "locked": false
     }
   ]
