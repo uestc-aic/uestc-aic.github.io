@@ -2,7 +2,7 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-11-01T03:42:16+08:00",
+  "fetched_at": "2026-11-02T03:43:23+08:00",
   "items": [
     {
       "id": "cc552e65637d7791",
@@ -47,6 +47,21 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-01T03:42:16+08:00",
+      "locked": false
+    },
+    {
+      "id": "c3dfc3ffaee9d076",
+      "title": "计算机（网安）学院任福继教授团队项目获奇瑞汽车最佳星火提案奖",
+      "url": "https://news.uestc.edu.cn/info/1005/44941.htm",
+      "date": "2026-10-30",
+      "date_text": "2026-10-30",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/44941.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-02T03:43:23+08:00",
       "locked": false
     },
     {
@@ -434,21 +449,6 @@
       "source": {
         "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
         "url": "https://news.uestc.edu.cn/info/1003/44657.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-24T03:39:02+08:00",
-      "locked": false
-    },
-    {
-      "id": "9190b2417d0df240",
-      "title": "上海交通大学李政道研究所王楠林教授做客学者论坛",
-      "url": "https://news.uestc.edu.cn/info/1005/44663.htm",
-      "date": "2026-10-22",
-      "date_text": "2026-10-22",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/44663.htm",
         "source_id": "uestc-news"
       },
       "collected_at": "2026-10-24T03:39:02+08:00",
