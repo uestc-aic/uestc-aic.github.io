@@ -2,8 +2,23 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-11-02T03:43:23+08:00",
+  "fetched_at": "2026-11-03T03:56:10+08:00",
   "items": [
+    {
+      "id": "d4268b4ec728f176",
+      "title": "校党委书记曹萍一行赴四川康定推进定点帮扶工作",
+      "url": "https://news.uestc.edu.cn/info/1003/44944.htm",
+      "date": "2026-11-02",
+      "date_text": "2026-11-02",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/44944.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-03T03:56:10+08:00",
+      "locked": false
+    },
     {
       "id": "cc552e65637d7791",
       "title": "「人文×科技」思想者讲坛第四十三期讲座预告",
@@ -434,21 +449,6 @@
       "source": {
         "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
         "url": "https://news.uestc.edu.cn/info/1004/44680.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-24T03:39:02+08:00",
-      "locked": false
-    },
-    {
-      "id": "b9bcbdddd00b4338",
-      "title": "学校举行2026年党员基本培训第二次集中大课",
-      "url": "https://news.uestc.edu.cn/info/1003/44657.htm",
-      "date": "2026-10-23",
-      "date_text": "2026-10-23",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/44657.htm",
         "source_id": "uestc-news"
       },
       "collected_at": "2026-10-24T03:39:02+08:00",
