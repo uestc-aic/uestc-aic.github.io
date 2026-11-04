@@ -2,8 +2,53 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-11-04T03:56:46+08:00",
+  "fetched_at": "2026-11-05T04:00:18+08:00",
   "items": [
+    {
+      "id": "66a4d3acc3d6d10a",
+      "title": "邓龙江院士获2025年度四川省科学技术杰出贡献奖",
+      "url": "https://news.uestc.edu.cn/info/1003/45044.htm",
+      "date": "2026-11-04",
+      "date_text": "2026-11-04",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/45044.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-05T04:00:18+08:00",
+      "locked": false
+    },
+    {
+      "id": "d5aadc355a8e5f69",
+      "title": "自动化学院开展本研师共建主题党日活动暨第二次集中大课专题研讨",
+      "url": "https://news.uestc.edu.cn/info/1047/45041.htm",
+      "date": "2026-11-04",
+      "date_text": "2026-11-04",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1047/45041.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-05T04:00:18+08:00",
+      "locked": false
+    },
+    {
+      "id": "6f93e4e313868d48",
+      "title": "学校举行2026级研究生党员骨干“研途先锋”训练营开营仪式",
+      "url": "https://news.uestc.edu.cn/info/1003/45008.htm",
+      "date": "2026-11-04",
+      "date_text": "2026-11-04",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/45008.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-05T04:00:18+08:00",
+      "locked": false
+    },
     {
       "id": "183e687ce15bab0a",
       "title": "我校中外合作办学机构和项目自评报告公示",
@@ -404,51 +449,6 @@
       "source": {
         "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
         "url": "https://news.uestc.edu.cn/info/1015/44768.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-28T03:45:39+08:00",
-      "locked": false
-    },
-    {
-      "id": "81fbf3c7b8bd978c",
-      "title": "成电讲坛 | 全国先进工作者、全国五一劳动奖章获得者张晓东：弘扬劳模精神 发展新质生产力",
-      "url": "https://news.uestc.edu.cn/info/1016/44773.htm",
-      "date": "2026-10-27",
-      "date_text": "2026-10-27",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1016/44773.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-28T03:45:39+08:00",
-      "locked": false
-    },
-    {
-      "id": "48dea6bcaf9f8ca3",
-      "title": "香港城市大学冯刚教授做客自动化工程学院第九十八期教授沙龙",
-      "url": "https://news.uestc.edu.cn/info/1005/44797.htm",
-      "date": "2026-10-26",
-      "date_text": "2026-10-26",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/44797.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-04T03:56:46+08:00",
-      "locked": false
-    },
-    {
-      "id": "6ff7a276acc50775",
-      "title": "上海交通大学张卫东教授做第一百零一期教授沙龙专题报告",
-      "url": "https://news.uestc.edu.cn/info/1005/44796.htm",
-      "date": "2026-10-26",
-      "date_text": "2026-10-26",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/44796.htm",
         "source_id": "uestc-news"
       },
       "collected_at": "2026-10-28T03:45:39+08:00",
