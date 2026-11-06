@@ -2,8 +2,98 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-11-06T03:57:33+08:00",
+  "fetched_at": "2026-11-07T03:55:22+08:00",
   "items": [
+    {
+      "id": "3d20ed1154539764",
+      "title": "学校党委理论学习中心组专题学习贯彻党的二十届五中全会精神",
+      "url": "https://news.uestc.edu.cn/info/1003/45159.htm",
+      "date": "2026-11-06",
+      "date_text": "2026-11-06",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/45159.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-07T03:55:22+08:00",
+      "locked": false
+    },
+    {
+      "id": "6e68efb63c09279f",
+      "title": "校领导率团访问爱尔兰、丹麦",
+      "url": "https://news.uestc.edu.cn/info/1003/45149.htm",
+      "date": "2026-11-06",
+      "date_text": "2026-11-06",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/45149.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-07T03:55:22+08:00",
+      "locked": false
+    },
+    {
+      "id": "cbc3f4b5b23b99de",
+      "title": "光电学院蒋亚东教授团队太惠玲课题组在Nature Sensors发表最新研究成果",
+      "url": "https://news.uestc.edu.cn/info/1005/45131.htm",
+      "date": "2026-11-06",
+      "date_text": "2026-11-06",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/45131.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-07T03:55:22+08:00",
+      "locked": false
+    },
+    {
+      "id": "ad23d7bc578df34f",
+      "title": "机电学院机器人工程本科生党支部开展传承伟大长征精神专题集中学习",
+      "url": "https://news.uestc.edu.cn/info/1047/45132.htm",
+      "date": "2026-11-05",
+      "date_text": "2026-11-05",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1047/45132.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-07T03:55:22+08:00",
+      "locked": false
+    },
+    {
+      "id": "a12e72f96c8e4541",
+      "title": "第二届来华留学生电子信息学科前沿学术论坛举办",
+      "url": "https://news.uestc.edu.cn/info/1004/45137.htm",
+      "date": "2026-11-05",
+      "date_text": "2026-11-05",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1004/45137.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-07T03:55:22+08:00",
+      "locked": false
+    },
+    {
+      "id": "66c5dac42f71a97b",
+      "title": "中国科学院院士、中国科学院地质与地球物理研究所潘永信研究员作“天问一号任务科学研究进展”特邀报告",
+      "url": "https://news.uestc.edu.cn/info/1005/45138.htm",
+      "date": "2026-11-05",
+      "date_text": "2026-11-05",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/45138.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-07T03:55:22+08:00",
+      "locked": false
+    },
     {
       "id": "6149afc4ce00dd5e",
       "title": "学校召开人才优先发展战略工作小组会",
@@ -362,96 +452,6 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-10-31T03:50:56+08:00",
-      "locked": false
-    },
-    {
-      "id": "ddd39f803c5a1a44",
-      "title": "集成电路学院党委创新党员大课研讨模式 推动强芯报国落地见效",
-      "url": "https://news.uestc.edu.cn/info/1047/44850.htm",
-      "date": "2026-10-29",
-      "date_text": "2026-10-29",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1047/44850.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-30T03:53:42+08:00",
-      "locked": false
-    },
-    {
-      "id": "b1edfabf04e64ec8",
-      "title": "成电讲坛 | 美国工程院院士、图灵奖得主Jack Dongarra:HPC in Transition 变革中的高性能计算",
-      "url": "https://news.uestc.edu.cn/info/1016/44826.htm",
-      "date": "2026-10-28",
-      "date_text": "2026-10-28",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1016/44826.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-29T03:51:31+08:00",
-      "locked": false
-    },
-    {
-      "id": "c4fbf6bcb8b61d7e",
-      "title": "成电舞台 | 第10届中国校园戏剧节——话剧《向天而行》",
-      "url": "https://news.uestc.edu.cn/info/1016/44828.htm",
-      "date": "2026-10-28",
-      "date_text": "2026-10-28",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1016/44828.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-29T03:51:31+08:00",
-      "locked": false
-    },
-    {
-      "id": "04f682128ca2364d",
-      "title": "成电讲坛 | 中国科学院院士潘永信 ：行星科学与人类文明",
-      "url": "https://news.uestc.edu.cn/info/1016/44829.htm",
-      "date": "2026-10-28",
-      "date_text": "2026-10-28",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1016/44829.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-29T03:51:31+08:00",
-      "locked": false
-    },
-    {
-      "id": "337e2e5f1be90441",
-      "title": "学校基层党组织开展2026年第二次集中大课交流研讨",
-      "url": "https://news.uestc.edu.cn/info/1047/44834.htm",
-      "date": "2026-10-28",
-      "date_text": "2026-10-28",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1047/44834.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-29T03:51:31+08:00",
-      "locked": false
-    },
-    {
-      "id": "863484e50edf46c4",
-      "title": "机电学院刘宇教授荣获系统科学与系统工程科学技术奖",
-      "url": "https://news.uestc.edu.cn/info/1005/44830.htm",
-      "date": "2026-10-28",
-      "date_text": "2026-10-28",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/44830.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-10-29T03:51:31+08:00",
       "locked": false
     }
   ]
