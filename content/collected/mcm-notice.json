@@ -2,8 +2,23 @@
   "source_id": "mcm-notice",
   "source_name": "全国大学生数学建模竞赛 · 通知与公告",
   "source_url": "https://www.mcm.edu.cn/html_cn/block/20ead73cbcf5a1c24b91947f98d7aac2.html",
-  "fetched_at": "2026-10-15T22:45:06+08:00",
+  "fetched_at": "2026-11-09T06:51:32+08:00",
   "items": [
+    {
+      "id": "e5b866bafbf10733",
+      "title": "关于2026年全国大学生数学建模竞赛中部分参赛论文相似度较高的通报",
+      "url": "https://www.mcm.edu.cn/html_cn/node/74c9193dcdfd44d026d2c3bf5f93695c.html",
+      "date": "2026-11-08",
+      "date_text": "26-11-08",
+      "category": "competition",
+      "source": {
+        "name": "全国大学生数学建模竞赛 · 通知与公告",
+        "url": "https://www.mcm.edu.cn/html_cn/node/74c9193dcdfd44d026d2c3bf5f93695c.html",
+        "source_id": "mcm-notice"
+      },
+      "collected_at": "2026-11-09T06:51:32+08:00",
+      "locked": false
+    },
     {
       "id": "2b02427261671b99",
       "title": "2026年全国大学生数学建模竞赛赛题讲评与经验交流会通知",
@@ -434,21 +449,6 @@
       "source": {
         "name": "全国大学生数学建模竞赛 · 通知与公告",
         "url": "https://www.mcm.edu.cn/html_cn/node/d12786b562ef851b30e044a68b79ca91.html",
-        "source_id": "mcm-notice"
-      },
-      "collected_at": "2026-10-15T22:39:16+08:00",
-      "locked": false
-    },
-    {
-      "id": "cfb7f4797015f276",
-      "title": "2023高教社杯全国大学生数学建模竞赛报名第一次通知",
-      "url": "https://www.mcm.edu.cn/html_cn/node/bbd69ac2a3527c7926c0155ec8850d6b.html",
-      "date": "2023-05-04",
-      "date_text": "23-05-04",
-      "category": "competition",
-      "source": {
-        "name": "全国大学生数学建模竞赛 · 通知与公告",
-        "url": "https://www.mcm.edu.cn/html_cn/node/bbd69ac2a3527c7926c0155ec8850d6b.html",
         "source_id": "mcm-notice"
       },
       "collected_at": "2026-10-15T22:39:16+08:00",
