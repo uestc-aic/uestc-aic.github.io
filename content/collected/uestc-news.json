@@ -2,8 +2,23 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-11-10T10:02:20+08:00",
+  "fetched_at": "2026-11-11T08:00:05+08:00",
   "items": [
+    {
+      "id": "8ef86234a6b94ef4",
+      "title": "医学院党委开展每周“医”学教职工理论学习暨廉洁教育实践",
+      "url": "https://news.uestc.edu.cn/info/1055/45260.htm",
+      "date": "2026-11-09",
+      "date_text": "2026-11-09",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1055/45260.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-11T08:00:05+08:00",
+      "locked": false
+    },
     {
       "id": "d50f829467f304aa",
       "title": "信通党委开展第二次集中大课多形式研讨",
@@ -122,6 +137,21 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-10T10:02:20+08:00",
+      "locked": false
+    },
+    {
+      "id": "ccbad1e7235e85a6",
+      "title": "继续教育学院多维度开展思政工作：思政铸魂强根基，实干赋能促发展",
+      "url": "https://news.uestc.edu.cn/info/1055/45173.htm",
+      "date": "2026-11-06",
+      "date_text": "2026-11-06",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1055/45173.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-11T08:00:05+08:00",
       "locked": false
     },
     {
@@ -290,6 +320,36 @@
       "locked": false
     },
     {
+      "id": "c0d069f264fb30a5",
+      "title": "经济与管理学院召开2027年教学办公会",
+      "url": "https://news.uestc.edu.cn/info/1004/45258.htm",
+      "date": "2026-11-04",
+      "date_text": "2026-11-04",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1004/45258.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-11T08:00:05+08:00",
+      "locked": false
+    },
+    {
+      "id": "c3744bed51fbcdc1",
+      "title": "北京大学汇丰商学院院长王鹏飞一行来访经管学院",
+      "url": "https://news.uestc.edu.cn/info/1006/45255.htm",
+      "date": "2026-11-04",
+      "date_text": "2026-11-04",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1006/45255.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-11T08:00:05+08:00",
+      "locked": false
+    },
+    {
       "id": "66a4d3acc3d6d10a",
       "title": "邓龙江院士获2025年度四川省科学技术杰出贡献奖",
       "url": "https://news.uestc.edu.cn/info/1003/45044.htm",
@@ -392,66 +452,6 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-06T03:57:33+08:00",
-      "locked": false
-    },
-    {
-      "id": "183e687ce15bab0a",
-      "title": "我校中外合作办学机构和项目自评报告公示",
-      "url": "https://news.uestc.edu.cn/info/1017/44981.htm",
-      "date": "2026-11-03",
-      "date_text": "2026-11-03",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1017/44981.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-04T03:56:46+08:00",
-      "locked": false
-    },
-    {
-      "id": "50b2750dc0c4d830",
-      "title": "人工智能+本科教学 | 关于召开智慧课程建设工作交流研讨会（第二期）的通知",
-      "url": "https://news.uestc.edu.cn/info/1017/44983.htm",
-      "date": "2026-11-03",
-      "date_text": "2026-11-03",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1017/44983.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-04T03:56:46+08:00",
-      "locked": false
-    },
-    {
-      "id": "1b6b6b5e96b41e70",
-      "title": "校工会召开第八届省青年教师教学竞赛工作总结暨研讨会",
-      "url": "https://news.uestc.edu.cn/info/1003/44988.htm",
-      "date": "2026-11-03",
-      "date_text": "2026-11-03",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/44988.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-04T03:56:46+08:00",
-      "locked": false
-    },
-    {
-      "id": "2c341eea66fea80a",
-      "title": "学校举办第二十六期“成电下午茶——校领导与教职工有约”活动",
-      "url": "https://news.uestc.edu.cn/info/1003/44978.htm",
-      "date": "2026-11-03",
-      "date_text": "2026-11-03",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/44978.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-04T03:56:46+08:00",
       "locked": false
     }
   ]
