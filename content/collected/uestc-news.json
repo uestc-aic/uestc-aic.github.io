@@ -2,8 +2,83 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-11-12T09:29:56+08:00",
+  "fetched_at": "2026-11-13T08:17:27+08:00",
   "items": [
+    {
+      "id": "92e09d2ec3aa1945",
+      "title": "「人文×科技」思想者讲坛第四十四期讲座预告",
+      "url": "https://news.uestc.edu.cn/info/1015/45363.htm",
+      "date": "2026-11-12",
+      "date_text": "2026-11-12",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1015/45363.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-13T08:17:27+08:00",
+      "locked": false
+    },
+    {
+      "id": "2b7aa79ce01fcd8d",
+      "title": "学者论坛：SIRI—— Tensor Rank Selection via Stability Index with Random Initializations",
+      "url": "https://news.uestc.edu.cn/info/1015/45315.htm",
+      "date": "2026-11-12",
+      "date_text": "2026-11-12",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1015/45315.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-13T08:17:27+08:00",
+      "locked": false
+    },
+    {
+      "id": "dc4b96f8fdc25016",
+      "title": "【人工智能+本科教学】学校举行智慧课程建设工作交流研讨会（第二期）",
+      "url": "https://news.uestc.edu.cn/info/1003/45310.htm",
+      "date": "2026-11-12",
+      "date_text": "2026-11-12",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/45310.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-13T08:17:27+08:00",
+      "locked": false
+    },
+    {
+      "id": "61aca12fe6560d18",
+      "title": "我校研究生在第五届中国研究生金融科技创新大赛再创佳绩",
+      "url": "https://news.uestc.edu.cn/info/1003/45309.htm",
+      "date": "2026-11-12",
+      "date_text": "2026-11-12",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/45309.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-13T08:17:27+08:00",
+      "locked": false
+    },
+    {
+      "id": "f2942260be88ecce",
+      "title": "第四届环喜马拉雅地区传播与社会发展论坛在孟加拉国开幕",
+      "url": "https://news.uestc.edu.cn/info/1003/45343.htm",
+      "date": "2026-11-12",
+      "date_text": "2026-11-12",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/45343.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-13T08:17:27+08:00",
+      "locked": false
+    },
     {
       "id": "7a66096340944f3e",
       "title": "成电讲坛 | 走近中国川剧 共享戏曲之美",
@@ -377,81 +452,6 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-07T03:55:22+08:00",
-      "locked": false
-    },
-    {
-      "id": "ad23d7bc578df34f",
-      "title": "机电学院机器人工程本科生党支部开展传承伟大长征精神专题集中学习",
-      "url": "https://news.uestc.edu.cn/info/1047/45132.htm",
-      "date": "2026-11-05",
-      "date_text": "2026-11-05",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1047/45132.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-07T03:55:22+08:00",
-      "locked": false
-    },
-    {
-      "id": "a12e72f96c8e4541",
-      "title": "第二届来华留学生电子信息学科前沿学术论坛举办",
-      "url": "https://news.uestc.edu.cn/info/1004/45137.htm",
-      "date": "2026-11-05",
-      "date_text": "2026-11-05",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1004/45137.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-07T03:55:22+08:00",
-      "locked": false
-    },
-    {
-      "id": "66c5dac42f71a97b",
-      "title": "中国科学院院士、中国科学院地质与地球物理研究所潘永信研究员作“天问一号任务科学研究进展”特邀报告",
-      "url": "https://news.uestc.edu.cn/info/1005/45138.htm",
-      "date": "2026-11-05",
-      "date_text": "2026-11-05",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/45138.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-07T03:55:22+08:00",
-      "locked": false
-    },
-    {
-      "id": "6149afc4ce00dd5e",
-      "title": "学校召开人才优先发展战略工作小组会",
-      "url": "https://news.uestc.edu.cn/info/1003/45099.htm",
-      "date": "2026-11-05",
-      "date_text": "2026-11-05",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/45099.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-06T03:57:33+08:00",
-      "locked": false
-    },
-    {
-      "id": "f6aec9f1a61739f3",
-      "title": "2026级新生骨干训练营结营",
-      "url": "https://news.uestc.edu.cn/info/1003/45077.htm",
-      "date": "2026-11-05",
-      "date_text": "2026-11-05",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/45077.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-06T03:57:33+08:00",
       "locked": false
     }
   ]
