@@ -2,8 +2,23 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-11-14T08:19:23+08:00",
+  "fetched_at": "2026-11-15T06:57:01+08:00",
   "items": [
+    {
+      "id": "8dfd58d334ff939c",
+      "title": "医学院黄晓波教授、潘纯研究员原创研究成果荣登重症医学顶刊《Intensive Care Medicine》",
+      "url": "https://news.uestc.edu.cn/info/1005/45419.htm",
+      "date": "2026-11-14",
+      "date_text": "2026-11-14",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/45419.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-15T06:57:01+08:00",
+      "locked": false
+    },
     {
       "id": "7b9b879e635c374f",
       "title": "学校获批新增设4个博士后科研流动站",
@@ -434,21 +449,6 @@
       "source": {
         "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
         "url": "https://news.uestc.edu.cn/info/1003/45202.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-10T10:02:20+08:00",
-      "locked": false
-    },
-    {
-      "id": "38a5a519a0c2d885",
-      "title": "中国工程院院士姚富强做客“引航讲坛”",
-      "url": "https://news.uestc.edu.cn/info/1003/45208.htm",
-      "date": "2026-11-09",
-      "date_text": "2026-11-09",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/45208.htm",
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-10T10:02:20+08:00",
