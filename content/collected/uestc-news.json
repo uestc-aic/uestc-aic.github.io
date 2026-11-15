@@ -2,8 +2,38 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-11-15T06:57:01+08:00",
+  "fetched_at": "2026-11-16T07:22:39+08:00",
   "items": [
+    {
+      "id": "f66f75084ccfe8b1",
+      "title": "“数智公共治理与公共政策学术丛书”新书发布会暨数智公共治理学术论坛在学校举行",
+      "url": "https://news.uestc.edu.cn/info/1005/45461.htm",
+      "date": "2026-11-15",
+      "date_text": "2026-11-15",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/45461.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-16T07:22:39+08:00",
+      "locked": false
+    },
+    {
+      "id": "b6d8fe2cbf1c8f25",
+      "title": "中国银行行政事业机构部总经理宁敏来校访问",
+      "url": "https://news.uestc.edu.cn/info/1003/45463.htm",
+      "date": "2026-11-15",
+      "date_text": "2026-11-15",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/45463.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-16T07:22:39+08:00",
+      "locked": false
+    },
     {
       "id": "8dfd58d334ff939c",
       "title": "医学院黄晓波教授、潘纯研究员原创研究成果荣登重症医学顶刊《Intensive Care Medicine》",
@@ -419,36 +449,6 @@
       "source": {
         "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
         "url": "https://news.uestc.edu.cn/info/1005/45205.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-10T10:02:20+08:00",
-      "locked": false
-    },
-    {
-      "id": "b5ed276a3b0de880",
-      "title": "经管学院罗政副教授在国际高水平期刊European Journal of Operational Research发表研究成果",
-      "url": "https://news.uestc.edu.cn/info/1005/45211.htm",
-      "date": "2026-11-09",
-      "date_text": "2026-11-09",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/45211.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-10T10:02:20+08:00",
-      "locked": false
-    },
-    {
-      "id": "41ffb26af80affe3",
-      "title": "学校召开2026年第二次实验室安全专项工作会",
-      "url": "https://news.uestc.edu.cn/info/1003/45202.htm",
-      "date": "2026-11-09",
-      "date_text": "2026-11-09",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/45202.htm",
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-10T10:02:20+08:00",
