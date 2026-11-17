@@ -2,8 +2,38 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-11-16T07:22:39+08:00",
+  "fetched_at": "2026-11-17T10:27:00+08:00",
   "items": [
+    {
+      "id": "e7cf9915cbd9c8b3",
+      "title": "【建设一流本科】“西南大魔王”：二十五年全国大学生机器人大赛的成电答卷",
+      "url": "https://news.uestc.edu.cn/info/1057/45480.htm",
+      "date": "2026-11-16",
+      "date_text": "2026-11-16",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1057/45480.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-17T10:27:00+08:00",
+      "locked": false
+    },
+    {
+      "id": "3548a61322c088f5",
+      "title": "第三届人工智能赋能思想政治教育高质量发展论坛暨四川省高等学校思想政治教育研究会2026年学术年会举行",
+      "url": "https://news.uestc.edu.cn/info/1003/45470.htm",
+      "date": "2026-11-16",
+      "date_text": "2026-11-16",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/45470.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-17T10:27:00+08:00",
+      "locked": false
+    },
     {
       "id": "f66f75084ccfe8b1",
       "title": "“数智公共治理与公共政策学术丛书”新书发布会暨数智公共治理学术论坛在学校举行",
@@ -419,36 +449,6 @@
       "source": {
         "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
         "url": "https://news.uestc.edu.cn/info/1003/45236.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-10T10:02:20+08:00",
-      "locked": false
-    },
-    {
-      "id": "287c8063e3b6d5db",
-      "title": "国家矿山安全监察局四川局与我校签署合作协议",
-      "url": "https://news.uestc.edu.cn/info/1003/45222.htm",
-      "date": "2026-11-09",
-      "date_text": "2026-11-09",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/45222.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-10T10:02:20+08:00",
-      "locked": false
-    },
-    {
-      "id": "27e857fdf2ae3eb0",
-      "title": "集成电路学院张波、周琦教授团队在氮化镓功率器件可靠性技术领域取得重要进展",
-      "url": "https://news.uestc.edu.cn/info/1005/45205.htm",
-      "date": "2026-11-09",
-      "date_text": "2026-11-09",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/45205.htm",
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-10T10:02:20+08:00",
