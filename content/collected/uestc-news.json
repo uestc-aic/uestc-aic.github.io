@@ -2,8 +2,83 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-11-18T09:35:50+08:00",
+  "fetched_at": "2026-11-19T09:10:16+08:00",
   "items": [
+    {
+      "id": "4483d8fb0d76eb68",
+      "title": "电子科技大学第十五届银杏节活动方案",
+      "url": "https://news.uestc.edu.cn/info/1016/45580.htm",
+      "date": "2026-11-18",
+      "date_text": "2026-11-18",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1016/45580.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-19T09:10:16+08:00",
+      "locked": false
+    },
+    {
+      "id": "56223416206d88b0",
+      "title": "创·见·未来！第六届新工科教育学生作品展",
+      "url": "https://news.uestc.edu.cn/info/1015/45586.htm",
+      "date": "2026-11-18",
+      "date_text": "2026-11-18",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1015/45586.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-19T09:10:16+08:00",
+      "locked": false
+    },
+    {
+      "id": "dec0f079a3e33546",
+      "title": "成电讲坛 | AI语境下的道德判断(Moral Judgment in the Context of AI)",
+      "url": "https://news.uestc.edu.cn/info/1016/45547.htm",
+      "date": "2026-11-18",
+      "date_text": "2026-11-18",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1016/45547.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-19T09:10:16+08:00",
+      "locked": false
+    },
+    {
+      "id": "0de6f144802aabba",
+      "title": "校领导率团访问法国、葡萄牙",
+      "url": "https://news.uestc.edu.cn/info/1003/45577.htm",
+      "date": "2026-11-18",
+      "date_text": "2026-11-18",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/45577.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-19T09:10:16+08:00",
+      "locked": false
+    },
+    {
+      "id": "933eefbb3e859894",
+      "title": "计算机（网安）学院任福继教授获评“我是科学人”2025年度特别贡献科学家",
+      "url": "https://news.uestc.edu.cn/info/1005/45575.htm",
+      "date": "2026-11-18",
+      "date_text": "2026-11-18",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/45575.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-19T09:10:16+08:00",
+      "locked": false
+    },
     {
       "id": "383b4283d9652ca9",
       "title": "成电讲坛 | 著名作家张嘉佳：与过去告别，和自己重逢——《我是你的遗物》图书分享",
@@ -92,6 +167,21 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-18T09:35:50+08:00",
+      "locked": false
+    },
+    {
+      "id": "ce0d9a905652e874",
+      "title": "第九届胶体与界面化学青年学者论坛在我校召开",
+      "url": "https://news.uestc.edu.cn/info/1005/45584.htm",
+      "date": "2026-11-16",
+      "date_text": "2026-11-16",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/45584.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-19T09:10:16+08:00",
       "locked": false
     },
     {
@@ -197,6 +287,21 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-15T06:57:01+08:00",
+      "locked": false
+    },
+    {
+      "id": "b7465086c1baabcb",
+      "title": "信通学院2026年工程领军人才创新论坛举办",
+      "url": "https://news.uestc.edu.cn/info/1005/45587.htm",
+      "date": "2026-11-13",
+      "date_text": "2026-11-13",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/45587.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-19T09:10:16+08:00",
       "locked": false
     },
     {
@@ -347,111 +452,6 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-13T08:17:27+08:00",
-      "locked": false
-    },
-    {
-      "id": "dc4b96f8fdc25016",
-      "title": "【人工智能+本科教学】学校举行智慧课程建设工作交流研讨会（第二期）",
-      "url": "https://news.uestc.edu.cn/info/1003/45310.htm",
-      "date": "2026-11-12",
-      "date_text": "2026-11-12",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/45310.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-13T08:17:27+08:00",
-      "locked": false
-    },
-    {
-      "id": "61aca12fe6560d18",
-      "title": "我校研究生在第五届中国研究生金融科技创新大赛再创佳绩",
-      "url": "https://news.uestc.edu.cn/info/1003/45309.htm",
-      "date": "2026-11-12",
-      "date_text": "2026-11-12",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/45309.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-13T08:17:27+08:00",
-      "locked": false
-    },
-    {
-      "id": "f2942260be88ecce",
-      "title": "第四届环喜马拉雅地区传播与社会发展论坛在孟加拉国开幕",
-      "url": "https://news.uestc.edu.cn/info/1003/45343.htm",
-      "date": "2026-11-12",
-      "date_text": "2026-11-12",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/45343.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-13T08:17:27+08:00",
-      "locked": false
-    },
-    {
-      "id": "f45eba9a680f5d06",
-      "title": "成电国际·第十八届国际教育交流月圆满收官",
-      "url": "https://news.uestc.edu.cn/info/1006/45430.htm",
-      "date": "2026-11-11",
-      "date_text": "2026-11-11",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1006/45430.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-14T08:19:23+08:00",
-      "locked": false
-    },
-    {
-      "id": "7a66096340944f3e",
-      "title": "成电讲坛 | 走近中国川剧 共享戏曲之美",
-      "url": "https://news.uestc.edu.cn/info/1016/45316.htm",
-      "date": "2026-11-11",
-      "date_text": "2026-11-11",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1016/45316.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-12T09:29:56+08:00",
-      "locked": false
-    },
-    {
-      "id": "d0395795b80b8f00",
-      "title": "学者论坛：从 Hopfield 网络到非 BP 算法——非传统学习规则的探索",
-      "url": "https://news.uestc.edu.cn/info/1015/45261.htm",
-      "date": "2026-11-11",
-      "date_text": "2026-11-11",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1015/45261.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-12T09:29:56+08:00",
-      "locked": false
-    },
-    {
-      "id": "09e972b3b824e82f",
-      "title": "经管学院陈旭教授团队在国际高水平期刊European Journal of Operational Research发表研究成果",
-      "url": "https://news.uestc.edu.cn/info/1005/45308.htm",
-      "date": "2026-11-11",
-      "date_text": "2026-11-11",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/45308.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-12T09:29:56+08:00",
       "locked": false
     }
   ]
