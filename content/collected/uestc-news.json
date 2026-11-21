@@ -2,8 +2,38 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-11-21T08:47:15+08:00",
+  "fetched_at": "2026-11-22T07:46:49+08:00",
   "items": [
+    {
+      "id": "94970ceb6d042b11",
+      "title": "电子科大与中兴通讯签署战略合作协议",
+      "url": "https://news.uestc.edu.cn/info/1006/45724.htm",
+      "date": "2026-11-21",
+      "date_text": "2026-11-21",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1006/45724.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-22T07:46:49+08:00",
+      "locked": false
+    },
+    {
+      "id": "2197f5e23b588f26",
+      "title": "法国驻成都总领事Christophe GIGAUDAUT一行来校访问",
+      "url": "https://news.uestc.edu.cn/info/1006/45712.htm",
+      "date": "2026-11-21",
+      "date_text": "2026-11-21",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1006/45712.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-22T07:46:49+08:00",
+      "locked": false
+    },
     {
       "id": "ea93df0df2dca7f5",
       "title": "教学工作坊：教学能力提升系列讲座（一）",
@@ -422,36 +452,6 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-16T07:22:39+08:00",
-      "locked": false
-    },
-    {
-      "id": "b6d8fe2cbf1c8f25",
-      "title": "中国银行行政事业机构部总经理宁敏来校访问",
-      "url": "https://news.uestc.edu.cn/info/1003/45463.htm",
-      "date": "2026-11-15",
-      "date_text": "2026-11-15",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/45463.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-16T07:22:39+08:00",
-      "locked": false
-    },
-    {
-      "id": "8dfd58d334ff939c",
-      "title": "医学院黄晓波教授、潘纯研究员原创研究成果荣登重症医学顶刊《Intensive Care Medicine》",
-      "url": "https://news.uestc.edu.cn/info/1005/45419.htm",
-      "date": "2026-11-14",
-      "date_text": "2026-11-14",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/45419.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-15T06:57:01+08:00",
       "locked": false
     }
   ]
