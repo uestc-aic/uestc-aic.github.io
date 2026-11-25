@@ -2,8 +2,38 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-11-24T12:16:27+08:00",
+  "fetched_at": "2026-11-25T11:01:38+08:00",
   "items": [
+    {
+      "id": "e24767dc8f9c0d26",
+      "title": "电子科技大学学习贯彻党的二十届五中全会精神宣讲安排",
+      "url": "https://news.uestc.edu.cn/info/1017/45820.htm",
+      "date": "2026-11-25",
+      "date_text": "2026-11-25",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1017/45820.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-25T11:01:38+08:00",
+      "locked": false
+    },
+    {
+      "id": "34a915cd7b1e22e0",
+      "title": "成电学子在全国大学生嵌入式芯片与系统设计竞赛——FPGA创新设计赛道荣获佳绩",
+      "url": "https://news.uestc.edu.cn/info/1004/45826.htm",
+      "date": "2026-11-24",
+      "date_text": "2026-11-24",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1004/45826.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-25T11:01:38+08:00",
+      "locked": false
+    },
     {
       "id": "cc35508257704cd3",
       "title": "资环学院科研团队在受限空间观测阵列信号高保真分离方面取得系列进展",
@@ -47,6 +77,21 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-24T12:16:27+08:00",
+      "locked": false
+    },
+    {
+      "id": "01ecfa13dc88809b",
+      "title": "信通学院“信仰之光”宣讲团为2026级新生开展理论宣讲",
+      "url": "https://news.uestc.edu.cn/info/1055/45814.htm",
+      "date": "2026-11-23",
+      "date_text": "2026-11-23",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1055/45814.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-25T11:01:38+08:00",
       "locked": false
     },
     {
@@ -407,51 +452,6 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-19T09:10:16+08:00",
-      "locked": false
-    },
-    {
-      "id": "933eefbb3e859894",
-      "title": "计算机（网安）学院任福继教授获评“我是科学人”2025年度特别贡献科学家",
-      "url": "https://news.uestc.edu.cn/info/1005/45575.htm",
-      "date": "2026-11-18",
-      "date_text": "2026-11-18",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1005/45575.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-19T09:10:16+08:00",
-      "locked": false
-    },
-    {
-      "id": "383b4283d9652ca9",
-      "title": "成电讲坛 | 著名作家张嘉佳：与过去告别，和自己重逢——《我是你的遗物》图书分享",
-      "url": "https://news.uestc.edu.cn/info/1016/45542.htm",
-      "date": "2026-11-17",
-      "date_text": "2026-11-17",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1016/45542.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-18T09:35:50+08:00",
-      "locked": false
-    },
-    {
-      "id": "0b22062c60f02da0",
-      "title": "华南理工大学党委书记于祥成来校调研交流",
-      "url": "https://news.uestc.edu.cn/info/1003/45535.htm",
-      "date": "2026-11-17",
-      "date_text": "2026-11-17",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/45535.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-18T09:35:50+08:00",
       "locked": false
     }
   ]
