@@ -2,8 +2,38 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-11-25T11:01:38+08:00",
+  "fetched_at": "2026-11-27T10:09:06+08:00",
   "items": [
+    {
+      "id": "28019642d756c9d7",
+      "title": "学校党委举行学习贯彻党的二十届五中全会精神专题书记论坛暨第二期“成电先锋”书记论坛",
+      "url": "https://news.uestc.edu.cn/info/1003/45867.htm",
+      "date": "2026-11-26",
+      "date_text": "2026-11-26",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/45867.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-27T10:09:06+08:00",
+      "locked": false
+    },
+    {
+      "id": "a17ed764c948a272",
+      "title": "学校举行第十四届国际青年学者论坛",
+      "url": "https://news.uestc.edu.cn/info/1003/45868.htm",
+      "date": "2026-11-26",
+      "date_text": "2026-11-26",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/45868.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-27T10:09:06+08:00",
+      "locked": false
+    },
     {
       "id": "e24767dc8f9c0d26",
       "title": "电子科技大学学习贯彻党的二十届五中全会精神宣讲安排",
@@ -17,6 +47,21 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-25T11:01:38+08:00",
+      "locked": false
+    },
+    {
+      "id": "22049b31a149a61a",
+      "title": "中国科学技术大学张海江教授应邀做客学者论坛",
+      "url": "https://news.uestc.edu.cn/info/1005/45890.htm",
+      "date": "2026-11-24",
+      "date_text": "2026-11-24",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/45890.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-27T10:09:06+08:00",
       "locked": false
     },
     {
@@ -404,51 +449,6 @@
       "source": {
         "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
         "url": "https://news.uestc.edu.cn/info/1016/45580.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-19T09:10:16+08:00",
-      "locked": false
-    },
-    {
-      "id": "56223416206d88b0",
-      "title": "创·见·未来！第六届新工科教育学生作品展",
-      "url": "https://news.uestc.edu.cn/info/1015/45586.htm",
-      "date": "2026-11-18",
-      "date_text": "2026-11-18",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1015/45586.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-19T09:10:16+08:00",
-      "locked": false
-    },
-    {
-      "id": "dec0f079a3e33546",
-      "title": "成电讲坛 | AI语境下的道德判断(Moral Judgment in the Context of AI)",
-      "url": "https://news.uestc.edu.cn/info/1016/45547.htm",
-      "date": "2026-11-18",
-      "date_text": "2026-11-18",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1016/45547.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-19T09:10:16+08:00",
-      "locked": false
-    },
-    {
-      "id": "0de6f144802aabba",
-      "title": "校领导率团访问法国、葡萄牙",
-      "url": "https://news.uestc.edu.cn/info/1003/45577.htm",
-      "date": "2026-11-18",
-      "date_text": "2026-11-18",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1003/45577.htm",
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-19T09:10:16+08:00",
