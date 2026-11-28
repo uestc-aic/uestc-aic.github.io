@@ -2,8 +2,38 @@
   "source_id": "uestc-news",
   "source_name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
   "source_url": "https://news.uestc.edu.cn/",
-  "fetched_at": "2026-11-27T10:09:06+08:00",
+  "fetched_at": "2026-11-28T09:56:18+08:00",
   "items": [
+    {
+      "id": "85a7e18b50669e07",
+      "title": "省决咨委教育文化组一行来校调研",
+      "url": "https://news.uestc.edu.cn/info/1003/45906.htm",
+      "date": "2026-11-27",
+      "date_text": "2026-11-27",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1003/45906.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-28T09:56:18+08:00",
+      "locked": false
+    },
+    {
+      "id": "e9e4fd6334a89711",
+      "title": "南京航空航天大学经济与管理学院到经管学院调研交流",
+      "url": "https://news.uestc.edu.cn/info/1006/45938.htm",
+      "date": "2026-11-26",
+      "date_text": "2026-11-26",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1006/45938.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-28T09:56:18+08:00",
+      "locked": false
+    },
     {
       "id": "28019642d756c9d7",
       "title": "学校党委举行学习贯彻党的二十届五中全会精神专题书记论坛暨第二期“成电先锋”书记论坛",
@@ -35,6 +65,21 @@
       "locked": false
     },
     {
+      "id": "67fb4fd6368bcdff",
+      "title": "第十六届全国仪器科学与技术学科博士生学术论坛在电子科技大学举行",
+      "url": "https://news.uestc.edu.cn/info/1005/45945.htm",
+      "date": "2026-11-25",
+      "date_text": "2026-11-25",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1005/45945.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-28T09:56:18+08:00",
+      "locked": false
+    },
+    {
       "id": "e24767dc8f9c0d26",
       "title": "电子科技大学学习贯彻党的二十届五中全会精神宣讲安排",
       "url": "https://news.uestc.edu.cn/info/1017/45820.htm",
@@ -47,6 +92,21 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-25T11:01:38+08:00",
+      "locked": false
+    },
+    {
+      "id": "d01a4c2f2b8e9408",
+      "title": "我校游泳队在2026年世界泳联中国游泳日（成都主会场）比赛中喜获佳绩",
+      "url": "https://news.uestc.edu.cn/info/1053/45948.htm",
+      "date": "2026-11-24",
+      "date_text": "2026-11-24",
+      "category": "campus",
+      "source": {
+        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
+        "url": "https://news.uestc.edu.cn/info/1053/45948.htm",
+        "source_id": "uestc-news"
+      },
+      "collected_at": "2026-11-28T09:56:18+08:00",
       "locked": false
     },
     {
@@ -392,66 +452,6 @@
         "source_id": "uestc-news"
       },
       "collected_at": "2026-11-21T08:47:15+08:00",
-      "locked": false
-    },
-    {
-      "id": "103fc7711d889820",
-      "title": "关于开展电子科技大学第十二届校园网络文化节网络文化作品征集展示活动的通知",
-      "url": "https://news.uestc.edu.cn/info/1016/45601.htm",
-      "date": "2026-11-19",
-      "date_text": "2026-11-19",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1016/45601.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-20T09:14:45+08:00",
-      "locked": false
-    },
-    {
-      "id": "0f13aeb08f850c83",
-      "title": "【建设一流本科】当代码遇上水墨：艺术类竞赛里的成电科艺融合实践",
-      "url": "https://news.uestc.edu.cn/info/1057/45591.htm",
-      "date": "2026-11-19",
-      "date_text": "2026-11-19",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1057/45591.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-20T09:14:45+08:00",
-      "locked": false
-    },
-    {
-      "id": "df1c5406e4c2356a",
-      "title": "全胜出线！电子科技大学男排直取 “贡嘎杯” 小组头名，晋级总决赛",
-      "url": "https://news.uestc.edu.cn/info/1053/45678.htm",
-      "date": "2026-11-18",
-      "date_text": "2026-11-18",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1053/45678.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-21T08:47:15+08:00",
-      "locked": false
-    },
-    {
-      "id": "4483d8fb0d76eb68",
-      "title": "电子科技大学第十五届银杏节活动方案",
-      "url": "https://news.uestc.edu.cn/info/1016/45580.htm",
-      "date": "2026-11-18",
-      "date_text": "2026-11-18",
-      "category": "campus",
-      "source": {
-        "name": "成电新闻网 · 首页（综合/学术/竞赛要闻）",
-        "url": "https://news.uestc.edu.cn/info/1016/45580.htm",
-        "source_id": "uestc-news"
-      },
-      "collected_at": "2026-11-19T09:10:16+08:00",
       "locked": false
     }
   ]
